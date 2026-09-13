@@ -65,6 +65,8 @@ def check_env() -> bool:
     print("=" * 68)
     print("  GoldAI Ultra — ForexClub / Libertex MT5 konfiguratsiya testi")
     print("=" * 68)
+    env_path = BASE_DIR / ".env"
+    print(f"  .env: {env_path} ({'mavjud' if env_path.is_file() else 'TOPILMADI'})")
     print(f"  Broker: {os.getenv('BROKER', 'ForexClub')}")
     print(f"  Server: {os.getenv('MT5_SERVER', '[kiritilmagan]')}")
     print(f"  AI tartibi: {os.getenv('AI_PROVIDER_ORDER', 'deepseek,gemini,openai')}")
