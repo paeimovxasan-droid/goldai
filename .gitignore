@@ -1,0 +1,52 @@
+# GoldAI Ultra — Libertex Edition
+# Secrets — hech qachon commit qilinmaydi!
+.env
+*.env
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+.env.local
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# IDE & OS
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Logs & Data
+logs/
+*.log
+*.sqlite
+*.db
+goldai_state.json
+trade_history.db
+
+# MT5 Terminal (Windows)
+terminal64.exe
+*.ex5
+
+# Node / Frontend (agar qo'shilsa)
+node_modules/
+.next/
+dist/
+out/
+
+# Secrets scan — qo'shimcha
+secrets/
+credentials.json
