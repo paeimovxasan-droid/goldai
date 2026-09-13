@@ -32,7 +32,19 @@ except ImportError:  # Allows the diagnostic command to run before dependencies 
                 os.environ[key] = value
         return True
 
-load_dotenv()
+_ENV_FILE = Path(__file__).resolve().parents[1] / ".env"
+# Always load the repository's .env, even when the launcher is started from a
+# different working directory. Existing process environment variables win.
+load_dotenv(_ENV_FILE)
+
+
+def _env_first(*names: str, default: str = "") -> str:
+    """Read the first non-empty environment variable and normalize quotes."""
+    for name in names:
+        value = os.getenv(name, "").strip()
+        if value:
+            return value.strip('\\"\\\'')
+    return default
 
 
 # ─── BOZORLAR — Libertex MT5 orqali ─────────────────────────────────
@@ -275,20 +287,22 @@ class AIProviderConfig:
     cooldown_seconds: int = field(default_factory=lambda: _as_int(
         os.getenv("AI_PROVIDER_COOLDOWN_SECONDS", "300"), 300
     ))
-    deepseek_api_key: str = field(default_factory=lambda: os.getenv("DEEPSEEK_API_KEY", "").strip())
-    deepseek_model: str = field(default_factory=lambda: os.getenv("DEEPSEEK_MODEL", "deepseek-chat").strip())
-    deepseek_base_url: str = field(default_factory=lambda: os.getenv(
-        "DEEPSEEK_BASE_URL", "https://api.deepseek.com/v1"
+    deepseek_api_key: str = field(default_factory=lambda: _env_first("DEEPSEEK_API_KEY", "DEEPSEEK_KEY"))
+    deepseek_model: str = field(default_factory=lambda: _env_first("DEEPSEEK_MODEL", default="deepseek-chat"))
+    deepseek_base_url: str = field(default_factory=lambda: _env_first(
+        "DEEPSEEK_BASE_URL", default="https://api.deepseek.com/v1"
     ).rstrip("/"))
-    openai_api_key: str = field(default_factory=lambda: os.getenv("OPENAI_API_KEY", "").strip())
-    openai_model: str = field(default_factory=lambda: os.getenv("OPENAI_MODEL", "gpt-4o-mini").strip())
-    openai_base_url: str = field(default_factory=lambda: os.getenv(
-        "OPENAI_BASE_URL", "https://api.openai.com/v1"
+    openai_api_key: str = field(default_factory=lambda: _env_first("OPENAI_API_KEY", "OPENAI_KEY"))
+    openai_model: str = field(default_factory=lambda: _env_first("OPENAI_MODEL", default="gpt-4o-mini"))
+    openai_base_url: str = field(default_factory=lambda: _env_first(
+        "OPENAI_BASE_URL", default="https://api.openai.com/v1"
     ).rstrip("/"))
-    gemini_api_key: str = field(default_factory=lambda: os.getenv("GEMINI_API_KEY", "").strip())
-    gemini_model: str = field(default_factory=lambda: os.getenv("GEMINI_MODEL", "gemini-2.0-flash").strip())
-    gemini_base_url: str = field(default_factory=lambda: os.getenv(
-        "GEMINI_BASE_URL", "https://generativelanguage.googleapis.com/v1beta"
+    gemini_api_key: str = field(default_factory=lambda: _env_first(
+        "GEMINI_API_KEY", "GOOGLE_GEMINI_API_KEY", "GOOGLE_API_KEY"
+    ))
+    gemini_model: str = field(default_factory=lambda: _env_first("GEMINI_MODEL", default="gemini-2.0-flash"))
+    gemini_base_url: str = field(default_factory=lambda: _env_first(
+        "GEMINI_BASE_URL", default="https://generativelanguage.googleapis.com/v1beta"
     ).rstrip("/"))
 
     def enabled_providers(self) -> list[str]:
@@ -296,8 +310,15 @@ class AIProviderConfig:
         aliases = {"google": "gemini", "google-gemini": "gemini"}
         requested = [aliases.get(p.strip().lower(), p.strip().lower())
                      for p in self.provider_order.split(",") if p.strip()]
-        known = {"deepseek", "gemini", "openai"}
-        return [p for p in requested if p in known and self.api_key_for(p)]
+        known = ("deepseek", "gemini", "openai")
+        ordered = [p for p in requested if p in known and self.api_key_for(p)]
+        # A stale .env may contain AI_PROVIDER_ORDER=deepseek from the old
+        # DeepSeek-only version. Keep the requested priority, but append any
+        # configured fallback so a valid new key is never silently ignored.
+        for provider in known:
+            if self.api_key_for(provider) and provider not in ordered:
+                ordered.append(provider)
+        return ordered
 
     def api_key_for(self, provider: str) -> str:
         return {

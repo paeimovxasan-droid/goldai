@@ -59,7 +59,7 @@ def check_env() -> bool:
         "GEMINI_API_KEY": os.getenv("GEMINI_API_KEY"),
         "OPENAI_API_KEY": os.getenv("OPENAI_API_KEY"),
         "ENABLE_BINANCE": os.getenv("ENABLE_BINANCE", "false"),
-        "TRADING_MODE": os.getenv("TRADING_MODE", "live"),
+        "TRADING_MODE": os.getenv("TRADING_MODE", "paper"),
     }
 
     print("=" * 68)
@@ -130,6 +130,15 @@ async def run_system_test() -> bool:
         from agents.deepseek_agent import DeepSeekAgent
         ai = DeepSeekAgent()
         providers = ai.configured_providers
+        def _provider_key_status(provider: str) -> str:
+            key = ai.settings.api_key_for(provider)
+            return f"{provider}=bor ({len(key)} belgi)" if key else f"{provider}=yo'q"
+        key_status = ", ".join(
+            _provider_key_status(provider) for provider in ("deepseek", "gemini", "openai")
+        )
+        provider_order = ", ".join(providers) if providers else "yo'q"
+        print(f"    Provider tartibi: {provider_order}")
+        print(f"    Key holati: {key_status}")
         if not providers:
             print("    [ -] API key yo'q — .env da GEMINI_API_KEY, OPENAI_API_KEY yoki DEEPSEEK_API_KEY kiriting")
         else:
