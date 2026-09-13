@@ -152,8 +152,7 @@ async def run_system_test() -> bool:
             if result:
                 print(f"    [OK] AI javobi olindi ({ai.active_provider})")
             else:
-                print("    [!!] Barcha AI providerlar javob bermadi (key/quota/internetni tekshiring)")
-                errors.append("AI: all configured providers failed")
+                print("    [ -] AI providerlar javob bermadi (ixtiyoriy; MT5 trading davom etadi)")
     except Exception as exc:
         print(f"    [!!] AI: {type(exc).__name__}: {exc}")
         errors.append(f"AI: {exc}")

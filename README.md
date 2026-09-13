@@ -35,6 +35,7 @@ OPENAI_API_KEY=
 - `MT5_SERVER` ni MT5 login oynasi yoki kabinetdagi qiymat bilan **aynan** bir xil yozing. `Demo` va `Real` serverlari almashmaydi.
 - `MT5_PATH` bo'sh bo'lsa, dastur ochiq MT5 terminaliga ulanadi. Noto'g'ri yo'l bo'lsa, launcher baribir odatiy IPC ulanishini sinaydi.
 - `TRADING_MODE=live` orderlarni MT5 ga yuboradi, `paper` real order yubormaydi, `auto` balans $5 dan kam bo'lsa paper rejimga o'tadi.
+- Gemini uchun hozir `GEMINI_MODEL=gemini-2.5-flash` ishlating; eski `gemini-2.0-flash` modeliga yangi so'rovlar 404 qaytarishi mumkin.
 - Birinchi test uchun `MT5_SERVER=ForexClub-MT5 Demo Server` va `TRADING_MODE=live` ishlating — orderlar Demo hisobda qoladi.
 
 ## 3. AI kalitlari va failover

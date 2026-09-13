@@ -300,7 +300,7 @@ class AIProviderConfig:
     gemini_api_key: str = field(default_factory=lambda: _env_first(
         "GEMINI_API_KEY", "GOOGLE_GEMINI_API_KEY", "GOOGLE_API_KEY"
     ))
-    gemini_model: str = field(default_factory=lambda: _env_first("GEMINI_MODEL", default="gemini-2.0-flash"))
+    gemini_model: str = field(default_factory=lambda: _env_first("GEMINI_MODEL", default="gemini-2.5-flash"))
     gemini_base_url: str = field(default_factory=lambda: _env_first(
         "GEMINI_BASE_URL", default="https://generativelanguage.googleapis.com/v1beta"
     ).rstrip("/"))

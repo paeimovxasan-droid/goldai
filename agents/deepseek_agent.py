@@ -173,6 +173,10 @@ class DeepSeekAgent:
                 payload["response_format"] = {"type": "json_object"}
         else:
             model = self.settings.gemini_model
+            # Google shut down Gemini 2.0 Flash; transparently migrate old
+            # template values so an existing .env does not keep returning 404.
+            if model in {"gemini-2.0-flash", "gemini-2.0-flash-001"}:
+                model = "gemini-2.5-flash"
             url = (
                 f"{self.settings.gemini_base_url}/models/{model}:generateContent"
                 f"?key={key}"
