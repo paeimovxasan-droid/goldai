@@ -24,6 +24,8 @@ if not exist "%ROOT%.env" (
     echo [OK] .env yaratildi.
     echo Endi .env faylida MT5 login/parol/server va kerakli AI kalitlarini kiriting.
     echo Kalitlarni GitHub yoki Telegramga yubormang.
+    echo .env Notepad'da ochilmoqda...
+    start "" notepad "%ROOT%.env"
     echo.
     pause
     exit /b 2
