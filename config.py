@@ -9,42 +9,9 @@ Serverlar: ForexClub-MT5 Real Server / ForexClub-MT5 Demo Server
 
 import os
 from dataclasses import dataclass, field
-from pathlib import Path
+from dotenv import load_dotenv
 
-try:
-    from dotenv import load_dotenv
-except ImportError:  # Allows the diagnostic command to run before dependencies are installed.
-    def load_dotenv(dotenv_path=None, override=False):
-        """Small .env fallback used only when python-dotenv is not installed."""
-        path = Path(dotenv_path or Path(__file__).resolve().parents[1] / ".env")
-        if not path.is_file():
-            return False
-        for raw_line in path.read_text(encoding="utf-8").splitlines():
-            line = raw_line.strip()
-            if not line or line.startswith("#") or "=" not in line:
-                continue
-            key, value = line.split("=", 1)
-            key = key.strip()
-            value = value.strip()
-            if len(value) >= 2 and value[0] == value[-1] and value[0] in {'\"', "'"}:
-                value = value[1:-1]
-            if override or key not in os.environ:
-                os.environ[key] = value
-        return True
-
-_ENV_FILE = Path(__file__).resolve().parents[1] / ".env"
-# Always load the repository's .env, even when the launcher is started from a
-# different working directory. Existing process environment variables win.
-load_dotenv(_ENV_FILE)
-
-
-def _env_first(*names: str, default: str = "") -> str:
-    """Read the first non-empty environment variable and normalize quotes."""
-    for name in names:
-        value = os.getenv(name, "").strip()
-        if value:
-            return value.strip('\\"\\\'')
-    return default
+load_dotenv()
 
 
 # ─── BOZORLAR — Libertex MT5 orqali ─────────────────────────────────
@@ -217,154 +184,57 @@ class LibertexConfig:
     leverage_default: int = 100  # Libertex leverage
 
 
-def _as_bool(value: str, default: bool = False) -> bool:
-    if value is None:
-        return default
-    return str(value).strip().lower() in {"1", "true", "yes", "on"}
-
-
-def _as_int(value: str, default: int = 0) -> int:
-    try:
-        return int(str(value).strip())
-    except (TypeError, ValueError):
-        return default
-
-
-def _server_candidates() -> list[str]:
-    """Build unique server candidates without trying unrelated account types first."""
-    configured = os.getenv("MT5_SERVER", "ForexClub-MT5 Real Server").strip()
-    raw_fallbacks = os.getenv("MT5_FALLBACK_SERVERS", "").strip()
-    if raw_fallbacks:
-        fallbacks = [item.strip() for item in raw_fallbacks.split(",") if item.strip()]
-    else:
-        fallbacks = [
-            "ForexClub-MT5 Real Server",
-            "ForexClub-MT5 Demo Server",
-            "ForexClub-MT5 Real Server 2",
-            "ForexClub-MT5 Demo Server 2",
-            "mt5-real-prim.fxclub.org",
-            "mt5-demo-prim.fxclub.org",
-        ]
-    result = []
-    for value in [configured, *fallbacks]:
-        if value and value not in result:
-            result.append(value)
-    return result
-
-
 @dataclass
 class BinanceConfig:
-    """Binance — faqat ENABLE_BINANCE=true bo'lsa ishlatiladi."""
-    api_key: str = field(default_factory=lambda: os.getenv("BINANCE_API_KEY", "").strip())
-    secret_key: str = field(default_factory=lambda: os.getenv("BINANCE_SECRET_KEY", "").strip())
-    testnet: bool = field(default_factory=lambda: _as_bool(os.getenv("BINANCE_TESTNET", "true"), True))
-    enabled: bool = field(default_factory=lambda: _as_bool(os.getenv("ENABLE_BINANCE", "false")))
+    """Binance — ENDI IXTISORIY, faqat ENABLE_BINANCE=true bo'lsa"""
+    api_key: str = os.getenv("BINANCE_API_KEY", "")
+    secret_key: str = os.getenv("BINANCE_SECRET_KEY", "")
+    testnet: bool = os.getenv("BINANCE_TESTNET", "true").lower() == "true"
+    enabled: bool = os.getenv("ENABLE_BINANCE", "false").lower() == "true"
     ws_url: str = "wss://stream.binance.com:9443/ws"
 
 
 @dataclass
 class MT5Config:
-    """ForexClub / Libertex MT5 ulanish parametrlari."""
-    login: int = field(default_factory=lambda: _as_int(os.getenv("MT5_LOGIN", "0")))
-    password: str = field(default_factory=lambda: os.getenv("MT5_PASSWORD", ""))
-    server: str = field(default_factory=lambda: os.getenv("MT5_SERVER", "ForexClub-MT5 Real Server").strip())
-    fallback_servers: list = field(default_factory=lambda: _server_candidates())
-    magic_number: int = field(default_factory=lambda: _as_int(os.getenv("MT5_MAGIC_NUMBER", "999001"), 999001))
-    timeout: int = field(default_factory=lambda: _as_int(os.getenv("MT5_TIMEOUT_MS", "60000"), 60000))
-    path: str = field(default_factory=lambda: os.getenv("MT5_PATH", "").strip().strip('\"'))
-    broker: str = field(default_factory=lambda: os.getenv("BROKER", "ForexClub").strip())
+    """ForexClub / Libertex MT5"""
+    login: int = int(os.getenv("MT5_LOGIN", "0"))
+    password: str = os.getenv("MT5_PASSWORD", "")
+    # ForexClub serverlari: ForexClub-MT5 Real Server / Demo Server
+    # Libertex kabinetida ko'rsatilgan aniq server nomini kiriting
+    server: str = os.getenv("MT5_SERVER", "ForexClub-MT5 Real Server")
+    # Alternativ serverlar (agar asosiysi ishlamasa avtomatik sinab ko'radi)
+    fallback_servers: list = field(default_factory=lambda: [
+        "ForexClub-MT5 Real Server",
+        "ForexClub-MT5 Demo Server",
+        "ForexClub-MT5 Real Server 2",
+        "mt5-real-prim.fxclub.org",
+        "mt5-real-sec.fxclub.org",
+    ])
+    magic_number: int = 999001
+    timeout: int = 60000
+    path: str = os.getenv("MT5_PATH", "")  # MT5 terminal yo'li (Windows da kerak bo'lishi mumkin)
+    broker: str = os.getenv("BROKER", "ForexClub")  # ForexClub / Libertex
 
 
 @dataclass
-class AIProviderConfig:
-    """OpenAI-compatible providers used by the AI agent."""
-    provider_order: str = field(default_factory=lambda: os.getenv(
-        "AI_PROVIDER_ORDER", "deepseek,gemini,openai"
-    ))
-    request_timeout: int = field(default_factory=lambda: _as_int(
-        os.getenv("AI_TIMEOUT_SECONDS", "20"), 20
-    ))
-    cooldown_seconds: int = field(default_factory=lambda: _as_int(
-        os.getenv("AI_PROVIDER_COOLDOWN_SECONDS", "300"), 300
-    ))
-    deepseek_api_key: str = field(default_factory=lambda: _env_first("DEEPSEEK_API_KEY", "DEEPSEEK_KEY"))
-    deepseek_model: str = field(default_factory=lambda: _env_first("DEEPSEEK_MODEL", default="deepseek-chat"))
-    deepseek_base_url: str = field(default_factory=lambda: _env_first(
-        "DEEPSEEK_BASE_URL", default="https://api.deepseek.com/v1"
-    ).rstrip("/"))
-    openai_api_key: str = field(default_factory=lambda: _env_first("OPENAI_API_KEY", "OPENAI_KEY"))
-    openai_model: str = field(default_factory=lambda: _env_first("OPENAI_MODEL", default="gpt-4o-mini"))
-    openai_base_url: str = field(default_factory=lambda: _env_first(
-        "OPENAI_BASE_URL", default="https://api.openai.com/v1"
-    ).rstrip("/"))
-    gemini_api_key: str = field(default_factory=lambda: _env_first(
-        "GEMINI_API_KEY", "GOOGLE_GEMINI_API_KEY", "GOOGLE_API_KEY"
-    ))
-    gemini_model: str = field(default_factory=lambda: _env_first("GEMINI_MODEL", default="gemini-2.5-flash"))
-    gemini_base_url: str = field(default_factory=lambda: _env_first(
-        "GEMINI_BASE_URL", default="https://generativelanguage.googleapis.com/v1beta"
-    ).rstrip("/"))
-
-    def enabled_providers(self) -> list[str]:
-        """Return configured providers in the requested failover order."""
-        aliases = {"google": "gemini", "google-gemini": "gemini"}
-        requested = [aliases.get(p.strip().lower(), p.strip().lower())
-                     for p in self.provider_order.split(",") if p.strip()]
-        known = ("deepseek", "gemini", "openai")
-        ordered = [p for p in requested if p in known and self.api_key_for(p)]
-        # A stale .env may contain AI_PROVIDER_ORDER=deepseek from the old
-        # DeepSeek-only version. Keep the requested priority, but append any
-        # configured fallback so a valid new key is never silently ignored.
-        for provider in known:
-            if self.api_key_for(provider) and provider not in ordered:
-                ordered.append(provider)
-        return ordered
-
-    def api_key_for(self, provider: str) -> str:
-        return {
-            "deepseek": self.deepseek_api_key,
-            "gemini": self.gemini_api_key,
-            "openai": self.openai_api_key,
-        }.get(provider, "")
-
-    # Compatibility fields used by older external integrations.
-    @property
-    def api_key(self) -> str:
-        return self.deepseek_api_key
-
-    @property
-    def model(self) -> str:
-        return self.deepseek_model
-
-    @property
-    def base_url(self) -> str:
-        return self.deepseek_base_url
-
-    @property
-    def max_tokens(self) -> int:
-        return 1500
-
-    @property
-    def temperature(self) -> float:
-        return 0.2
-
-
-# Kept as a compatibility alias for integrations importing DeepSeekConfig.
-DeepSeekConfig = AIProviderConfig
+class DeepSeekConfig:
+    api_key: str = os.getenv("DEEPSEEK_API_KEY", "")
+    model: str = "deepseek-chat"
+    base_url: str = "https://api.deepseek.com/v1"
+    max_tokens: int = 1500
+    temperature: float = 0.2
 
 
 @dataclass
 class DatabaseConfig:
-    url: str = field(default_factory=lambda: os.getenv(
-        "DB_URL", "postgresql://ultra:ultra_secure_2025@localhost:5432/goldai_ultra"
-    ))
-    redis_url: str = field(default_factory=lambda: os.getenv("REDIS_URL", "redis://localhost:6379"))
+    url: str = os.getenv("DB_URL", "postgresql://ultra:ultra123@localhost:5432/goldai_ultra")
+    redis_url: str = os.getenv("REDIS_URL", "redis://localhost:6379")
 
 
 @dataclass
 class TelegramConfig:
-    token: str = field(default_factory=lambda: os.getenv("TELEGRAM_BOT_TOKEN", "").strip())
-    chat_id: str = field(default_factory=lambda: os.getenv("TELEGRAM_CHAT_ID", "").strip())
+    token: str = os.getenv("TELEGRAM_BOT_TOKEN", "")
+    chat_id: str = os.getenv("TELEGRAM_CHAT_ID", "")
 
 
 class AppConfig:
@@ -375,7 +245,6 @@ class AppConfig:
         self.risk = RiskConfig()
         self.whale = WhaleConfig()
         self.deepseek = DeepSeekConfig()
-        self.ai = self.deepseek  # Clearer name; old integrations use config.deepseek.
         self.database = DatabaseConfig()
         self.telegram = TelegramConfig()
         self.markets = MARKETS
@@ -383,9 +252,6 @@ class AppConfig:
         # Broker nomi
         self.broker_name = self.mt5.broker  # ForexClub / Libertex
         self.enable_binance = self.binance.enabled
-        self.trading_mode = os.getenv("TRADING_MODE", "paper").strip().lower()
-        if self.trading_mode not in {"live", "paper", "auto"}:
-            self.trading_mode = "paper"
 
     def get_active_symbols(self, balance: float) -> list:
         """Balansga qarab aktiv symbollar"""

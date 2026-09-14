@@ -16,10 +16,9 @@ from dataclasses import dataclass
 from datetime import datetime, date
 from typing import Optional
 from core.logger import logger
-from core.config import config
 
 
-DB_URL = config.database.url
+DB_URL = "postgresql://ultra:ultra_secure_2025@localhost:5432/goldai_ultra"
 
 
 @dataclass

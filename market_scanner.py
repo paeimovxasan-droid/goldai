@@ -63,18 +63,14 @@ class ScanResult:
 class MultiMarketScanner:
     """Barcha bozorlarni parallel skanerlash — v2 kuchaytirilgan"""
 
-    def __init__(self, market_data_engine=None):
+    def __init__(self):
         self.liquidity = LiquidityEngine()
         self.smc = SMCEngine()
         self.whale = WhaleMonitor()
         self.cluster = ClusterEngine()
-        # H1 ma'lumotlarini aynan orchestratorning ulangan MT5 sessionidan olamiz.
-        # Oldin bu yerda ikkinchi, ulanmagan engine yaratilgan edi.
-        if market_data_engine is not None:
-            self._mde = market_data_engine
-        else:
-            from engines.market_data import MultiMarketDataEngine
-            self._mde = MultiMarketDataEngine()
+        # H1 ma'lumotlarini olish uchun market data engine
+        from engines.market_data import MultiMarketDataEngine
+        self._mde = MultiMarketDataEngine()
 
     async def scan_all(self, market_data: dict, balance: float) -> ScanResult:
         """Barcha bozorlarni parallel tahlil qilish"""

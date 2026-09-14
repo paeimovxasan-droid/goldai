@@ -4,18 +4,16 @@ Multi-market signal va whale alertlari + Interactive Command Handler
 """
 
 import asyncio
-import os
 import ssl
 import aiohttp
 from datetime import datetime
 from core.config import config
 from core.logger import logger
 
-# TLS verification is secure by default. Set TELEGRAM_VERIFY_SSL=false only
-# for a controlled corporate proxy that replaces certificates.
-_SSL_CTX = None
-if os.getenv("TELEGRAM_VERIFY_SSL", "true").strip().lower() in {"0", "false", "no"}:
-    _SSL_CTX = False
+# SSL sertifikat tekshirishni o'chirish (proxy/VPN muhiti uchun)
+_SSL_CTX = ssl.create_default_context()
+_SSL_CTX.check_hostname = False
+_SSL_CTX.verify_mode = ssl.CERT_NONE
 
 
 class TelegramBot:
@@ -49,7 +47,7 @@ class TelegramBot:
 /closeall — Barcha pozitsiyalarni yopish
 
 🤖 <b>AI Suhbat:</b>
-/ask [savol] — AI trading tahlil (DeepSeek/Gemini/OpenAI failover)
+/ask [savol] — AI trading tahlil (DeepSeek)
 <i>Yoki oddiygina savol yozing — AI javob beradi</i>
 
 ℹ️ <b>Boshqa:</b>
