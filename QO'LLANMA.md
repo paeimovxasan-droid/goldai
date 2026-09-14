@@ -2,10 +2,8 @@
 
 > **Broker:** ForexClub / Libertex via MetaTrader 5  
 > **Rejim:** Libertex MT5 — ASOSIY | Binance faqat `ENABLE_BINANCE=true` bo'lsa (ixtiyoriy)  
-> **Maqsad:** xavfsiz, nazorat qilinadigan MT5 avtomatlashtirish
-> **Versiya:** 2.2.0
->
-> **Tez yo'l:** Windows'da faqat `START_GOLDAI.bat` ni oching. U virtual muhit va paketlarni tayyorlaydi, keyin bot + API ni ishga tushiradi. Avval Demo hisobda sinang.
+> **Maqsad:** $10 → $1,000,000 Capital Growth  
+> **Versiya:** 2.1.0-libertex
 
 ---
 
@@ -18,7 +16,7 @@
 5. [Python muhitini sozlash](#5-python-muhitini-sozlash)
 6. [.env faylini to'ldirish](#6-env-faylini-toldirish)
 7. [Telegram bot sozlash](#7-telegram-bot-sozlash)
-8. [AI providerlar: DeepSeek + Gemini + OpenAI](#8-ai-providerlar-deepseek--gemini--openai-ixtiyoriy)
+8. [DeepSeek AI (ixtiyoriy)](#8-deepseek-ai-ixtiyoriy)
 9. [Ma'lumotlar bazasi (ixtiyoriy)](#9-malumotlar-bazasi-ixtiyoriy)
 10. [Test qilish](#10-test-qilish)
 11. [Botni ishga tushirish](#11-botni-ishga-tushirish)
@@ -59,7 +57,7 @@
 1. Libertex kabinetiga kiring → **"Mening hisoblarim"** yoki **"My Accounts"**
 2. **MT5** yorlig'ini tanlang
 3. Quyidagilarni **aniq** ko'chirib oling:
-   - **Login** — masalan `12345678` (raqam)
+   - **Login** — masalan `227427278` (raqam)
    - **Parol** — MT5 paroli (Libertex parolidan farq qilishi mumkin)
    - **Server** — masalan `ForexClub-MT5 Real Server`
 
@@ -112,7 +110,8 @@
 git clone https://github.com/paeimovxasan-droid/goldai.git
 cd goldai
 
-# Branch nomi repo/ish jarayoniga qarab farq qiladi; ZIP ishlatsangiz bu qadam kerak emas.
+# Libertex branch (agar kerak bo'lsa)
+git checkout arena/01a097a5-goldai
 
 # Yoki ZIP yuklab → papkaga oching
 ```
@@ -180,13 +179,11 @@ copy .env.example .env
 ```ini
 # ─── Libertex / ForexClub MT5 — ASOSIY ────────────────────────
 # Libertex kabinetidan ANIQ ko'chiring!
-MT5_LOGIN=12345678
-MT5_PASSWORD=CHANGE_ME
-MT5_SERVER=ForexClub-MT5 Demo Server
+MT5_LOGIN=227427278
+MT5_PASSWORD=Buni090701@
+MT5_SERVER=ForexClub-MT5 Real Server
 MT5_PATH=
-MT5_TIMEOUT_MS=60000
 BROKER=ForexClub
-TRADING_MODE=live
 
 # ─── Binance (Ixtiyoriy — O'CHIQ) ─────────────────────────────
 # Libertex rejimida Binance kerak EMAS!
@@ -196,23 +193,22 @@ BINANCE_API_KEY=
 BINANCE_SECRET_KEY=
 BINANCE_TESTNET=true
 
-# ─── AI failover (kamida bittasi) ─────────────────────────────
-AI_PROVIDER_ORDER=deepseek,gemini,openai
-DEEPSEEK_API_KEY=
-GEMINI_API_KEY=
-OPENAI_API_KEY=
-# Ixtiyoriy model nomlari:
-# GEMINI_MODEL=gemini-2.0-flash
-# OPENAI_MODEL=gpt-4o-mini
+# ─── DeepSeek AI ──────────────────────────────────────────────
+# https://platform.deepseek.com → API Keys → Create
+DEEPSEEK_API_KEY=sk-...
 
-# ─── Telegram (ixtiyoriy) ─────────────────────────────────────
-TELEGRAM_BOT_TOKEN=
-TELEGRAM_CHAT_ID=
+# ─── Telegram ─────────────────────────────────────────────────
+# @BotFather → /newbot → token oling
+# @userinfobot → chat_id oling
+TELEGRAM_BOT_TOKEN=1234567890:AAH...
+TELEGRAM_CHAT_ID=1234567890
 
 # ─── Database (ixtiyoriy) ────────────────────────────────────
-DB_URL=postgresql://ultra:ultra_secure_2025@localhost:5432/goldai_ultra
+DB_URL=postgresql://ultra:ultra123@localhost:5432/goldai_ultra
 REDIS_URL=redis://localhost:6379
 API_PORT=8000
+SECRET_KEY=ultra-secret-key-2025
+DEBUG=false
 ```
 
 ### 6.3 Muhim eslatmalar
@@ -246,20 +242,11 @@ python test_telegram.py
 
 ---
 
-## 8. AI providerlar: DeepSeek + Gemini + OpenAI (ixtiyoriy)
+## 8. DeepSeek AI (ixtiyoriy)
 
-Avvalgi versiya faqat DeepSeek'ni chaqirardi. Hozir `agents/deepseek_agent.py` uchala provider'ni `AI_PROVIDER_ORDER` bo'yicha sinaydi. DeepSeek quota/HTTP 402 yoki boshqa xatoda Gemini, keyin OpenAI ga avtomatik o'tadi.
-
-```ini
-AI_PROVIDER_ORDER=deepseek,gemini,openai
-DEEPSEEK_API_KEY=
-GEMINI_API_KEY=
-OPENAI_API_KEY=
-GEMINI_MODEL=gemini-2.0-flash
-OPENAI_MODEL=gpt-4o-mini
-```
-
-Kamida bitta kalit yetarli. Kalit bo'lmasa MT5 texnik/risk qismi ishlaydi, faqat `/ask` va AI review o'chadi. Provider holati `/api/v2/health` da ko'rinadi. Kalitlarni GitHub, Telegram yoki screenshotga chiqarmang; eski commitlarda ko'ringan kalitlarni darhol revoke qiling.
+1. https://platform.deepseek.com → Ro'yxatdan o'tish
+2. **API Keys** → **Create New** → `sk-...` ni nusxalash → `.env` ga
+3. Bo'lmasa ham bot ishlaydi, faqat `/ask` va AI tahlil o'chadi
 
 ---
 
@@ -273,8 +260,8 @@ Kamida bitta kalit yetarli. Kalit bo'lmasa MT5 texnik/risk qismi ishlaydi, faqat
 2. `init.sql` ni ishga tushiring:
 
 ```bash
-psql -U postgres -f init.sql
-# Yoki pgAdmin da loyiha papkasidagi init.sql ni ochib Run
+psql -U postgres -f database/init.sql
+# Yoki pgAdmin da database/init.sql ni ochib Run
 ```
 
 3. `.env` da `DB_URL` ni to'g'rilang
@@ -282,7 +269,7 @@ psql -U postgres -f init.sql
 ### DBsiz ishlatish
 
 - Hech narsa qilmasangiz ham bo'ladi — `TradeHistory: xotira rejimi` logi chiqadi
-- Savdolar `logs/trades.txt` va `goldai_state.json` da saqlanadi
+- Savdolar `logs/trades.log` va `goldai_state.json` da saqlanadi
 
 ---
 
@@ -294,14 +281,17 @@ psql -U postgres -f init.sql
 python run.py --test
 ```
 
-`run.py --test` quyidagilarni aniq ko'rsatadi:
+**Muvaffaqiyatli natija:**
 
-- package/import holati;
-- sozlangan AI providerlar va qaysi biri javob bergani;
-- Telegram (agar kalit berilgan bo'lsa);
-- MT5 IPC/login, server, balans va topilgan symbol soni.
+```
+[OK] 1/5 .env fayli
+[OK] 2/5 Telegram
+[OK] 3/5 Libertex MT5: ForexClub-MT5 Real Server | Balans $123.45 | Leverage 1:500
+[OK] 4/5 Strategiya: 45% ishonch + ADX≥20 + H1 EMA21/50 tekshirildi
+[OK] 5/5 Simvollar: 5/6 yuklandi (EURUSD, XAUUSD, BTCUSD...)
 
-MT5 yoki ixtiyoriy Telegram/AI xatosi yashirilmaydi. Avval xatoni tuzating, keyin `START_GOLDAI.bat` ni qayta ishga tushiring.
+✅ Hamma testlar o'tdi! Botni ishga tushiring: python run.py --bot
+```
 
 ### 10.2 MT5 ulanmadi — nima qilish?
 
@@ -315,7 +305,7 @@ MT5 yoki ixtiyoriy Telegram/AI xatosi yashirilmaydi. Avval xatoni tuzating, keyi
 3. `MT5_PATH` ni to'g'rilang: `C:\Program Files\ForexClub MT5\terminal64.exe`
 4. Antivirus / Firewall MT5 ni bloklamayaptimi?
 
-Agar MT5 ulanmasa, bot **degraded/diagnostika rejimida** davom etadi: order yubormaydi va har keyingi siklda qayta ulanishni sinaydi. Ulanish tiklangandan keyingina MT5 orderlari ishlaydi.
+Agar `ENABLE_BINANCE=false` bo'lsa, bot **demo rejimda** davom etadi (savdo qilmaydi, faqat signal tahlili).
 
 ### 10.3 Python import testi
 
@@ -333,14 +323,6 @@ python -c "from core.orchestrator import UltraOrchestrator; print('OK')"
 
 ### 11.1 Asosiy ishga tushirish
 
-Windows'da bitta fayl yetarli:
-
-```text
-START_GOLDAI.bat
-```
-
-U `.venv` yaratadi, `requirements.txt` o'rnatadi va `python run.py` (bot + API) ni ishga tushiradi. Qo'lda:
-
 ```bash
 python run.py --bot
 ```
@@ -351,7 +333,7 @@ python run.py --bot
 🚀 GoldAI Ultra — Libertex Edition
    Broker: ForexClub | Server: ForexClub-MT5 Real Server
 ✅ Rejim: LIBERTEX MT5 MODE (ForexClub | Forex + Crypto + Stocks)
-🏦 Libertex hisob: Login=12345678 | Server=ForexClub-MT5 Real Server | Leverage 1:500
+🏦 Libertex hisob: Login=227427278 | Server=ForexClub-MT5 Real Server | Leverage 1:500
 💰 Balans: $123.45 | Tier: MINI
 📊 Aktiv bozorlar (7): EURUSD, XAUUSD, BTCUSD, ETHUSD, GBPUSD, USDJPY, XAGUSD
 🔄 Multi-Market loop boshlandi [Libertex MT5 (ForexClub)]...
@@ -371,13 +353,9 @@ Telegram da:
 ### 11.2 Boshqa rejimlar
 
 ```bash
-# .env da rejim tanlang:
-TRADING_MODE=paper           # real order yubormaydi
-# yoki
-TRADING_MODE=live            # MT5 orderlarini yuboradi
-
-python run.py --api           # Faqat FastAPI server (port 8000)
-python run.py --help          # Barcha parametrlar
+python run.py --bot --dry-run   # Paper trading (real savdo yo'q)
+python run.py --api             # Faqat FastAPI server (port 8000)
+python run.py --help            # Barcha parametrlar
 ```
 
 ### 11.3 To'xtatish
@@ -387,18 +365,21 @@ python run.py --help          # Barcha parametrlar
 
 ### 11.4 Avtomatik ishga tushirish (Windows)
 
-Asosiy usul — login qilingandan so'ng `START_GOLDAI.bat` ni ochish. MT5 IPC current user session bilan ishlagani uchun `SYSTEM` darajasidagi Task Scheduler va Windows auto-login tavsiya etilmaydi.
+**Task Scheduler:**
 
-Ixtiyoriy user task uchun:
+1. `taskschd.msc` → "Vazifa yaratish"
+2. Trigger: "Kompyuter yoqilganda"
+3. Action: `python C:\path\to\goldai\run.py --bot`
+4. "Foydalanuvchi tizimga kirgan-kirmaganidan qat'iy nazar" + "Eng yuqori huquqlar"
 
-```powershell
-powershell -ExecutionPolicy Bypass -File .\install_autostart.ps1
-```
+Yoki **.bat** fayl:
 
-Bu `ONLOGON` triggerini joriy Windows foydalanuvchisi nomidan yaratadi. O'chirish:
-
-```powershell
-powershell -ExecutionPolicy Bypass -File .\install_autostart.ps1 -Uninstall
+```bat
+@echo off
+cd /d C:\path\to\goldai
+call venv\Scripts\activate
+python run.py --bot
+pause
 ```
 
 ---
@@ -419,7 +400,7 @@ powershell -ExecutionPolicy Bypass -File .\install_autostart.ps1 -Uninstall
 | `/sell EURUSD` | Qo'lda SELL |
 | `/auto` | Avtonomiya on/off |
 | `/closeall` | Barcha pozitsiyalarni yopish |
-| `/ask BTC qanday?` | DeepSeek/Gemini/OpenAI failover AI chat |
+| `/ask BTC qanday?` | DeepSeek AI chat |
 | `/stop` | Botni to'xtatish |
 
 > **Libertex eslatmasi:**
@@ -445,7 +426,7 @@ Telegram da slash siz yozing: `BTC bugun ko'tariladimi?` → DeepSeek javob bera
 | $50K–200K | 👑 Master | 1.8% | 7 | 30+ |
 | $200K–1M | 🌟 Legend | 2.0% | 8 | 30+ |
 
-- **Lot** avtomatik hisoblanadi: `risk / SL masofa`; live rejimda bu lot broker minimumidan kichik chiqsa, ortiqcha riskli order bloklanadi
+- **Lot** avtomatik hisoblanadi: `risk / SL masofa`
 - **SL/TP** — ATR + swing-point + smart SL (stop-hunt himoyasi)
 - **Signal filtri:** 45% ishonch, ADX≥20, H1 EMA21/50 trend, session, funding (Binance da)
 - **Cooldown:** SL olgandan keyin 30 daqiqa o'sha symbol da savdo yo'q
@@ -510,19 +491,20 @@ goldai/
 ├── bot/
 │   └── telegram_bot.py    # Libertex mode + /scan etc
 ├── api/
-│   └── main.py            # FastAPI + health/dashboard endpointlar
+│   └── main.py            # FastAPI Libertex Edition v2.1.0
 ├── agents/
-│   └── deepseek_agent.py  # DeepSeek → Gemini → OpenAI failover
-├── init.sql               # Ixtiyoriy PostgreSQL schema
-├── run.py                 # entry point va diagnostika
-├── START_GOLDAI.bat       # yagona Windows launcher
-├── .env.example           # secret'siz namuna
+│   └── deepseek_agent.py
+├── database/
+│   └── init.sql
+├── run.py                 # Libertex Edition entry point
+├── config.py              # core/config sync (legacy)
+├── .env.example           # Namuna
 ├── .gitignore
-├── README.md
-└── QO'LLANMA.md
+├── README.md              # Qisqa
+└── QO'LLANMA.md           # Siz o'qiyotgan batafsil qo'llanma
 ```
 
-> **Eslatma:** Upload paytida yo'qolgan package tuzilmasi qayta tiklandi. Endi source fayllar `core/`, `engines/`, `agents/`, `bot/` va `api/` ichida canonical nusxada saqlanadi.
+> **Eslatma:** Ildizdagi `market_data.py`, `orchestrator.py` va hokazo — `engines/` va `core/` ning sync nusxalari (legacy kompatibilitet).
 
 ---
 

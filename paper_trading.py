@@ -14,20 +14,9 @@ from dataclasses import dataclass
 from datetime import datetime, timezone
 from typing import Optional
 from core.logger import logger
-from core.config import config
 
 
-PAPER_THRESHOLD_USD = 5.0
-
-
-def _paper_mode_from_config(balance: float) -> bool:
-    """Respect an explicit mode; never silently paper-trade a funded MT5 account."""
-    mode = getattr(config, "trading_mode", "live")
-    if mode == "paper":
-        return True
-    if mode == "live":
-        return False
-    return balance < PAPER_THRESHOLD_USD
+PAPER_THRESHOLD_USD = 5.0    # $5 dan kam bo'lsa paper mode (real pul bilan ishlash)
 
 
 @dataclass
@@ -71,7 +60,7 @@ class PaperTradingEngine:
         self._closed_log: list[dict] = []
 
     def is_paper_mode(self, balance: float) -> bool:
-        return _paper_mode_from_config(balance)
+        return balance < PAPER_THRESHOLD_USD
 
     def open_position(self, symbol: str, side: str, lot: float,
                        entry: float, sl: float, tp: float) -> PaperResult:

@@ -22,29 +22,17 @@ orchestrator: Optional[UltraOrchestrator] = None
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     global orchestrator
-    # run.py's combined mode injects the same orchestrator used by the bot.
-    # The old code created a second instance and also forgot to await init().
-    orchestrator = getattr(app.state, "orchestrator", None)
-    owns_orchestrator = orchestrator is None
-    if owns_orchestrator:
-        orchestrator = UltraOrchestrator()
-        app.state.orchestrator = orchestrator
-        await orchestrator.initialize()
+    orchestrator = UltraOrchestrator()
+    orchestrator.initialize()
     yield
-    if owns_orchestrator and orchestrator:
-        await orchestrator.stop_async()
-
-
-def _get_orchestrator() -> UltraOrchestrator:
-    if orchestrator is None:
-        raise HTTPException(503, "GoldAI hali ishga tushmagan")
-    return orchestrator
+    if orchestrator:
+        orchestrator.stop()
 
 
 app = FastAPI(
     title="GoldAI Ultra — Libertex Edition",
     description="Libertex (ForexClub) MT5 — Forex | Crypto | Stocks | Commodities | $10→$1M",
-    version="2.2.0-libertex",
+    version="2.1.0-libertex",
     lifespan=lifespan
 )
 
@@ -53,42 +41,20 @@ app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], all
 
 @app.get("/")
 async def root():
-    return {
-        "name": "GoldAI Ultra",
-        "version": "2.2.0",
-        "markets": len(MARKETS),
-        "mt5_server": config.mt5.server,
-        "ai_failover": ["deepseek", "gemini", "openai"],
-    }
-
-
-@app.get("/api/v2/health")
-async def health():
-    """Startup-safe health signal used by the launcher/monitoring."""
-    if orchestrator is None:
-        return {"status": "starting", "mt5_connected": False}
-    return {
-        "status": "ok" if orchestrator.market.mt5_connected else "degraded",
-        "running": orchestrator._running,
-        "mt5_connected": orchestrator.market.mt5_connected,
-        "mt5_server": orchestrator.market.connected_server or config.mt5.server,
-        "mt5_error": orchestrator.market.last_connection_error,
-        "ai": orchestrator.ai.provider_status(),
-    }
+    return {"name": "GoldAI Ultra", "version": "2.0.0", "markets": len(MARKETS)}
 
 
 @app.get("/api/v2/dashboard")
 async def dashboard():
     """To'liq dashboard ma'lumoti"""
-    o = _get_orchestrator()
-    account = o.market.get_account_info()
+    account = orchestrator.market.get_account_info()
     balance = account.get("balance", 0)
     equity = account.get("equity", 0)
 
-    risk_status = o.risk.check_risk(balance, equity)
-    positions = o.market.get_all_positions()
-    stats = o.risk.get_statistics(balance)
-    dyn_params = o.risk.get_dynamic_params(balance)
+    risk_status = orchestrator.risk.check_risk(balance, equity)
+    positions = orchestrator.market.get_all_positions()
+    stats = orchestrator.risk.get_statistics(balance)
+    dyn_params = orchestrator.risk.get_dynamic_params(balance)
     active_symbols = config.get_active_symbols(balance)
 
     return {
@@ -113,14 +79,10 @@ async def dashboard():
             "active_symbols": active_symbols
         },
         "system": {
-            "running": o._running,
-            "cycles": o._cycle_count,
-            "trades_today": o._trades_today,
-            "mode": o._mode,
-            "mt5_connected": o.market.mt5_connected,
-            "mt5_server": o.market.connected_server or config.mt5.server,
+            "running": orchestrator._running,
+            "cycles": orchestrator._cycle_count,
+            "trades_today": orchestrator._trades_today,
         },
-        "ai": o.ai.provider_status(),
         "timestamp": datetime.utcnow().isoformat()
     }
 
@@ -128,8 +90,7 @@ async def dashboard():
 @app.get("/api/v2/markets")
 async def get_markets():
     """Barcha bozorlar ro'yxati"""
-    o = _get_orchestrator()
-    account = o.market.get_account_info()
+    account = orchestrator.market.get_account_info()
     balance = account.get("balance", 0)
     active = config.get_active_symbols(balance)
 
@@ -143,8 +104,7 @@ async def get_markets():
 
 @app.get("/api/v2/market/{symbol}/tick")
 async def get_tick(symbol: str):
-    o = _get_orchestrator()
-    tick = o.market.get_tick(symbol)
+    tick = orchestrator.market.get_tick(symbol)
     if not tick:
         raise HTTPException(404, f"{symbol} tick olinmadi")
     return tick
@@ -152,8 +112,7 @@ async def get_tick(symbol: str):
 
 @app.get("/api/v2/market/{symbol}/ohlc")
 async def get_ohlc(symbol: str, timeframe: str = "M15", bars: int = 100):
-    o = _get_orchestrator()
-    df = await o.market.get_ohlc_async(symbol, timeframe, bars)
+    df = await orchestrator.market.get_ohlc_async(symbol, timeframe, bars)
     if df is None:
         raise HTTPException(404, "OHLC olinmadi")
     return df.tail(bars).reset_index().to_dict(orient="records")
@@ -162,12 +121,11 @@ async def get_ohlc(symbol: str, timeframe: str = "M15", bars: int = 100):
 @app.get("/api/v2/whale/{symbol}")
 async def get_whale(symbol: str):
     """Whale faoliyati"""
-    o = _get_orchestrator()
-    account = o.market.get_account_info()
-    df = await o.market.get_ohlc_async(symbol, "M15", 100)
+    account = orchestrator.market.get_account_info()
+    df = await orchestrator.market.get_ohlc_async(symbol, "M15", 100)
     if df is None:
         raise HTTPException(404, "Ma'lumot yo'q")
-    activity = await o.whale.analyze_whale_activity(symbol, df)
+    activity = await orchestrator.whale.analyze_whale_activity(symbol, df)
     return {
         "symbol": symbol,
         "signal": activity.signal.value,
@@ -176,14 +134,13 @@ async def get_whale(symbol: str):
         "volume_spike": activity.volume_spike,
         "institutional": activity.institutional_flow,
         "description": activity.description,
-        "summary": o.whale.get_whale_summary(symbol)
+        "summary": orchestrator.whale.get_whale_summary(symbol)
     }
 
 
 @app.get("/api/v2/whale/orderflow/{symbol}")
 async def get_orderflow(symbol: str):
-    o = _get_orchestrator()
-    flow = o.whale.get_order_flow(symbol)
+    flow = orchestrator.whale.get_order_flow(symbol)
     if not flow:
         raise HTTPException(404, "Order flow ma'lumoti yo'q")
     return vars(flow)
@@ -192,11 +149,10 @@ async def get_orderflow(symbol: str):
 @app.get("/api/v2/scan")
 async def scan_markets():
     """Barcha bozorlarni skanerlash"""
-    o = _get_orchestrator()
-    account = o.market.get_account_info()
+    account = orchestrator.market.get_account_info()
     balance = account.get("balance", 0)
-    market_data = await o.market.scan_all_markets(balance)
-    scan = await o.scanner.scan_all(market_data, balance)
+    market_data = await orchestrator.market.scan_all_markets(balance)
+    scan = await orchestrator.scanner.scan_all(market_data, balance)
 
     return {
         "total_scanned": scan.total_scanned,
@@ -209,25 +165,22 @@ async def scan_markets():
 
 @app.get("/api/v2/performance")
 async def get_performance():
-    o = _get_orchestrator()
-    account = o.market.get_account_info()
+    account = orchestrator.market.get_account_info()
     balance = account.get("balance", 0)
-    stats = o.risk.get_statistics(balance)
-    next_tier = o.risk._next_tier_target(balance)
+    stats = orchestrator.risk.get_statistics(balance)
+    next_tier = orchestrator.risk._next_tier_target(balance)
     return {**stats, "next_tier": next_tier}
 
 
 @app.post("/api/v2/trade/close-all")
 async def close_all():
-    o = _get_orchestrator()
-    results = o.execution.close_all_positions("API Manual")
+    results = orchestrator.execution.close_all_positions("API Manual")
     return {"closed": len(results)}
 
 
 @app.post("/api/v2/trade/close/{ticket}")
 async def close_one(ticket: int):
-    o = _get_orchestrator()
-    r = o.execution.close_position(ticket)
+    r = orchestrator.execution.close_position(ticket)
     if not r.success:
         raise HTTPException(400, r.error)
     return vars(r)
@@ -235,17 +188,15 @@ async def close_one(ticket: int):
 
 @app.post("/api/v2/system/start")
 async def start(background_tasks: BackgroundTasks):
-    o = _get_orchestrator()
-    background_tasks.add_task(o.start)
+    background_tasks.add_task(orchestrator.start)
     return {"status": "started"}
 
 
 @app.post("/api/v2/system/stop")
 async def stop():
-    o = _get_orchestrator()
-    await o.stop_async()
+    orchestrator.stop()
     return {"status": "stopped"}
 
 
 if __name__ == "__main__":
-    uvicorn.run("api.main:app", host="0.0.0.0", port=8000, reload=False)
+    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=False)

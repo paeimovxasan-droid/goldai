@@ -74,7 +74,7 @@ class UltraOrchestrator:
         self.market    = MultiMarketDataEngine()
         self.risk      = DynamicRiskEngine()
         self.whale     = WhaleMonitor()
-        self.scanner   = MultiMarketScanner(self.market)
+        self.scanner   = MultiMarketScanner()
         self.ai        = DeepSeekAgent()
         self.telegram  = TelegramBot()
         self.history   = TradeHistory()
@@ -89,14 +89,12 @@ class UltraOrchestrator:
 
         self._mode = self.MODE_MT5
         self._running = False
-        self._initialized = False
         self._cycle_count = 0
         self._trades_today = 0
         self._last_whale_alert: dict = {}
         self._open_ticket_map: dict = {}  # ticket → {symbol, entry, sl, tp, side, qty}
         self._auto_mode = True            # True=avtonomiya, False=faqat qo'lda
         self._sl_cooldown: dict = {}      # symbol → unix timestamp (SL olgandan keyin 45 min kutish)
-        self._last_mt5_reconnect = 0.0
 
         # State fayli joyi (script yonida)
         _base = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -181,7 +179,6 @@ class UltraOrchestrator:
         await self._startup_sl_check()
         # ─────────────────────────────────────────────────────────
 
-        self._initialized = True
         return True
 
     async def _startup_sl_check(self):
@@ -250,30 +247,10 @@ class UltraOrchestrator:
 
     # ─── MAIN CYCLE ───────────────────────────────────────────────
 
-    async def _reconnect_mt5_if_needed(self) -> bool:
-        """Retry MT5 after terminal/network restarts instead of staying in a dead demo state."""
-        if self._mode != self.MODE_MT5 or self.market.mt5_connected:
-            return self.market.mt5_connected
-        now = time.time()
-        if now - self._last_mt5_reconnect < 60:
-            return False
-        self._last_mt5_reconnect = now
-        logger.warning("🔁 MT5 ulanmagan — terminal/server qayta ulanishi sinab ko'rilmoqda")
-        if not self.market.connect_mt5():
-            return False
-        self.execution = ExecutionEngine()
-        account = self.market.get_account_info()
-        balance = float(account.get("balance") or 0)
-        if balance > 0:
-            self.risk.initialize(balance)
-            logger.info("✅ MT5 qayta ulandi; savdo sikli davom etadi (balans=$%.2f)", balance)
-        return True
-
     async def run_cycle(self):
         self._cycle_count += 1
 
         try:
-            await self._reconnect_mt5_if_needed()
             # 1. Hisob ma'lumotlari
             account = await self._get_account()
             balance = account.get("balance", 0)
@@ -498,17 +475,10 @@ class UltraOrchestrator:
 
         # Paper mode yoki minimal lot tekshiruvi
         is_paper = self.paper.is_paper_mode(balance)
-        min_lot = float(symbol_info.get("volume_min", 0.001) or 0.001)
+        min_lot = symbol_info.get("volume_min", 0.001)
         if pos_size.lot < min_lot:
-            # Forcing the broker minimum on a small funded account can exceed
-            # the configured percentage risk by many times.  Paper mode may
-            # simulate it; live mode waits for a risk-compatible opportunity.
-            if not is_paper:
-                logger.info(
-                    f"🚫 {signal.symbol}: hisoblangan lot {pos_size.lot} < broker min {min_lot}; "
-                    "live trade xavfsizlik uchun bloklandi"
-                )
-                return
+            # Minimal lot bilan davom et (paper yoki real)
+            tag = "Paper" if is_paper else "Real-MinLot"
             pos_size = type(pos_size)(
                 lot=min_lot,
                 risk_amount=pos_size.risk_amount,
@@ -516,9 +486,9 @@ class UltraOrchestrator:
                 tp_distance=pos_size.tp_distance,
                 rr_ratio=pos_size.rr_ratio,
                 allowed=True,
-                reason=f"Paper min lot: {min_lot}"
+                reason=f"{tag} lot: {min_lot}"
             )
-            logger.info(f"📐 Paper: broker minimal lot {min_lot} ishlatildi")
+            logger.info(f"📐 {tag}: lot {min_lot} ishlatildi")
 
         whale_involved = bool(signal.whale_activity and
                               signal.whale_activity.get("confidence", 0) > 50)
@@ -558,7 +528,7 @@ class UltraOrchestrator:
             "reason": decision.reason, "executed": True
         })
 
-        return await self._execute_trade(decision)
+        await self._execute_trade(decision)
 
     async def _execute_trade(self, decision: TradingDecision):
         icons = {"forex": "💱", "crypto": "₿", "commodity": "🏅", "stock": "📈", "index": "📊"}
@@ -628,7 +598,7 @@ class UltraOrchestrator:
                 symbol=decision.symbol,
                 side=decision.action,
                 lot=decision.lot,
-                entry=float(getattr(result, "price", 0) or decision.entry),
+                entry=result.price or decision.entry,
                 sl=decision.stop_loss,
                 tp=decision.take_profit,
                 tier=decision.tier,
@@ -686,9 +656,7 @@ class UltraOrchestrator:
                 cvd_trend=decision.cvd_trend,
             )
         else:
-            logger.error(f"❌ Savdo muvaffaqiyatsiz: {getattr(result, 'error', 'broker rad etdi')}")
-
-        return result
+            logger.error(f"❌ Savdo muvaffaqiyatsiz: {result.error}")
 
     # ─── POSITION MANAGEMENT ──────────────────────────────────────
 
@@ -710,17 +678,11 @@ class UltraOrchestrator:
                     self.execution.set_break_even(ticket)
 
             if self._mode == self.MODE_MT5:
-                # ExecutionEngine expects points, while ATR is a price
-                # distance. Passing ATR directly made the trail effectively
-                # zero for 5-digit Forex symbols and caused invalid stops.
-                symbol_meta = self.market.get_symbol_info(pos["symbol"])
-                point = float(symbol_meta.get("point", 0) or 0)
-                if point > 0:
-                    self.execution.apply_trailing_stop(
-                        ticket=ticket,
-                        trail_pips=atr * 0.8 / point,
-                        step_pips=atr * 0.2 / point
-                    )
+                self.execution.apply_trailing_stop(
+                    ticket=ticket,
+                    trail_pips=atr * 0.8,
+                    step_pips=atr * 0.2
+                )
 
     async def _get_atr(self, symbol: str) -> float:
         df = await self.market.get_ohlc_async(symbol, "M15", 20)
@@ -921,26 +883,16 @@ class UltraOrchestrator:
                 whale_activity=None
             )
 
-        # 3. Bajarish — natijani tekshirib, Telegram'da yolg'on success bermaymiz.
-        result = await self._process_signal(manual_sig, account, risk_status, {symbol: df})
-        if result is None:
-            return (
-                f"❌ {side} {symbol} bajarilmadi.\n"
-                "Signal/risk/SL tekshiruvlaridan biri orderni blokladi. "
-                "logs\\goldai_ultra.log faylini tekshiring."
-            )
-        if not result.success:
-            return f"❌ {side} {symbol} order rad etildi: {getattr(result, 'error', 'nomaʼlum xato')}"
+        # 3. Bajarish
+        await self._process_signal(manual_sig, account, risk_status, {symbol: df})
 
         account2 = await self._get_account()
         balance2 = float(account2.get("balance") or 0)
         is_paper = self.paper.is_paper_mode(balance2)
         mode = "📝 PAPER" if is_paper else "💰 REAL"
-        ticket = getattr(result, "ticket", 0)
 
         return (
-            f"✅ {mode} {side} {symbol} ochildi\n"
-            f"Ticket: {ticket}\n"
+            f"✅ {mode} {side} {symbol}\n"
             f"Entry: {manual_sig.entry:,.4f}\n"
             f"SL: {manual_sig.stop_loss:,.4f}\n"
             f"TP: {manual_sig.take_profit:,.4f}\n"
@@ -1013,10 +965,7 @@ class UltraOrchestrator:
     # ─── START ────────────────────────────────────────────────────
 
     async def start(self):
-        if self._running:
-            logger.info("GoldAI allaqachon ishlayapti — ikkinchi loop ochilmadi")
-            return
-        if not self._initialized and not await self.initialize():
+        if not await self.initialize():
             return
 
         # Oldingi holatni yuklash (agar mavjud bo'lsa)
