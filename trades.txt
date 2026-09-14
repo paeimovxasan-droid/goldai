@@ -1,0 +1,2828 @@
+======================================================================
+  GoldAI Ultra — Savdo Jurnali (Trade Log)
+  $10 → $1,000,000 Capital Growth System
+======================================================================
+
+======================================================================
+[2026-06-30 05:02:23 UTC] BOT ISHGA TUSHDI
+  Rejim   : Binance Futures
+  Balans  : $0.00
+  Tier    : MICRO
+======================================================================
+
+======================================================================
+[2026-06-30 05:05:40 UTC] BOT ISHGA TUSHDI
+  Rejim   : Binance Futures
+  Balans  : $0.00
+  Tier    : MICRO
+======================================================================
+
+======================================================================
+[2026-06-30 05:07:21 UTC] BOT ISHGA TUSHDI
+  Rejim   : Binance Futures
+  Balans  : $0.00
+  Tier    : MICRO
+======================================================================
+
+======================================================================
+[2026-06-30 05:07:43 UTC] BOT ISHGA TUSHDI
+  Rejim   : Binance Futures
+  Balans  : $0.00
+  Tier    : MICRO
+======================================================================
+
+======================================================================
+[2026-06-30 05:17:15 UTC] BOT ISHGA TUSHDI
+  Rejim   : Binance Futures
+  Balans  : $0.00
+  Tier    : MICRO
+======================================================================
+
+[2026-07-01 20:07:56 UTC] BALANS YANGILANDI
+  Balans  : $13.02
+  Equity  : $13.02
+  Tier    : MICRO
+  O'sish  : +30.16%
+
+[2026-07-01 20:38:30 UTC] BALANS YANGILANDI
+  Balans  : $13.02
+  Equity  : $13.02
+  Tier    : MICRO
+  O'sish  : +30.16%
+
+[2026-07-01 21:08:57 UTC] BALANS YANGILANDI
+  Balans  : $13.02
+  Equity  : $13.02
+  Tier    : MICRO
+  O'sish  : +30.16%
+
+[2026-07-01 21:39:49 UTC] BALANS YANGILANDI
+  Balans  : $13.02
+  Equity  : $13.02
+  Tier    : MICRO
+  O'sish  : +30.16%
+
+[2026-07-01 22:10:26 UTC] BALANS YANGILANDI
+  Balans  : $13.02
+  Equity  : $13.02
+  Tier    : MICRO
+  O'sish  : +30.16%
+
+[2026-07-01 22:40:58 UTC] BALANS YANGILANDI
+  Balans  : $13.02
+  Equity  : $13.02
+  Tier    : MICRO
+  O'sish  : +30.16%
+
+[2026-07-01 23:11:28 UTC] BALANS YANGILANDI
+  Balans  : $13.02
+  Equity  : $13.02
+  Tier    : MICRO
+  O'sish  : +30.16%
+
+[2026-07-01 23:42:15 UTC] BALANS YANGILANDI
+  Balans  : $13.02
+  Equity  : $13.02
+  Tier    : MICRO
+  O'sish  : +30.16%
+
+[2026-07-02 00:13:00 UTC] BALANS YANGILANDI
+  Balans  : $13.02
+  Equity  : $13.02
+  Tier    : MICRO
+  O'sish  : +30.16%
+
+[2026-07-02 00:43:29 UTC] BALANS YANGILANDI
+  Balans  : $13.02
+  Equity  : $13.02
+  Tier    : MICRO
+  O'sish  : +30.16%
+
+[2026-07-02 01:13:55 UTC] BALANS YANGILANDI
+  Balans  : $13.02
+  Equity  : $13.02
+  Tier    : MICRO
+  O'sish  : +30.16%
+
+[2026-07-02 01:44:19 UTC] BALANS YANGILANDI
+  Balans  : $13.02
+  Equity  : $13.02
+  Tier    : MICRO
+  O'sish  : +30.16%
+
+[2026-07-02 02:14:46 UTC] BALANS YANGILANDI
+  Balans  : $13.02
+  Equity  : $13.02
+  Tier    : MICRO
+  O'sish  : +30.16%
+
+[2026-07-02 02:45:07 UTC] BALANS YANGILANDI
+  Balans  : $13.02
+  Equity  : $13.02
+  Tier    : MICRO
+  O'sish  : +30.16%
+
+[2026-07-02 03:15:27 UTC] BALANS YANGILANDI
+  Balans  : $13.02
+  Equity  : $13.02
+  Tier    : MICRO
+  O'sish  : +30.16%
+
+[2026-07-02 03:46:01 UTC] BALANS YANGILANDI
+  Balans  : $13.02
+  Equity  : $13.02
+  Tier    : MICRO
+  O'sish  : +30.16%
+
+[2026-07-02 04:16:58 UTC] BALANS YANGILANDI
+  Balans  : $13.02
+  Equity  : $13.02
+  Tier    : MICRO
+  O'sish  : +30.16%
+
+======================================================================
+[2026-07-02 04:19:59 UTC] BOT ISHGA TUSHDI
+  Rejim   : Binance Futures
+  Balans  : $13.02
+  Tier    : MICRO
+======================================================================
+
+======================================================================
+[2026-07-02 04:30:21 UTC] BOT ISHGA TUSHDI
+  Rejim   : Binance Futures
+  Balans  : $13.02
+  Tier    : MICRO
+======================================================================
+
+======================================================================
+[2026-07-02 04:44:31 UTC] BOT ISHGA TUSHDI
+  Rejim   : Binance Futures
+  Balans  : $12.95
+  Tier    : MICRO
+======================================================================
+
+======================================================================
+[2026-07-02 04:49:01 UTC] BOT ISHGA TUSHDI
+  Rejim   : Binance Futures
+  Balans  : $12.86
+  Tier    : MICRO
+======================================================================
+
+======================================================================
+[2026-07-02 04:49:17 UTC] BOT ISHGA TUSHDI
+  Rejim   : Binance Futures
+  Balans  : $12.86
+  Tier    : MICRO
+======================================================================
+
+======================================================================
+[2026-07-02 04:52:09 UTC] BOT ISHGA TUSHDI
+  Rejim   : Binance Futures
+  Balans  : $12.78
+  Tier    : MICRO
+======================================================================
+
+======================================================================
+[2026-07-02 04:52:21 UTC] BOT ISHGA TUSHDI
+  Rejim   : Binance Futures
+  Balans  : $0.59
+  Tier    : MICRO
+======================================================================
+
+======================================================================
+[2026-07-02 04:56:01 UTC] BOT ISHGA TUSHDI
+  Rejim   : Binance Futures
+  Balans  : $12.50
+  Tier    : MICRO
+======================================================================
+
+======================================================================
+[2026-07-02 05:07:15 UTC] BOT ISHGA TUSHDI
+  Rejim   : Binance Futures
+  Balans  : $12.23
+  Tier    : MICRO
+======================================================================
+
+======================================================================
+[2026-07-02 05:18:10 UTC] BOT ISHGA TUSHDI
+  Rejim   : Binance Futures
+  Balans  : $12.11
+  Tier    : MICRO
+======================================================================
+
+======================================================================
+[2026-07-02 05:18:23 UTC] BOT ISHGA TUSHDI
+  Rejim   : Binance Futures
+  Balans  : $12.11
+  Tier    : MICRO
+======================================================================
+
+[2026-07-02 05:19:23 UTC] OCHILDI [BINANCE]
+  Ticket  : #1782969487
+  Symbol  : BNBUSD  (SELL)
+  Lot     : 0.01
+  Entry   : 551.37960
+  SL      : 556.94909
+  TP      : 548.73376
+  R:R     : 1.79  |  Ishonch: 30.0%
+  Tier    : MICRO
+
+[2026-07-02 05:19:33 UTC] OCHILDI [BINANCE]
+  Ticket  : #1782969501
+  Symbol  : XRPUSD  (SELL)
+  Lot     : 6.0
+  Entry   : 1.06064
+  SL      : 1.07135
+  TP      : 1.05502
+  R:R     : 1.79  |  Ishonch: 29.9%
+  Tier    : MICRO
+
+[2026-07-02 05:22:34 UTC] OCHILDI [BINANCE]
+  Ticket  : #1782969488
+  Symbol  : BNBUSD  (SELL)
+  Lot     : 0.01
+  Entry   : 551.16180
+  SL      : 556.72909
+  TP      : 548.51376
+  R:R     : 1.79  |  Ishonch: 29.7%
+  Tier    : MICRO
+
+======================================================================
+[2026-07-02 05:22:55 UTC] BOT ISHGA TUSHDI
+  Rejim   : Binance Futures
+  Balans  : $12.10
+  Tier    : MICRO
+======================================================================
+
+[2026-07-02 05:26:10 UTC] OCHILDI [BINANCE]
+  Ticket  : #1782969772
+  Symbol  : XRPUSD  (SELL)
+  Lot     : 5.0
+  Entry   : 1.06130
+  SL      : 1.07202
+  TP      : 1.05348
+  R:R     : 1.37  |  Ishonch: 29.1%
+  Tier    : MICRO
+
+[2026-07-02 05:27:51 UTC] !!! SL YO'Q — HIMOYA FAOLLASHDI !!!
+  Symbol  : XRPUSD  #1782970069
+  Harakat : Restart: SL yo'q — pozitsiya darhol yopildi
+
+======================================================================
+[2026-07-02 05:27:52 UTC] BOT ISHGA TUSHDI
+  Rejim   : Binance Futures
+  Balans  : $12.09
+  Tier    : MICRO
+======================================================================
+
+======================================================================
+[2026-07-02 05:28:07 UTC] BOT ISHGA TUSHDI
+  Rejim   : Binance Futures
+  Balans  : $12.09
+  Tier    : MICRO
+======================================================================
+
+[2026-07-02 05:28:08 UTC] OCHILDI [BINANCE]
+  Ticket  : #1782970070
+  Symbol  : XRPUSD  (SELL)
+  Lot     : 5.0
+  Entry   : 1.06131
+  SL      : 1.07203
+  TP      : 1.05326
+  R:R     : 1.37  |  Ishonch: 29.9%
+  Tier    : MICRO
+
+[2026-07-02 05:28:18 UTC] OCHILDI [BINANCE]
+  Ticket  : #1782970082
+  Symbol  : BNBUSD  (SELL)
+  Lot     : 0.01
+  Entry   : 551.13875
+  SL      : 556.70581
+  TP      : 548.47176
+  R:R     : 1.79  |  Ishonch: 29.7%
+  Tier    : MICRO
+
+======================================================================
+[2026-07-02 05:40:22 UTC] BOT ISHGA TUSHDI
+  Rejim   : Binance Futures
+  Balans  : $9.95
+  Tier    : MICRO
+======================================================================
+
+======================================================================
+[2026-07-02 05:40:23 UTC] BOT ISHGA TUSHDI
+  Rejim   : Binance Futures
+  Balans  : $9.95
+  Tier    : MICRO
+======================================================================
+
+======================================================================
+[2026-07-02 05:45:29 UTC] BOT ISHGA TUSHDI
+  Rejim   : Binance Futures
+  Balans  : $9.95
+  Tier    : MICRO
+======================================================================
+
+[2026-07-02 06:31:45 UTC] OCHILDI [BINANCE]
+  Ticket  : #1782971128
+  Symbol  : XRPUSD  (BUY)
+  Lot     : 7.0
+  Entry   : 1.06600
+  SL      : 1.05545
+  TP      : 1.07008
+  R:R     : 1.84  |  Ishonch: 50.1%
+  Tier    : MICRO
+
+[2026-07-02 06:53:24 UTC] OCHILDI [BINANCE]
+  Ticket  : #1782971129
+  Symbol  : BNBUSD  (BUY)
+  Lot     : 0.01
+  Entry   : 552.14916
+  SL      : 546.68234
+  TP      : 554.16494
+  R:R     : 1.75  |  Ishonch: 83.8%
+  Tier    : MICRO
+
+[2026-07-02 06:53:27 UTC] *** STOP LOSS URILDI ***
+  Ticket  : #1782971128  XRPUSD
+  SL narx : 1.05660
+  Zarar   : -0.40 $
+
+[2026-07-02 09:38:12 UTC] *** TAKE PROFIT OLINDI ***
+  Ticket  : #1782971129  BNBUSD
+  TP narx : 554.71000
+  Foyda   : +531.00 $
+
+[2026-07-02 09:39:13 UTC] OCHILDI [BINANCE]
+  Ticket  : #1782971130
+  Symbol  : ADAUSD  (SELL)
+  Lot     : 23.0
+  Entry   : 0.15791
+  SL      : 0.15951
+  TP      : 0.15502
+  R:R     : 1.79  |  Ishonch: 33.6%
+  Tier    : MICRO
+
+======================================================================
+[2026-07-02 10:56:39 UTC] BOT ISHGA TUSHDI
+  Rejim   : Binance Futures
+  Balans  : $10.98
+  Tier    : MICRO
+======================================================================
+
+======================================================================
+[2026-07-02 11:02:07 UTC] BOT ISHGA TUSHDI
+  Rejim   : Binance Futures
+  Balans  : $10.97
+  Tier    : MICRO
+======================================================================
+
+[2026-07-02 11:48:42 UTC] OCHILDI [BINANCE]
+  Ticket  : #1782990124
+  Symbol  : ADAUSD  (BUY)
+  Lot     : 6.0
+  Entry   : 0.15539
+  SL      : 0.15385
+  TP      : 0.17537
+  R:R     : 2.50  |  Ishonch: 30.5%
+  Tier    : MICRO
+
+[2026-07-02 12:19:26 UTC] OCHILDI [BINANCE]
+  Ticket  : #1782990125
+  Symbol  : XRPUSD  (BUY)
+  Lot     : 4.0
+  Entry   : 1.08925
+  SL      : 1.07847
+  TP      : 1.11311
+  R:R     : 2.29  |  Ishonch: 34.3%
+  Tier    : MICRO
+
+[2026-07-02 12:19:28 UTC] *** STOP LOSS URILDI ***
+  Ticket  : #1782990124  ADAUSD
+  SL narx : 0.16010
+  Zarar   : -0.01 $
+
+[2026-07-02 13:54:48 UTC] OCHILDI [BINANCE]
+  Ticket  : #1782990126
+  Symbol  : XRPUSD  (BUY)
+  Lot     : 1.0
+  Entry   : 1.08902
+  SL      : 1.07824
+  TP      : 1.17366
+  R:R     : 2.50  |  Ishonch: 49.6%
+  Tier    : MICRO
+
+[2026-07-02 13:54:49 UTC] *** TAKE PROFIT OLINDI ***
+  Ticket  : #1782990125  XRPUSD
+  TP narx : 1.10540
+  Foyda   : +1.64 $
+
+[2026-07-02 14:11:15 UTC] OCHILDI [BINANCE]
+  Ticket  : #1782990127
+  Symbol  : BNBUSD  (BUY)
+  Lot     : 0.01
+  Entry   : 565.03994
+  SL      : 559.44549
+  TP      : 573.32753
+  R:R     : 2.00  |  Ishonch: 64.0%
+  Tier    : MICRO
+
+[2026-07-02 14:11:20 UTC] *** STOP LOSS URILDI ***
+  Ticket  : #1782990126  XRPUSD
+  SL narx : 1.10120
+  Zarar   : -0.43 $
+
+[2026-07-02 19:20:11 UTC] OCHILDI [BINANCE]
+  Ticket  : #1782990128
+  Symbol  : SOLUSD  (BUY)
+  Lot     : 0.1
+  Entry   : 81.16758
+  SL      : 80.36394
+  TP      : 82.28252
+  R:R     : 2.22  |  Ishonch: 69.5%
+  Tier    : MICRO
+
+[2026-07-02 19:20:14 UTC] *** STOP LOSS URILDI ***
+  Ticket  : #1782990127  BNBUSD
+  SL narx : 559.37000
+  Zarar   : -471.00 $
+
+[2026-07-03 02:53:50 UTC] *** STOP LOSS URILDI ***
+  Ticket  : #1782990128  SOLUSD
+  SL narx : 80.82000
+  Zarar   : -14.00 $
+
+[2026-07-03 02:59:01 UTC] BALANS YANGILANDI
+  Balans  : $12.03
+  Equity  : $12.03
+  Tier    : MICRO
+  O'sish  : +20.26%
+
+[2026-07-03 03:30:13 UTC] BALANS YANGILANDI
+  Balans  : $12.03
+  Equity  : $12.03
+  Tier    : MICRO
+  O'sish  : +20.26%
+
+[2026-07-03 04:01:18 UTC] BALANS YANGILANDI
+  Balans  : $12.03
+  Equity  : $12.03
+  Tier    : MICRO
+  O'sish  : +20.26%
+
+[2026-07-03 04:32:10 UTC] BALANS YANGILANDI
+  Balans  : $12.03
+  Equity  : $12.03
+  Tier    : MICRO
+  O'sish  : +20.26%
+
+[2026-07-03 05:03:00 UTC] BALANS YANGILANDI
+  Balans  : $12.03
+  Equity  : $12.03
+  Tier    : MICRO
+  O'sish  : +20.26%
+
+======================================================================
+[2026-07-03 05:40:19 UTC] BOT ISHGA TUSHDI
+  Rejim   : Binance Futures
+  Balans  : $12.03
+  Tier    : MICRO
+======================================================================
+
+[2026-07-03 06:00:16 UTC] OCHILDI [BINANCE]
+  Ticket  : #1783057215
+  Symbol  : ADAUSD  (BUY)
+  Lot     : 31.0
+  Entry   : 0.16426
+  SL      : 0.16263
+  TP      : 0.16628
+  R:R     : 2.12  |  Ishonch: 54.2%
+  Tier    : MICRO
+
+[2026-07-03 08:43:34 UTC] YOPILDI — TAKE_PROFIT  [WIN]
+  Ticket  : #1783057215
+  Symbol  : ADAUSD  (BUY)
+  Entry   : 0.16426
+  Yopildi : 0.16630
+  Foyda   : +0.03 $
+  Sabab   : TAKE_PROFIT
+
+[2026-07-03 08:43:42 UTC] OCHILDI [BINANCE]
+  Ticket  : #1783057216
+  Symbol  : ADAUSD  (BUY)
+  Lot     : 14.0
+  Entry   : 0.16576
+  SL      : 0.16412
+  TP      : 0.17279
+  R:R     : 2.50  |  Ishonch: 68.4%
+  Tier    : MICRO
+
+[2026-07-03 12:16:27 UTC] YOPILDI — STOP_LOSS  [WIN]
+  Ticket  : #1783057216
+  Symbol  : ADAUSD  (BUY)
+  Entry   : 0.16576
+  Yopildi : 0.16860
+  Foyda   : +0.05 $
+  Sabab   : STOP_LOSS
+
+[2026-07-03 12:19:38 UTC] OCHILDI [BINANCE]
+  Ticket  : #1783057217
+  Symbol  : SOLUSD  (BUY)
+  Lot     : 0.2
+  Entry   : 81.85816
+  SL      : 81.04768
+  TP      : 81.75579
+  R:R     : 2.50  |  Ishonch: 55.4%
+  Tier    : MICRO
+
+[2026-07-03 12:19:40 UTC] OCHILDI [BINANCE]
+  Ticket  : #1783057218
+  Symbol  : BNBUSD  (BUY)
+  Lot     : 0.01
+  Entry   : 567.30205
+  SL      : 561.68520
+  TP      : 573.33398
+  R:R     : 2.26  |  Ishonch: 48.0%
+  Tier    : MICRO
+
+======================================================================
+[2026-07-03 12:32:58 UTC] BOT ISHGA TUSHDI
+  Rejim   : Binance Futures
+  Balans  : $7.76
+  Tier    : MICRO
+======================================================================
+
+[2026-07-03 14:13:59 UTC] YOPILDI — STOP_LOSS  [LOSS]
+  Ticket  : #1783057217
+  Symbol  : SOLUSD  (BUY)
+  Entry   : 81.85816
+  Yopildi : 81.03000
+  Foyda   : -0.17 $
+  Sabab   : STOP_LOSS
+
+[2026-07-03 20:36:44 UTC] YOPILDI — TAKE_PROFIT  [WIN]
+  Ticket  : #1783057218
+  Symbol  : BNBUSD  (BUY)
+  Entry   : 567.30205
+  Yopildi : 574.54000
+  Foyda   : +0.07 $
+  Sabab   : TAKE_PROFIT
+
+[2026-07-03 20:47:05 UTC] BALANS YANGILANDI
+  Balans  : $12.17
+  Equity  : $12.17
+  Tier    : MICRO
+  O'sish  : +21.65%
+
+[2026-07-03 21:06:39 UTC] BALANS YANGILANDI
+  Balans  : $12.17
+  Equity  : $12.17
+  Tier    : MICRO
+  O'sish  : +21.65%
+
+[2026-07-03 21:18:01 UTC] BALANS YANGILANDI
+  Balans  : $12.17
+  Equity  : $12.17
+  Tier    : MICRO
+  O'sish  : +21.65%
+
+[2026-07-03 21:19:01 UTC] OCHILDI [BINANCE]
+  Ticket  : #1783057219
+  Symbol  : XRPUSD  (BUY)
+  Lot     : 5.0
+  Entry   : 1.13661
+  SL      : 1.12536
+  TP      : 1.15036
+  R:R     : 2.50  |  Ishonch: 59.3%
+  Tier    : MICRO
+
+[2026-07-03 21:19:02 UTC] OCHILDI [BINANCE]
+  Ticket  : #1783081977
+  Symbol  : XRPUSD  (BUY)
+  Lot     : 5.0
+  Entry   : 1.13661
+  SL      : 1.12536
+  TP      : 1.15141
+  R:R     : 2.50  |  Ishonch: 60.6%
+  Tier    : MICRO
+
+[2026-07-04 06:22:59 UTC] YOPILDI — STOP_LOSS  [LOSS]
+  Ticket  : #1783057219
+  Symbol  : XRPUSD  (BUY)
+  Entry   : 1.13661
+  Yopildi : 1.13600
+  Foyda   : -0.00 $
+  Sabab   : STOP_LOSS
+
+[2026-07-04 06:23:05 UTC] YOPILDI — STOP_LOSS  [LOSS]
+  Ticket  : #1783081977
+  Symbol  : XRPUSD  (BUY)
+  Entry   : 1.13661
+  Yopildi : 1.13600
+  Foyda   : -0.00 $
+  Sabab   : STOP_LOSS
+
+[2026-07-04 06:23:11 UTC] OCHILDI [BINANCE]
+  Ticket  : #1783057220
+  Symbol  : BNBUSD  (SELL)
+  Lot     : 0.01
+  Entry   : 568.51551
+  SL      : 574.25809
+  TP      : 558.31456
+  R:R     : 2.30  |  Ishonch: 48.8%
+  Tier    : MICRO
+
+[2026-07-04 06:23:19 UTC] OCHILDI [BINANCE]
+  Ticket  : #1783081978
+  Symbol  : BNBUSD  (SELL)
+  Lot     : 0.01
+  Entry   : 568.51551
+  SL      : 574.25809
+  TP      : 558.59456
+  R:R     : 2.30  |  Ishonch: 50.9%
+  Tier    : MICRO
+
+[2026-07-04 08:45:54 UTC] YOPILDI — STOP_LOSS  [LOSS]
+  Ticket  : #1783081978
+  Symbol  : BNBUSD  (SELL)
+  Entry   : 568.51551
+  Yopildi : 574.63000
+  Foyda   : -0.06 $
+  Sabab   : STOP_LOSS
+
+[2026-07-04 08:46:04 UTC] OCHILDI [BINANCE]
+  Ticket  : #1783081979
+  Symbol  : SOLUSD  (BUY)
+  Lot     : 0.1
+  Entry   : 83.10784
+  SL      : 82.28499
+  TP      : 83.03753
+  R:R     : 2.50  |  Ishonch: 71.5%
+  Tier    : MICRO
+
+[2026-07-04 08:46:43 UTC] YOPILDI — STOP_LOSS  [LOSS]
+  Ticket  : #1783057220
+  Symbol  : BNBUSD  (SELL)
+  Entry   : 568.51551
+  Yopildi : 574.89000
+  Foyda   : -0.06 $
+  Sabab   : STOP_LOSS
+
+[2026-07-04 08:46:50 UTC] OCHILDI [BINANCE]
+  Ticket  : #1783057221
+  Symbol  : SOLUSD  (BUY)
+  Lot     : 0.1
+  Entry   : 83.10568
+  SL      : 82.28285
+  TP      : 83.18286
+  R:R     : 2.50  |  Ishonch: 62.3%
+  Tier    : MICRO
+
+[2026-07-04 08:57:11 UTC] YOPILDI — STOP_LOSS  [LOSS]
+  Ticket  : #1783057221
+  Symbol  : SOLUSD  (BUY)
+  Entry   : 83.10568
+  Yopildi : 82.24000
+  Foyda   : -0.09 $
+  Sabab   : STOP_LOSS
+
+[2026-07-04 08:57:20 UTC] YOPILDI — STOP_LOSS  [LOSS]
+  Ticket  : #1783081979
+  Symbol  : SOLUSD  (BUY)
+  Entry   : 83.10784
+  Yopildi : 82.24000
+  Foyda   : -0.09 $
+  Sabab   : STOP_LOSS
+
+[2026-07-04 09:03:26 UTC] BALANS YANGILANDI
+  Balans  : $12.06
+  Equity  : $12.06
+  Tier    : MICRO
+  O'sish  : +20.56%
+
+[2026-07-04 09:15:02 UTC] BALANS YANGILANDI
+  Balans  : $12.06
+  Equity  : $12.06
+  Tier    : MICRO
+  O'sish  : +20.56%
+
+[2026-07-04 09:34:27 UTC] OCHILDI [BINANCE]
+  Ticket  : #1783057222
+  Symbol  : ETHUSD  (BUY)
+  Lot     : 0.02
+  Entry   : 1,773.00800
+  SL      : 1,755.45347
+  TP      : 1,763.56131
+  R:R     : 2.50  |  Ishonch: 55.5%
+  Tier    : MICRO
+
+[2026-07-04 09:34:33 UTC] BALANS YANGILANDI
+  Balans  : $12.06
+  Equity  : $12.06
+  Tier    : MICRO
+  O'sish  : +20.56%
+
+[2026-07-04 09:37:21 UTC] YOPILDI — STOP_LOSS  [LOSS]
+  Ticket  : #1783057222
+  Symbol  : ETHUSD  (BUY)
+  Entry   : 1,773.00800
+  Yopildi : 1,755.20000
+  Foyda   : -0.36 $
+  Sabab   : STOP_LOSS
+
+[2026-07-04 09:45:58 UTC] OCHILDI [BINANCE]
+  Ticket  : #1783081980
+  Symbol  : ETHUSD  (BUY)
+  Lot     : 0.02
+  Entry   : 1,772.05171
+  SL      : 1,754.50664
+  TP      : 1,762.32341
+  R:R     : 2.50  |  Ishonch: 64.0%
+  Tier    : MICRO
+
+[2026-07-04 09:46:04 UTC] BALANS YANGILANDI
+  Balans  : $11.98
+  Equity  : $11.98
+  Tier    : MICRO
+  O'sish  : +19.78%
+
+[2026-07-04 10:05:18 UTC] BALANS YANGILANDI
+  Balans  : $4.96
+  Equity  : $11.99
+  Tier    : MICRO
+  O'sish  : -50.43%
+
+[2026-07-04 10:36:20 UTC] BALANS YANGILANDI
+  Balans  : $4.97
+  Equity  : $12.00
+  Tier    : MICRO
+  O'sish  : -50.29%
+
+======================================================================
+[2026-07-04 12:26:29 UTC] BOT ISHGA TUSHDI
+  Rejim   : Binance Futures
+  Balans  : $11.96
+  Tier    : MICRO
+======================================================================
+
+[2026-07-04 12:29:32 UTC] YOPILDI — TAKE_PROFIT  [LOSS]
+  Ticket  : #1783081980
+  Symbol  : ETHUSD  (BUY)
+  Entry   : 1,772.05171
+  Yopildi : 1,762.35000
+  Foyda   : -0.19 $
+  Sabab   : TAKE_PROFIT
+
+======================================================================
+[2026-07-04 12:30:26 UTC] BOT ISHGA TUSHDI
+  Rejim   : Binance Futures
+  Balans  : $12.06
+  Tier    : MICRO
+======================================================================
+
+[2026-07-04 12:30:41 UTC] OCHILDI [BINANCE]
+  Ticket  : #1783168223
+  Symbol  : ADAUSD  (BUY)
+  Lot     : 12.0
+  Entry   : 0.17645
+  SL      : 0.17470
+  TP      : 0.18220
+  R:R     : 1.50  |  Ishonch: 48.6%
+  Tier    : MICRO
+
+[2026-07-04 12:30:41 UTC] OCHILDI [BINANCE]
+  Ticket  : #1783081981
+  Symbol  : ADAUSD  (BUY)
+  Lot     : 12.0
+  Entry   : 0.17645
+  SL      : 0.17470
+  TP      : 0.18521
+  R:R     : 2.50  |  Ishonch: 48.6%
+  Tier    : MICRO
+
+[2026-07-04 12:30:50 UTC] OCHILDI [BINANCE]
+  Ticket  : #1783167987
+  Symbol  : ADAUSD  (BUY)
+  Lot     : 12.0
+  Entry   : 0.17645
+  SL      : 0.17470
+  TP      : 0.18220
+  R:R     : 1.50  |  Ishonch: 48.4%
+  Tier    : MICRO
+
+[2026-07-04 13:32:43 UTC] YOPILDI — STOP_LOSS  [WIN]
+  Ticket  : #1783168223
+  Symbol  : ADAUSD  (BUY)
+  Entry   : 0.17645
+  Yopildi : 0.17820
+  Foyda   : +0.03 $
+  Sabab   : STOP_LOSS
+
+[2026-07-04 13:32:53 UTC] OCHILDI [BINANCE]
+  Ticket  : #1783168224
+  Symbol  : BNBUSD  (BUY)
+  Lot     : 0.05
+  Entry   : 577.41852
+  SL      : 571.70150
+  TP      : 573.76700
+  R:R     : 2.00  |  Ishonch: 48.0%
+  Tier    : MICRO
+
+[2026-07-04 13:32:58 UTC] YOPILDI — STOP_LOSS  [WIN]
+  Ticket  : #1783167987
+  Symbol  : ADAUSD  (BUY)
+  Entry   : 0.17645
+  Yopildi : 0.17820
+  Foyda   : +0.03 $
+  Sabab   : STOP_LOSS
+
+[2026-07-04 13:36:15 UTC] OCHILDI [BINANCE]
+  Ticket  : #1783167988
+  Symbol  : BNBUSD  (BUY)
+  Lot     : 0.04
+  Entry   : 577.46851
+  SL      : 571.75100
+  TP      : 574.32800
+  R:R     : 2.00  |  Ishonch: 64.1%
+  Tier    : MICRO
+
+[2026-07-04 14:02:08 UTC] YOPILDI — TAKE_PROFIT  [LOSS]
+  Ticket  : #1783168224
+  Symbol  : BNBUSD  (BUY)
+  Entry   : 577.41852
+  Yopildi : 574.32000
+  Foyda   : -0.15 $
+  Sabab   : TAKE_PROFIT
+
+[2026-07-04 14:02:17 UTC] OCHILDI [BINANCE]
+  Ticket  : #1783168225
+  Symbol  : XRPUSD  (BUY)
+  Lot     : 2.0
+  Entry   : 1.14735
+  SL      : 1.13599
+  TP      : 1.19932
+  R:R     : 2.00  |  Ishonch: 61.9%
+  Tier    : MICRO
+
+[2026-07-04 14:02:20 UTC] OCHILDI [BINANCE]
+  Ticket  : #1783168226
+  Symbol  : SOLUSD  (BUY)
+  Lot     : 0.1
+  Entry   : 82.10369
+  SL      : 81.29078
+  TP      : 82.57843
+  R:R     : 2.00  |  Ishonch: 59.5%
+  Tier    : MICRO
+
+[2026-07-04 14:03:11 UTC] YOPILDI — TAKE_PROFIT  [LOSS]
+  Ticket  : #1783167988
+  Symbol  : BNBUSD  (BUY)
+  Entry   : 577.46851
+  Yopildi : 574.46000
+  Foyda   : -0.12 $
+  Sabab   : TAKE_PROFIT
+
+[2026-07-04 14:03:21 UTC] OCHILDI [BINANCE]
+  Ticket  : #1783167989
+  Symbol  : SOLUSD  (BUY)
+  Lot     : 0.1
+  Entry   : 82.10369
+  SL      : 81.29078
+  TP      : 82.57843
+  R:R     : 2.00  |  Ishonch: 60.4%
+  Tier    : MICRO
+
+[2026-07-04 14:09:28 UTC] YOPILDI — STOP_LOSS  [WIN]
+  Ticket  : #1783168225
+  Symbol  : XRPUSD  (BUY)
+  Entry   : 1.14735
+  Yopildi : 1.15690
+  Foyda   : +0.03 $
+  Sabab   : STOP_LOSS
+
+[2026-07-04 14:19:40 UTC] YOPILDI — STOP_LOSS  [WIN]
+  Ticket  : #1783081981
+  Symbol  : ADAUSD  (BUY)
+  Entry   : 0.17645
+  Yopildi : 0.18060
+  Foyda   : +0.06 $
+  Sabab   : STOP_LOSS
+
+[2026-07-04 14:19:49 UTC] OCHILDI [BINANCE]
+  Ticket  : #1783081982
+  Symbol  : SOLUSD  (BUY)
+  Lot     : 0.1
+  Entry   : 82.10276
+  SL      : 81.28986
+  TP      : 82.83035
+  R:R     : 2.50  |  Ishonch: 59.9%
+  Tier    : MICRO
+
+[2026-07-04 14:19:51 UTC] OCHILDI [BINANCE]
+  Ticket  : #1783081983
+  Symbol  : XRPUSD  (BUY)
+  Lot     : 1.0
+  Entry   : 1.15589
+  SL      : 1.14445
+  TP      : 1.20720
+  R:R     : 2.33  |  Ishonch: 55.3%
+  Tier    : MICRO
+
+[2026-07-04 15:12:04 UTC] YOPILDI — STOP_LOSS  [WIN]
+  Ticket  : #1783081983
+  Symbol  : XRPUSD  (BUY)
+  Entry   : 1.15589
+  Yopildi : 1.17180
+  Foyda   : +0.05 $
+  Sabab   : STOP_LOSS
+
+[2026-07-04 16:49:40 UTC] OCHILDI [BINANCE]
+  Ticket  : #1783168227
+  Symbol  : ADAUSD  (BUY)
+  Lot     : 2.0
+  Entry   : 0.17826
+  SL      : 0.17650
+  TP      : 0.23774
+  R:R     : 2.50  |  Ishonch: 80.7%
+  Tier    : MICRO
+
+[2026-07-04 16:49:42 UTC] OCHILDI [BINANCE]
+  Ticket  : #1783168228
+  Symbol  : XRPUSD  (BUY)
+  Lot     : 3.0
+  Entry   : 1.17256
+  SL      : 1.16095
+  TP      : 1.20348
+  R:R     : 2.50  |  Ishonch: 55.0%
+  Tier    : MICRO
+
+[2026-07-04 16:50:29 UTC] OCHILDI [BINANCE]
+  Ticket  : #1783167990
+  Symbol  : ADAUSD  (BUY)
+  Lot     : 2.0
+  Entry   : 0.17825
+  SL      : 0.17649
+  TP      : 0.23777
+  R:R     : 2.50  |  Ishonch: 75.4%
+  Tier    : MICRO
+
+[2026-07-04 16:50:32 UTC] OCHILDI [BINANCE]
+  Ticket  : #1783167991
+  Symbol  : XRPUSD  (BUY)
+  Lot     : 3.0
+  Entry   : 1.17254
+  SL      : 1.16093
+  TP      : 1.20037
+  R:R     : 2.50  |  Ishonch: 59.5%
+  Tier    : MICRO
+
+[2026-07-04 16:52:26 UTC] OCHILDI [BINANCE]
+  Ticket  : #1783081984
+  Symbol  : XRPUSD  (BUY)
+  Lot     : 2.0
+  Entry   : 1.17099
+  SL      : 1.15940
+  TP      : 1.21207
+  R:R     : 2.29  |  Ishonch: 66.7%
+  Tier    : MICRO
+
+[2026-07-04 16:54:51 UTC] YOPILDI — STOP_LOSS  [WIN]
+  Ticket  : #1783168227
+  Symbol  : ADAUSD  (BUY)
+  Entry   : 0.17826
+  Yopildi : 0.19340
+  Foyda   : +0.23 $
+  Sabab   : STOP_LOSS
+
+[2026-07-04 16:55:32 UTC] YOPILDI — STOP_LOSS  [WIN]
+  Ticket  : #1783167990
+  Symbol  : ADAUSD  (BUY)
+  Entry   : 0.17825
+  Yopildi : 0.19350
+  Foyda   : +0.23 $
+  Sabab   : STOP_LOSS
+
+[2026-07-04 19:09:27 UTC] YOPILDI — STOP_LOSS  [LOSS]
+  Ticket  : #1783167991
+  Symbol  : XRPUSD  (BUY)
+  Entry   : 1.17254
+  Yopildi : 1.17170
+  Foyda   : -0.00 $
+  Sabab   : STOP_LOSS
+
+[2026-07-04 19:09:35 UTC] OCHILDI [BINANCE]
+  Ticket  : #1783167992
+  Symbol  : SOLUSD  (BUY)
+  Lot     : 0.2
+  Entry   : 82.69270
+  SL      : 81.87396
+  TP      : 82.40208
+  R:R     : 2.00  |  Ishonch: 44.1%
+  Tier    : MICRO
+
+[2026-07-04 19:11:15 UTC] YOPILDI — STOP_LOSS  [LOSS]
+  Ticket  : #1783168228
+  Symbol  : XRPUSD  (BUY)
+  Entry   : 1.17256
+  Yopildi : 1.17240
+  Foyda   : -0.00 $
+  Sabab   : STOP_LOSS
+
+[2026-07-04 19:11:24 UTC] OCHILDI [BINANCE]
+  Ticket  : #1783168229
+  Symbol  : SOLUSD  (BUY)
+  Lot     : 0.2
+  Entry   : 82.57877
+  SL      : 81.76116
+  TP      : 82.23326
+  R:R     : 1.50  |  Ishonch: 37.1%
+  Tier    : MICRO
+
+[2026-07-04 19:12:38 UTC] YOPILDI — STOP_LOSS  [LOSS]
+  Ticket  : #1783167992
+  Symbol  : SOLUSD  (BUY)
+  Entry   : 82.69270
+  Yopildi : 81.86000
+  Foyda   : -0.17 $
+  Sabab   : STOP_LOSS
+
+[2026-07-04 19:14:42 UTC] YOPILDI — STOP_LOSS  [LOSS]
+  Ticket  : #1783081984
+  Symbol  : XRPUSD  (BUY)
+  Entry   : 1.17099
+  Yopildi : 1.17030
+  Foyda   : -0.00 $
+  Sabab   : STOP_LOSS
+
+[2026-07-04 19:16:52 UTC] OCHILDI [BINANCE]
+  Ticket  : #1783081985
+  Symbol  : SOLUSD  (BUY)
+  Lot     : 0.1
+  Entry   : 82.46544
+  SL      : 81.64895
+  TP      : 82.28262
+  R:R     : 2.50  |  Ishonch: 39.5%
+  Tier    : MICRO
+
+[2026-07-04 19:30:32 UTC] OCHILDI [BINANCE]
+  Ticket  : #1783167993
+  Symbol  : ADAUSD  (BUY)
+  Lot     : 2.0
+  Entry   : 0.17858
+  SL      : 0.17681
+  TP      : 0.23521
+  R:R     : 2.50  |  Ishonch: 45.7%
+  Tier    : MICRO
+
+[2026-07-04 19:37:45 UTC] YOPILDI — STOP_LOSS  [WIN]
+  Ticket  : #1783167993
+  Symbol  : ADAUSD  (BUY)
+  Entry   : 0.17858
+  Yopildi : 0.19290
+  Foyda   : +0.21 $
+  Sabab   : STOP_LOSS
+
+[2026-07-04 19:43:09 UTC] BALANS YANGILANDI
+  Balans  : $12.29
+  Equity  : $12.30
+  Tier    : MICRO
+  O'sish  : +22.86%
+
+[2026-07-04 19:55:00 UTC] YOPILDI — STOP_LOSS  [LOSS]
+  Ticket  : #1783168229
+  Symbol  : SOLUSD  (BUY)
+  Entry   : 82.57877
+  Yopildi : 81.72000
+  Foyda   : -0.17 $
+  Sabab   : STOP_LOSS
+
+[2026-07-04 19:55:08 UTC] OCHILDI [BINANCE]
+  Ticket  : #1783168230
+  Symbol  : ADAUSD  (BUY)
+  Lot     : 2.0
+  Entry   : 0.17860
+  SL      : 0.17683
+  TP      : 0.23307
+  R:R     : 2.50  |  Ishonch: 59.8%
+  Tier    : MICRO
+
+[2026-07-04 19:55:10 UTC] OCHILDI [BINANCE]
+  Ticket  : #1783168231
+  Symbol  : BNBUSD  (BUY)
+  Lot     : 0.06
+  Entry   : 580.59226
+  SL      : 574.84382
+  TP      : 576.84235
+  R:R     : 2.00  |  Ishonch: 56.7%
+  Tier    : MICRO
+
+[2026-07-04 19:59:47 UTC] OCHILDI [BINANCE]
+  Ticket  : #1783167994
+  Symbol  : XRPUSD  (BUY)
+  Lot     : 6.0
+  Entry   : 1.17321
+  SL      : 1.16159
+  TP      : 1.18541
+  R:R     : 2.50  |  Ishonch: 57.8%
+  Tier    : MICRO
+
+[2026-07-04 20:16:52 UTC] YOPILDI — STOP_LOSS  [WIN]
+  Ticket  : #1783168230
+  Symbol  : ADAUSD  (BUY)
+  Entry   : 0.17860
+  Yopildi : 0.19300
+  Foyda   : +0.22 $
+  Sabab   : STOP_LOSS
+
+[2026-07-04 20:18:57 UTC] YOPILDI — STOP_LOSS  [LOSS]
+  Ticket  : #1783168231
+  Symbol  : BNBUSD  (BUY)
+  Entry   : 580.59226
+  Yopildi : 574.19000
+  Foyda   : -0.38 $
+  Sabab   : STOP_LOSS
+
+[2026-07-04 20:19:04 UTC] YOPILDI — STOP_LOSS  [LOSS]
+  Ticket  : #1783081985
+  Symbol  : SOLUSD  (BUY)
+  Entry   : 82.46544
+  Yopildi : 81.58000
+  Foyda   : -0.09 $
+  Sabab   : STOP_LOSS
+
+[2026-07-04 20:20:12 UTC] OCHILDI [BINANCE]
+  Ticket  : #1783081986
+  Symbol  : BNBUSD  (BUY)
+  Lot     : 0.03
+  Entry   : 578.49134
+  SL      : 572.76370
+  TP      : 576.14651
+  R:R     : 2.30  |  Ishonch: 52.3%
+  Tier    : MICRO
+
+[2026-07-04 20:25:42 UTC] YOPILDI — STOP_LOSS  [LOSS]
+  Ticket  : #1783167994
+  Symbol  : XRPUSD  (BUY)
+  Entry   : 1.17321
+  Yopildi : 1.16050
+  Foyda   : -0.08 $
+  Sabab   : STOP_LOSS
+
+[2026-07-04 22:14:49 UTC] YOPILDI — TAKE_PROFIT  [LOSS]
+  Ticket  : #1783081986
+  Symbol  : BNBUSD  (BUY)
+  Entry   : 578.49134
+  Yopildi : 576.81000
+  Foyda   : -0.05 $
+  Sabab   : TAKE_PROFIT
+
+[2026-07-04 22:14:57 UTC] OCHILDI [BINANCE]
+  Ticket  : #1783081987
+  Symbol  : ADAUSD  (BUY)
+  Lot     : 21.0
+  Entry   : 0.19228
+  SL      : 0.19038
+  TP      : 0.19465
+  R:R     : 2.50  |  Ishonch: 66.0%
+  Tier    : MICRO
+
+[2026-07-05 00:32:45 UTC] YOPILDI — STOP_LOSS  [LOSS]
+  Ticket  : #1783081987
+  Symbol  : ADAUSD  (BUY)
+  Entry   : 0.19228
+  Yopildi : 0.18980
+  Foyda   : -0.07 $
+  Sabab   : STOP_LOSS
+
+[2026-07-05 00:52:40 UTC] BALANS YANGILANDI
+  Balans  : $12.03
+  Equity  : $12.03
+  Tier    : MICRO
+  O'sish  : +20.30%
+
+[2026-07-05 01:23:45 UTC] BALANS YANGILANDI
+  Balans  : $12.03
+  Equity  : $12.03
+  Tier    : MICRO
+  O'sish  : +20.30%
+
+[2026-07-05 01:54:20 UTC] BALANS YANGILANDI
+  Balans  : $12.03
+  Equity  : $12.03
+  Tier    : MICRO
+  O'sish  : +20.30%
+
+[2026-07-05 02:24:58 UTC] BALANS YANGILANDI
+  Balans  : $12.03
+  Equity  : $12.03
+  Tier    : MICRO
+  O'sish  : +20.30%
+
+[2026-07-05 02:55:37 UTC] BALANS YANGILANDI
+  Balans  : $12.03
+  Equity  : $12.03
+  Tier    : MICRO
+  O'sish  : +20.30%
+
+[2026-07-05 03:26:26 UTC] BALANS YANGILANDI
+  Balans  : $12.03
+  Equity  : $12.03
+  Tier    : MICRO
+  O'sish  : +20.30%
+
+[2026-07-05 03:57:05 UTC] BALANS YANGILANDI
+  Balans  : $12.03
+  Equity  : $12.03
+  Tier    : MICRO
+  O'sish  : +20.30%
+
+[2026-07-05 04:27:44 UTC] BALANS YANGILANDI
+  Balans  : $12.03
+  Equity  : $12.03
+  Tier    : MICRO
+  O'sish  : +20.30%
+
+[2026-07-05 04:58:20 UTC] BALANS YANGILANDI
+  Balans  : $12.03
+  Equity  : $12.03
+  Tier    : MICRO
+  O'sish  : +20.30%
+
+[2026-07-05 05:29:12 UTC] BALANS YANGILANDI
+  Balans  : $12.03
+  Equity  : $12.03
+  Tier    : MICRO
+  O'sish  : +20.30%
+
+[2026-07-05 06:00:11 UTC] BALANS YANGILANDI
+  Balans  : $12.03
+  Equity  : $12.03
+  Tier    : MICRO
+  O'sish  : +20.30%
+
+[2026-07-05 06:30:58 UTC] BALANS YANGILANDI
+  Balans  : $12.03
+  Equity  : $12.03
+  Tier    : MICRO
+  O'sish  : +20.30%
+
+[2026-07-05 07:01:43 UTC] BALANS YANGILANDI
+  Balans  : $12.03
+  Equity  : $12.03
+  Tier    : MICRO
+  O'sish  : +20.30%
+
+[2026-07-05 07:32:32 UTC] BALANS YANGILANDI
+  Balans  : $12.03
+  Equity  : $12.03
+  Tier    : MICRO
+  O'sish  : +20.30%
+
+[2026-07-05 08:03:18 UTC] BALANS YANGILANDI
+  Balans  : $12.03
+  Equity  : $12.03
+  Tier    : MICRO
+  O'sish  : +20.30%
+
+[2026-07-05 08:34:01 UTC] BALANS YANGILANDI
+  Balans  : $12.03
+  Equity  : $12.03
+  Tier    : MICRO
+  O'sish  : +20.30%
+
+[2026-07-05 09:04:39 UTC] BALANS YANGILANDI
+  Balans  : $12.03
+  Equity  : $12.03
+  Tier    : MICRO
+  O'sish  : +20.30%
+
+[2026-07-05 09:35:24 UTC] BALANS YANGILANDI
+  Balans  : $12.03
+  Equity  : $12.03
+  Tier    : MICRO
+  O'sish  : +20.30%
+
+[2026-07-05 10:06:00 UTC] BALANS YANGILANDI
+  Balans  : $12.03
+  Equity  : $12.03
+  Tier    : MICRO
+  O'sish  : +20.30%
+
+[2026-07-05 10:36:46 UTC] BALANS YANGILANDI
+  Balans  : $12.03
+  Equity  : $12.03
+  Tier    : MICRO
+  O'sish  : +20.30%
+
+[2026-07-05 11:07:35 UTC] BALANS YANGILANDI
+  Balans  : $12.03
+  Equity  : $12.03
+  Tier    : MICRO
+  O'sish  : +20.30%
+
+[2026-07-05 11:38:19 UTC] BALANS YANGILANDI
+  Balans  : $12.03
+  Equity  : $12.03
+  Tier    : MICRO
+  O'sish  : +20.30%
+
+[2026-07-05 12:09:08 UTC] BALANS YANGILANDI
+  Balans  : $12.03
+  Equity  : $12.03
+  Tier    : MICRO
+  O'sish  : +20.30%
+
+[2026-07-05 12:39:52 UTC] BALANS YANGILANDI
+  Balans  : $12.03
+  Equity  : $12.03
+  Tier    : MICRO
+  O'sish  : +20.30%
+
+[2026-07-05 13:10:38 UTC] BALANS YANGILANDI
+  Balans  : $12.03
+  Equity  : $12.03
+  Tier    : MICRO
+  O'sish  : +20.30%
+
+[2026-07-05 13:41:17 UTC] BALANS YANGILANDI
+  Balans  : $12.03
+  Equity  : $12.03
+  Tier    : MICRO
+  O'sish  : +20.30%
+
+[2026-07-05 14:12:05 UTC] BALANS YANGILANDI
+  Balans  : $12.03
+  Equity  : $12.03
+  Tier    : MICRO
+  O'sish  : +20.30%
+
+[2026-07-05 14:43:01 UTC] BALANS YANGILANDI
+  Balans  : $12.03
+  Equity  : $12.03
+  Tier    : MICRO
+  O'sish  : +20.30%
+
+[2026-07-05 15:13:44 UTC] BALANS YANGILANDI
+  Balans  : $12.03
+  Equity  : $12.03
+  Tier    : MICRO
+  O'sish  : +20.30%
+
+[2026-07-05 15:44:29 UTC] BALANS YANGILANDI
+  Balans  : $12.03
+  Equity  : $12.03
+  Tier    : MICRO
+  O'sish  : +20.30%
+
+[2026-07-05 16:15:13 UTC] BALANS YANGILANDI
+  Balans  : $12.03
+  Equity  : $12.03
+  Tier    : MICRO
+  O'sish  : +20.30%
+
+[2026-07-05 16:45:55 UTC] BALANS YANGILANDI
+  Balans  : $12.03
+  Equity  : $12.03
+  Tier    : MICRO
+  O'sish  : +20.30%
+
+[2026-07-05 17:16:35 UTC] BALANS YANGILANDI
+  Balans  : $12.03
+  Equity  : $12.03
+  Tier    : MICRO
+  O'sish  : +20.30%
+
+[2026-07-05 17:47:22 UTC] BALANS YANGILANDI
+  Balans  : $12.03
+  Equity  : $12.03
+  Tier    : MICRO
+  O'sish  : +20.30%
+
+[2026-07-05 18:17:58 UTC] BALANS YANGILANDI
+  Balans  : $12.03
+  Equity  : $12.03
+  Tier    : MICRO
+  O'sish  : +20.30%
+
+[2026-07-05 18:48:42 UTC] BALANS YANGILANDI
+  Balans  : $12.03
+  Equity  : $12.03
+  Tier    : MICRO
+  O'sish  : +20.30%
+
+[2026-07-05 19:00:53 UTC] OCHILDI [BINANCE]
+  Ticket  : #1783167995
+  Symbol  : ADAUSD  (BUY)
+  Lot     : 33.0
+  Entry   : 0.19068
+  SL      : 0.18879
+  TP      : 0.19180
+  R:R     : 1.71  |  Ishonch: 52.0%
+  Tier    : MICRO
+
+[2026-07-05 19:00:54 UTC] OCHILDI [BINANCE]
+  Ticket  : #1783168232
+  Symbol  : ADAUSD  (BUY)
+  Lot     : 33.0
+  Entry   : 0.19068
+  SL      : 0.18879
+  TP      : 0.19180
+  R:R     : 1.71  |  Ishonch: 52.0%
+  Tier    : MICRO
+
+[2026-07-05 19:19:34 UTC] BALANS YANGILANDI
+  Balans  : $9.51
+  Equity  : $12.02
+  Tier    : MICRO
+  O'sish  : -4.89%
+
+[2026-07-05 19:25:37 UTC] YOPILDI — STOP_LOSS  [LOSS]
+  Ticket  : #1783168232
+  Symbol  : ADAUSD  (BUY)
+  Entry   : 0.19068
+  Yopildi : 0.18870
+  Foyda   : -0.07 $
+  Sabab   : STOP_LOSS
+
+[2026-07-05 19:25:50 UTC] BALANS YANGILANDI
+  Balans  : $12.02
+  Equity  : $11.94
+  Tier    : MICRO
+  O'sish  : +20.24%
+
+[2026-07-05 19:26:32 UTC] YOPILDI — STOP_LOSS  [LOSS]
+  Ticket  : #1783167995
+  Symbol  : ADAUSD  (BUY)
+  Entry   : 0.19068
+  Yopildi : 0.18870
+  Foyda   : -0.07 $
+  Sabab   : STOP_LOSS
+
+[2026-07-05 19:50:35 UTC] BALANS YANGILANDI
+  Balans  : $11.94
+  Equity  : $11.94
+  Tier    : MICRO
+  O'sish  : +19.38%
+
+[2026-07-05 19:54:56 UTC] BALANS YANGILANDI
+  Balans  : $11.94
+  Equity  : $11.94
+  Tier    : MICRO
+  O'sish  : +19.38%
+
+[2026-07-05 19:56:43 UTC] BALANS YANGILANDI
+  Balans  : $11.94
+  Equity  : $11.94
+  Tier    : MICRO
+  O'sish  : +19.38%
+
+[2026-07-05 20:07:01 UTC] OCHILDI [BINANCE]
+  Ticket  : #1783167996
+  Symbol  : SOLUSD  (BUY)
+  Lot     : 0.1
+  Entry   : 81.53908
+  SL      : 80.73176
+  TP      : 81.77647
+  R:R     : 2.00  |  Ishonch: 72.9%
+  Tier    : MICRO
+
+[2026-07-05 20:07:01 UTC] OCHILDI [BINANCE]
+  Ticket  : #1783168233
+  Symbol  : SOLUSD  (BUY)
+  Lot     : 0.1
+  Entry   : 81.53908
+  SL      : 80.73176
+  TP      : 81.77647
+  R:R     : 2.00  |  Ishonch: 72.9%
+  Tier    : MICRO
+
+[2026-07-05 20:21:33 UTC] BALANS YANGILANDI
+  Balans  : $8.69
+  Equity  : $11.93
+  Tier    : MICRO
+  O'sish  : -13.10%
+
+[2026-07-05 20:52:31 UTC] BALANS YANGILANDI
+  Balans  : $8.68
+  Equity  : $11.92
+  Tier    : MICRO
+  O'sish  : -13.18%
+
+[2026-07-05 21:23:29 UTC] BALANS YANGILANDI
+  Balans  : $8.74
+  Equity  : $12.00
+  Tier    : MICRO
+  O'sish  : -12.56%
+
+[2026-07-05 21:54:18 UTC] BALANS YANGILANDI
+  Balans  : $8.77
+  Equity  : $12.03
+  Tier    : MICRO
+  O'sish  : -12.31%
+
+[2026-07-05 21:56:51 UTC] YOPILDI — TAKE_PROFIT  [WIN]
+  Ticket  : #1783168233
+  Symbol  : SOLUSD  (BUY)
+  Entry   : 81.53908
+  Yopildi : 81.89000
+  Foyda   : +0.04 $
+  Sabab   : TAKE_PROFIT
+
+[2026-07-05 21:57:02 UTC] YOPILDI — TAKE_PROFIT  [WIN]
+  Ticket  : #1783167996
+  Symbol  : SOLUSD  (BUY)
+  Entry   : 81.53908
+  Yopildi : 81.88000
+  Foyda   : +0.03 $
+  Sabab   : TAKE_PROFIT
+
+[2026-07-05 21:58:09 UTC] BALANS YANGILANDI
+  Balans  : $12.10
+  Equity  : $12.10
+  Tier    : MICRO
+  O'sish  : +21.00%
+
+[2026-07-05 21:59:09 UTC] OCHILDI [BINANCE]
+  Ticket  : #1783167997
+  Symbol  : ADAUSD  (BUY)
+  Lot     : 11.0
+  Entry   : 0.18895
+  SL      : 0.18708
+  TP      : 0.19564
+  R:R     : 1.50  |  Ishonch: 59.7%
+  Tier    : MICRO
+
+[2026-07-05 22:00:07 UTC] BALANS YANGILANDI
+  Balans  : $12.10
+  Equity  : $12.09
+  Tier    : MICRO
+  O'sish  : +20.97%
+
+[2026-07-05 22:00:59 UTC] OCHILDI [BINANCE]
+  Ticket  : #1783168234
+  Symbol  : XRPUSD  (BUY)
+  Lot     : 4.0
+  Entry   : 1.14372
+  SL      : 1.13240
+  TP      : 1.16134
+  R:R     : 1.87  |  Ishonch: 71.8%
+  Tier    : MICRO
+
+[2026-07-05 22:25:09 UTC] BALANS YANGILANDI
+  Balans  : $10.91
+  Equity  : $12.18
+  Tier    : MICRO
+  O'sish  : +9.14%
+
+[2026-07-05 22:35:08 UTC] YOPILDI — STOP_LOSS  [WIN]
+  Ticket  : #1783167997
+  Symbol  : ADAUSD  (BUY)
+  Entry   : 0.18895
+  Yopildi : 0.19130
+  Foyda   : +0.04 $
+  Sabab   : STOP_LOSS
+
+[2026-07-05 22:35:16 UTC] OCHILDI [BINANCE]
+  Ticket  : #1783167998
+  Symbol  : XRPUSD  (BUY)
+  Lot     : 2.0
+  Entry   : 1.14367
+  SL      : 1.13235
+  TP      : 1.21513
+  R:R     : 2.50  |  Ishonch: 48.2%
+  Tier    : MICRO
+
+[2026-07-05 22:35:50 UTC] YOPILDI — STOP_LOSS  [WIN]
+  Ticket  : #1783168234
+  Symbol  : XRPUSD  (BUY)
+  Entry   : 1.14372
+  Yopildi : 1.15370
+  Foyda   : +0.03 $
+  Sabab   : STOP_LOSS
+
+[2026-07-05 22:35:58 UTC] OCHILDI [BINANCE]
+  Ticket  : #1783168235
+  Symbol  : ADAUSD  (BUY)
+  Lot     : 9.0
+  Entry   : 0.18887
+  SL      : 0.18700
+  TP      : 0.19959
+  R:R     : 2.00  |  Ishonch: 65.1%
+  Tier    : MICRO
+
+[2026-07-05 22:45:14 UTC] YOPILDI — STOP_LOSS  [WIN]
+  Ticket  : #1783168235
+  Symbol  : ADAUSD  (BUY)
+  Entry   : 0.18887
+  Yopildi : 0.19070
+  Foyda   : +0.03 $
+  Sabab   : STOP_LOSS
+
+[2026-07-05 22:50:40 UTC] YOPILDI — STOP_LOSS  [WIN]
+  Ticket  : #1783167998
+  Symbol  : XRPUSD  (BUY)
+  Entry   : 1.14367
+  Yopildi : 1.15300
+  Foyda   : +0.03 $
+  Sabab   : STOP_LOSS
+
+[2026-07-05 22:55:58 UTC] BALANS YANGILANDI
+  Balans  : $12.14
+  Equity  : $12.14
+  Tier    : MICRO
+  O'sish  : +21.42%
+
+[2026-07-05 23:00:09 UTC] BALANS YANGILANDI
+  Balans  : $12.14
+  Equity  : $12.14
+  Tier    : MICRO
+  O'sish  : +21.42%
+
+[2026-07-05 23:01:54 UTC] BALANS YANGILANDI
+  Balans  : $12.14
+  Equity  : $12.14
+  Tier    : MICRO
+  O'sish  : +21.42%
+
+[2026-07-05 23:26:54 UTC] BALANS YANGILANDI
+  Balans  : $12.14
+  Equity  : $12.14
+  Tier    : MICRO
+  O'sish  : +21.42%
+
+[2026-07-05 23:30:57 UTC] BALANS YANGILANDI
+  Balans  : $12.14
+  Equity  : $12.14
+  Tier    : MICRO
+  O'sish  : +21.42%
+
+[2026-07-05 23:32:46 UTC] BALANS YANGILANDI
+  Balans  : $12.14
+  Equity  : $12.14
+  Tier    : MICRO
+  O'sish  : +21.42%
+
+[2026-07-05 23:57:40 UTC] BALANS YANGILANDI
+  Balans  : $12.14
+  Equity  : $12.14
+  Tier    : MICRO
+  O'sish  : +21.42%
+
+[2026-07-06 00:01:46 UTC] BALANS YANGILANDI
+  Balans  : $12.14
+  Equity  : $12.14
+  Tier    : MICRO
+  O'sish  : +21.42%
+
+[2026-07-06 00:03:42 UTC] BALANS YANGILANDI
+  Balans  : $12.14
+  Equity  : $12.14
+  Tier    : MICRO
+  O'sish  : +21.42%
+
+[2026-07-06 00:28:31 UTC] BALANS YANGILANDI
+  Balans  : $12.14
+  Equity  : $12.14
+  Tier    : MICRO
+  O'sish  : +21.42%
+
+[2026-07-06 00:32:56 UTC] BALANS YANGILANDI
+  Balans  : $12.14
+  Equity  : $12.14
+  Tier    : MICRO
+  O'sish  : +21.42%
+
+[2026-07-06 00:34:39 UTC] BALANS YANGILANDI
+  Balans  : $12.14
+  Equity  : $12.14
+  Tier    : MICRO
+  O'sish  : +21.42%
+
+[2026-07-06 00:59:20 UTC] BALANS YANGILANDI
+  Balans  : $12.14
+  Equity  : $12.14
+  Tier    : MICRO
+  O'sish  : +21.42%
+
+[2026-07-06 01:03:43 UTC] BALANS YANGILANDI
+  Balans  : $12.14
+  Equity  : $12.14
+  Tier    : MICRO
+  O'sish  : +21.42%
+
+[2026-07-06 01:05:33 UTC] BALANS YANGILANDI
+  Balans  : $12.14
+  Equity  : $12.14
+  Tier    : MICRO
+  O'sish  : +21.42%
+
+[2026-07-06 01:30:16 UTC] BALANS YANGILANDI
+  Balans  : $12.14
+  Equity  : $12.14
+  Tier    : MICRO
+  O'sish  : +21.42%
+
+[2026-07-06 01:34:37 UTC] BALANS YANGILANDI
+  Balans  : $12.14
+  Equity  : $12.14
+  Tier    : MICRO
+  O'sish  : +21.42%
+
+[2026-07-06 01:36:17 UTC] BALANS YANGILANDI
+  Balans  : $12.14
+  Equity  : $12.14
+  Tier    : MICRO
+  O'sish  : +21.42%
+
+[2026-07-06 02:01:26 UTC] BALANS YANGILANDI
+  Balans  : $12.14
+  Equity  : $12.14
+  Tier    : MICRO
+  O'sish  : +21.42%
+
+[2026-07-06 02:05:46 UTC] BALANS YANGILANDI
+  Balans  : $12.14
+  Equity  : $12.14
+  Tier    : MICRO
+  O'sish  : +21.42%
+
+[2026-07-06 02:07:22 UTC] BALANS YANGILANDI
+  Balans  : $12.14
+  Equity  : $12.14
+  Tier    : MICRO
+  O'sish  : +21.42%
+
+[2026-07-06 02:32:38 UTC] BALANS YANGILANDI
+  Balans  : $12.14
+  Equity  : $12.14
+  Tier    : MICRO
+  O'sish  : +21.42%
+
+[2026-07-06 02:36:49 UTC] BALANS YANGILANDI
+  Balans  : $12.14
+  Equity  : $12.14
+  Tier    : MICRO
+  O'sish  : +21.42%
+
+[2026-07-06 02:38:20 UTC] BALANS YANGILANDI
+  Balans  : $12.14
+  Equity  : $12.14
+  Tier    : MICRO
+  O'sish  : +21.42%
+
+[2026-07-06 03:03:45 UTC] BALANS YANGILANDI
+  Balans  : $12.14
+  Equity  : $12.14
+  Tier    : MICRO
+  O'sish  : +21.42%
+
+[2026-07-06 03:07:51 UTC] BALANS YANGILANDI
+  Balans  : $12.14
+  Equity  : $12.14
+  Tier    : MICRO
+  O'sish  : +21.42%
+
+[2026-07-06 03:09:09 UTC] BALANS YANGILANDI
+  Balans  : $12.14
+  Equity  : $12.14
+  Tier    : MICRO
+  O'sish  : +21.42%
+
+[2026-07-06 03:34:42 UTC] BALANS YANGILANDI
+  Balans  : $12.14
+  Equity  : $12.14
+  Tier    : MICRO
+  O'sish  : +21.42%
+
+======================================================================
+[2026-07-06 03:36:54 UTC] BOT ISHGA TUSHDI
+  Rejim   : Binance Futures
+  Balans  : $12.14
+  Tier    : MICRO
+======================================================================
+
+======================================================================
+[2026-07-06 03:36:59 UTC] BOT ISHGA TUSHDI
+  Rejim   : Binance Futures
+  Balans  : $12.14
+  Tier    : MICRO
+======================================================================
+
+======================================================================
+[2026-07-06 03:36:59 UTC] BOT ISHGA TUSHDI
+  Rejim   : Binance Futures
+  Balans  : $12.14
+  Tier    : MICRO
+======================================================================
+
+======================================================================
+[2026-07-06 03:37:00 UTC] BOT ISHGA TUSHDI
+  Rejim   : Binance Futures
+  Balans  : $12.14
+  Tier    : MICRO
+======================================================================
+
+======================================================================
+[2026-07-06 03:37:00 UTC] BOT ISHGA TUSHDI
+  Rejim   : Binance Futures
+  Balans  : $12.14
+  Tier    : MICRO
+======================================================================
+
+======================================================================
+[2026-07-06 03:38:06 UTC] BOT ISHGA TUSHDI
+  Rejim   : Binance Futures
+  Balans  : $12.14
+  Tier    : MICRO
+======================================================================
+
+[2026-07-06 04:08:07 UTC] BALANS YANGILANDI
+  Balans  : $12.14
+  Equity  : $12.14
+  Tier    : MICRO
+  O'sish  : +21.42%
+
+[2026-07-06 04:39:04 UTC] BALANS YANGILANDI
+  Balans  : $12.14
+  Equity  : $12.14
+  Tier    : MICRO
+  O'sish  : +21.42%
+
+[2026-07-06 05:09:48 UTC] BALANS YANGILANDI
+  Balans  : $12.14
+  Equity  : $12.14
+  Tier    : MICRO
+  O'sish  : +21.42%
+
+[2026-07-06 05:40:52 UTC] BALANS YANGILANDI
+  Balans  : $12.14
+  Equity  : $12.14
+  Tier    : MICRO
+  O'sish  : +21.42%
+
+[2026-07-06 06:02:48 UTC] OCHILDI [BINANCE]
+  Ticket  : #1783309083
+  Symbol  : ADAUSD  (BUY)
+  Lot     : 22.0
+  Entry   : 0.18504
+  SL      : 0.18321
+  TP      : 0.18829
+  R:R     : 2.01  |  Ishonch: 27.4%
+  Tier    : MICRO
+
+[2026-07-06 07:02:13 UTC] YOPILDI — STOP_LOSS  [LOSS]
+  Ticket  : #1783309083
+  Symbol  : ADAUSD  (BUY)
+  Entry   : 0.18504
+  Yopildi : 0.18290
+  Foyda   : -0.06 $
+  Sabab   : STOP_LOSS
+
+[2026-07-06 07:02:23 UTC] OCHILDI [BINANCE]
+  Ticket  : #1783309084
+  Symbol  : BNBUSD  (BUY)
+  Lot     : 0.04
+  Entry   : 586.26724
+  SL      : 580.46261
+  TP      : 583.74348
+  R:R     : 2.50  |  Ishonch: 49.1%
+  Tier    : MICRO
+
+[2026-07-06 08:37:36 UTC] YOPILDI — STOP_LOSS  [LOSS]
+  Ticket  : #1783309084
+  Symbol  : BNBUSD  (BUY)
+  Entry   : 586.26724
+  Yopildi : 580.42000
+  Foyda   : -0.23 $
+  Sabab   : STOP_LOSS
+
+[2026-07-06 08:37:46 UTC] OCHILDI [BINANCE]
+  Ticket  : #1783309085
+  Symbol  : XRPUSD  (BUY)
+  Lot     : 7.0
+  Entry   : 1.14638
+  SL      : 1.13503
+  TP      : 1.14846
+  R:R     : 1.50  |  Ishonch: 46.6%
+  Tier    : MICRO
+
+[2026-07-06 09:38:18 UTC] YOPILDI — STOP_LOSS  [LOSS]
+  Ticket  : #1783309085
+  Symbol  : XRPUSD  (BUY)
+  Entry   : 1.14638
+  Yopildi : 1.13470
+  Foyda   : -0.08 $
+  Sabab   : STOP_LOSS
+
+[2026-07-06 09:38:26 UTC] OCHILDI [BINANCE]
+  Ticket  : #1783309086
+  Symbol  : ADAUSD  (BUY)
+  Lot     : 56.0
+  Entry   : 0.18417
+  SL      : 0.18235
+  TP      : 0.18462
+  R:R     : 2.49  |  Ishonch: 51.6%
+  Tier    : MICRO
+
+[2026-07-06 09:46:26 UTC] YOPILDI — STOP_LOSS  [LOSS]
+  Ticket  : #1783309086
+  Symbol  : ADAUSD  (BUY)
+  Entry   : 0.18417
+  Yopildi : 0.18230
+  Foyda   : -0.10 $
+  Sabab   : STOP_LOSS
+
+[2026-07-06 09:47:36 UTC] BALANS YANGILANDI
+  Balans  : $11.91
+  Equity  : $11.91
+  Tier    : MICRO
+  O'sish  : +19.08%
+
+[2026-07-06 10:18:37 UTC] BALANS YANGILANDI
+  Balans  : $11.91
+  Equity  : $11.91
+  Tier    : MICRO
+  O'sish  : +19.08%
+
+======================================================================
+[2026-07-07 06:33:38 UTC] BOT ISHGA TUSHDI
+  Rejim   : Binance Futures
+  Balans  : $11.91
+  Tier    : MICRO
+======================================================================
+
+======================================================================
+[2026-07-07 06:34:40 UTC] BOT ISHGA TUSHDI
+  Rejim   : Binance Futures
+  Balans  : $11.91
+  Tier    : MICRO
+======================================================================
+
+[2026-07-07 06:34:53 UTC] OCHILDI [BINANCE]
+  Ticket  : #1783406076
+  Symbol  : BNBUSD  (BUY)
+  Lot     : 0.02
+  Entry   : 583.36793
+  SL      : 577.59201
+  TP      : 583.67497
+  R:R     : 2.50  |  Ishonch: 40.0%
+  Tier    : MICRO
+
+======================================================================
+[2026-07-07 06:36:55 UTC] BOT ISHGA TUSHDI
+  Rejim   : Binance Futures
+  Balans  : $11.90
+  Tier    : MICRO
+======================================================================
+
+======================================================================
+[2026-07-07 06:37:48 UTC] BOT ISHGA TUSHDI
+  Rejim   : Binance Futures
+  Balans  : $11.90
+  Tier    : MICRO
+======================================================================
+
+[2026-07-07 07:34:39 UTC] YOPILDI — STOP_LOSS  [LOSS]
+  Ticket  : #1783406265
+  Symbol  : BNBUSD  (BUY)
+  Entry   : 579.65000
+  Yopildi : 579.63000
+  Foyda   : -0.00 $
+  Sabab   : STOP_LOSS
+
+[2026-07-07 07:39:06 UTC] BALANS YANGILANDI
+  Balans  : $11.89
+  Equity  : $11.89
+  Tier    : MICRO
+  O'sish  : +18.90%
+
+[2026-07-07 08:05:57 UTC] OCHILDI [BINANCE]
+  Ticket  : #1783406266
+  Symbol  : BNBUSD  (BUY)
+  Lot     : 0.02
+  Entry   : 581.52756
+  SL      : 575.76986
+  TP      : 582.04282
+  R:R     : 2.23  |  Ishonch: 37.4%
+  Tier    : MICRO
+
+[2026-07-07 08:06:02 UTC] YOPILDI — STOP_LOSS  [LOSS]
+  Ticket  : #1783406266
+  Symbol  : BNBUSD  (BUY)
+  Entry   : 581.52756
+  Yopildi : 578.03000
+  Foyda   : -0.10 $
+  Sabab   : STOP_LOSS
+
+[2026-07-07 08:09:44 UTC] BALANS YANGILANDI
+  Balans  : $11.87
+  Equity  : $11.87
+  Tier    : MICRO
+  O'sish  : +18.73%
+
+[2026-07-07 08:31:27 UTC] OCHILDI [BINANCE]
+  Ticket  : #1783406267
+  Symbol  : BTCUSD  (BUY)
+  Lot     : 0.001
+  Entry   : 63,548.91962
+  SL      : 62,919.72240
+  TP      : 63,231.58738
+  R:R     : 1.54  |  Ishonch: 48.5%
+  Tier    : MICRO
+
+[2026-07-07 08:31:31 UTC] YOPILDI — STOP_LOSS  [LOSS]
+  Ticket  : #1783406267
+  Symbol  : BTCUSD  (BUY)
+  Entry   : 63,548.91962
+  Yopildi : 63,010.10000
+  Foyda   : -0.54 $
+  Sabab   : STOP_LOSS
+
+[2026-07-07 08:36:32 UTC] OCHILDI [BINANCE]
+  Ticket  : #1783406268
+  Symbol  : BNBUSD  (BUY)
+  Lot     : 0.02
+  Entry   : 581.51675
+  SL      : 575.75916
+  TP      : 580.59419
+  R:R     : 2.06  |  Ishonch: 51.3%
+  Tier    : MICRO
+
+[2026-07-07 08:36:36 UTC] YOPILDI — STOP_LOSS  [LOSS]
+  Ticket  : #1783406268
+  Symbol  : BNBUSD  (BUY)
+  Entry   : 581.51675
+  Yopildi : 577.66000
+  Foyda   : -0.12 $
+  Sabab   : STOP_LOSS
+
+[2026-07-07 08:40:50 UTC] BALANS YANGILANDI
+  Balans  : $11.76
+  Equity  : $11.76
+  Tier    : MICRO
+  O'sish  : +17.62%
+
+======================================================================
+[2026-08-19 15:01:16 UTC] BOT ISHGA TUSHDI
+  Rejim   : Binance Futures
+
+======================================================================
+[2026-08-19 15:01:16 UTC] BOT ISHGA TUSHDI
+  Rejim   : Binance Futures
+  Balans  : $0.00
+  Tier    : MICRO
+======================================================================
+  Balans  : $0.00
+  Tier    : MICRO
+======================================================================
+
+
+======================================================================
+======================================================================
+[2026-08-19 15:27:07 UTC] BOT ISHGA TUSHDI
+[2026-08-19 15:27:07 UTC] BOT ISHGA TUSHDI
+  Rejim   : Binance Futures
+  Balans  : $0.00
+  Tier    : MICRO
+======================================================================
+
+======================================================================
+[2026-08-21 14:54:45 UTC] BOT ISHGA TUSHDI
+  Rejim   : Binance Futures
+  Balans  : $0.00
+  Tier    : MICRO
+======================================================================
+
+======================================================================
+[2026-08-21 14:57:41 UTC] BOT ISHGA TUSHDI
+  Rejim   : Binance Futures
+  Balans  : $0.00
+  Tier    : MICRO
+======================================================================
+
+[2026-08-21 16:05:13 UTC] OCHILDI [BINANCE]
+  Ticket  : #1787324074
+  Symbol  : XRPUSD  (BUY)
+  Lot     : 9.0
+  Entry   : 1.41157
+  SL      : 1.39759
+  TP      : 1.41442
+  R:R     : 3.00  |  Ishonch: 45.2%
+  Tier    : MICRO
+
+[2026-08-21 16:05:17 UTC] YOPILDI — STOP_LOSS  [LOSS]
+  Ticket  : #1787324074
+  Symbol  : XRPUSD  (BUY)
+  Entry   : 1.41157
+  Yopildi : 1.40150
+  Foyda   : -0.14 $
+  Sabab   : STOP_LOSS
+
+======================================================================
+[2026-08-21 16:08:21 UTC] BOT ISHGA TUSHDI
+  Rejim   : Binance Futures
+  Balans  : $11.73
+  Tier    : MICRO
+======================================================================
+
+[2026-08-21 16:08:34 UTC] OCHILDI [BINANCE]
+  Ticket  : #1787328499
+  Symbol  : XRPUSD  (BUY)
+  Lot     : 9.0
+  Entry   : 1.40251
+  SL      : 1.38862
+  TP      : 1.40534
+  R:R     : 3.00  |  Ishonch: 46.7%
+  Tier    : MICRO
+
+[2026-08-21 16:08:38 UTC] OCHILDI [BINANCE]
+  Ticket  : #1787328500
+  Symbol  : BTCUSD  (BUY)
+  Lot     : 0.001
+  Entry   : 77,457.61265
+  SL      : 76,690.70559
+  TP      : 77,498.38103
+  R:R     : 2.50  |  Ishonch: 47.6%
+  Tier    : MICRO
+
+[2026-08-21 16:08:45 UTC] YOPILDI — STOP_LOSS  [LOSS]
+  Ticket  : #1787328499
+  Symbol  : XRPUSD  (BUY)
+  Entry   : 1.40251
+  Yopildi : 1.39380
+  Foyda   : -0.12 $
+  Sabab   : STOP_LOSS
+
+[2026-08-21 16:08:45 UTC] YOPILDI — STOP_LOSS  [LOSS]
+  Ticket  : #1787328500
+  Symbol  : BTCUSD  (BUY)
+  Entry   : 77,457.61265
+  Yopildi : 76,954.10000
+  Foyda   : -0.50 $
+  Sabab   : STOP_LOSS
+
+======================================================================
+[2026-08-21 16:11:16 UTC] BOT ISHGA TUSHDI
+  Rejim   : Binance Futures
+  Balans  : $11.58
+  Tier    : MICRO
+======================================================================
+
+[2026-08-21 16:11:28 UTC] OCHILDI [BINANCE]
+  Ticket  : #1787328673
+  Symbol  : XRPUSD  (BUY)
+  Lot     : 2.0
+  Entry   : 1.39261
+  SL      : 1.37882
+  TP      : 1.44814
+  R:R     : 2.52  |  Ishonch: 48.2%
+  Tier    : MICRO
+
+[2026-08-21 16:41:50 UTC] YOPILDI — STOP_LOSS  [LOSS]
+  Ticket  : #1787328673
+  Symbol  : XRPUSD  (BUY)
+  Entry   : 1.39261
+  Yopildi : 1.39150
+  Foyda   : -0.02 $
+  Sabab   : STOP_LOSS
+
+[2026-08-21 16:42:34 UTC] OCHILDI [BINANCE]
+  Ticket  : #1787328674
+  Symbol  : BTCUSD  (BUY)
+  Lot     : 0.001
+  Entry   : 77,053.72492
+  SL      : 76,290.81675
+  TP      : 79,137.25302
+  R:R     : 1.83  |  Ishonch: 45.7%
+  Tier    : MICRO
+
+[2026-08-21 18:42:32 UTC] YOPILDI — STOP_LOSS  [LOSS]
+  Ticket  : #1787328674
+  Symbol  : BTCUSD  (BUY)
+  Entry   : 77,053.72492
+  Yopildi : 77,050.70000
+  Foyda   : -0.00 $
+  Sabab   : STOP_LOSS
+
+[2026-08-21 19:01:20 UTC] BALANS YANGILANDI
+  Balans  : $11.17
+  Equity  : $11.17
+  Tier    : MICRO
+  O'sish  : +11.66%
+
+[2026-08-21 19:12:39 UTC] OCHILDI [BINANCE]
+  Ticket  : #1787328675
+  Symbol  : ADAUSD  (BUY)
+  Lot     : 31.0
+  Entry   : 0.21737
+  SL      : 0.21522
+  TP      : 0.21846
+  R:R     : 2.00  |  Ishonch: 53.9%
+  Tier    : MICRO
+
+[2026-08-21 19:32:04 UTC] BALANS YANGILANDI
+  Balans  : $11.12
+  Equity  : $11.12
+  Tier    : MICRO
+  O'sish  : +11.19%
+
+[2026-08-21 20:03:01 UTC] BALANS YANGILANDI
+  Balans  : $11.12
+  Equity  : $11.12
+  Tier    : MICRO
+  O'sish  : +11.19%
+
+[2026-08-21 20:33:57 UTC] BALANS YANGILANDI
+  Balans  : $11.12
+  Equity  : $11.12
+  Tier    : MICRO
+  O'sish  : +11.19%
+
+[2026-08-21 21:04:58 UTC] BALANS YANGILANDI
+  Balans  : $11.12
+  Equity  : $11.12
+  Tier    : MICRO
+  O'sish  : +11.19%
+
+[2026-08-21 21:32:52 UTC] OCHILDI [BINANCE]
+  Ticket  : #1787328676
+  Symbol  : ETHUSD  (BUY)
+  Lot     : 0.01
+  Entry   : 2,465.93469
+  SL      : 2,441.51950
+  TP      : 2,553.06100
+  R:R     : 2.00  |  Ishonch: 49.6%
+  Tier    : MICRO
+
+[2026-08-21 22:07:47 UTC] YOPILDI — TAKE_PROFIT  [WIN]
+  Ticket  : #1787328676
+  Symbol  : ETHUSD  (BUY)
+  Entry   : 2,465.93469
+  Yopildi : 2,542.85000
+  Foyda   : +0.77 $
+  Sabab   : TAKE_PROFIT
+
+[2026-08-21 22:31:38 UTC] OCHILDI [BINANCE]
+  Ticket  : #1787328677
+  Symbol  : ADAUSD  (BUY)
+  Lot     : 10.0
+  Entry   : 0.22574
+  SL      : 0.22350
+  TP      : 0.23541
+  R:R     : 2.50  |  Ishonch: 46.1%
+  Tier    : MICRO
+
+[2026-08-21 22:57:58 UTC] YOPILDI — STOP_LOSS  [WIN]
+  Ticket  : #1787328677
+  Symbol  : ADAUSD  (BUY)
+  Entry   : 0.22574
+  Yopildi : 0.23180
+  Foyda   : +0.53 $
+  Sabab   : STOP_LOSS
+
+[2026-08-21 23:08:49 UTC] BALANS YANGILANDI
+  Balans  : $12.04
+  Equity  : $12.04
+  Tier    : MICRO
+  O'sish  : +20.45%
+
+[2026-08-21 23:39:49 UTC] BALANS YANGILANDI
+  Balans  : $12.04
+  Equity  : $12.04
+  Tier    : MICRO
+  O'sish  : +20.45%
+
+[2026-08-22 00:10:57 UTC] BALANS YANGILANDI
+  Balans  : $12.04
+  Equity  : $12.04
+  Tier    : MICRO
+  O'sish  : +20.45%
+
+[2026-08-22 00:41:54 UTC] BALANS YANGILANDI
+  Balans  : $12.04
+  Equity  : $12.04
+  Tier    : MICRO
+  O'sish  : +20.45%
+
+[2026-08-22 01:12:53 UTC] BALANS YANGILANDI
+  Balans  : $12.04
+  Equity  : $12.04
+  Tier    : MICRO
+  O'sish  : +20.45%
+
+[2026-08-22 01:43:50 UTC] BALANS YANGILANDI
+  Balans  : $12.04
+  Equity  : $12.04
+  Tier    : MICRO
+  O'sish  : +20.45%
+
+[2026-08-22 02:14:58 UTC] BALANS YANGILANDI
+  Balans  : $12.04
+  Equity  : $12.04
+  Tier    : MICRO
+  O'sish  : +20.45%
+
+[2026-08-22 02:46:04 UTC] BALANS YANGILANDI
+  Balans  : $12.04
+  Equity  : $12.04
+  Tier    : MICRO
+  O'sish  : +20.45%
+
+[2026-08-22 03:17:07 UTC] BALANS YANGILANDI
+  Balans  : $12.04
+  Equity  : $12.04
+  Tier    : MICRO
+  O'sish  : +20.45%
+
+[2026-08-22 03:48:05 UTC] BALANS YANGILANDI
+  Balans  : $12.04
+  Equity  : $12.04
+  Tier    : MICRO
+  O'sish  : +20.45%
+
+[2026-08-22 04:19:07 UTC] BALANS YANGILANDI
+  Balans  : $12.04
+  Equity  : $12.04
+  Tier    : MICRO
+  O'sish  : +20.45%
+
+[2026-08-22 04:50:01 UTC] BALANS YANGILANDI
+  Balans  : $12.04
+  Equity  : $12.04
+  Tier    : MICRO
+  O'sish  : +20.45%
+
+[2026-08-22 05:21:06 UTC] BALANS YANGILANDI
+  Balans  : $12.04
+  Equity  : $12.04
+  Tier    : MICRO
+  O'sish  : +20.45%
+
+[2026-08-22 05:52:10 UTC] BALANS YANGILANDI
+  Balans  : $12.04
+  Equity  : $12.04
+  Tier    : MICRO
+  O'sish  : +20.45%
+
+[2026-08-22 06:09:50 UTC] OCHILDI [BINANCE]
+  Ticket  : #1787328678
+  Symbol  : BTCUSD  (SELL)
+  Lot     : 0.001
+  Entry   : 78,293.98816
+  SL      : 79,084.83653
+  TP      : 74,435.09150
+  R:R     : 1.66  |  Ishonch: 46.9%
+  Tier    : MICRO
+
+[2026-08-23 10:22:28 UTC] YOPILDI — STOP_LOSS  [WIN]
+  Ticket  : #1787328678
+  Symbol  : BTCUSD  (SELL)
+  Entry   : 78,293.98816
+  Yopildi : 76,895.90000
+  Foyda   : +1.40 $
+  Sabab   : STOP_LOSS
+
+[2026-08-23 10:22:47 UTC] OCHILDI [BINANCE]
+  Ticket  : #1787328679
+  Symbol  : ADAUSD  (BUY)
+  Lot     : 9.0
+  Entry   : 0.22030
+  SL      : 0.21812
+  TP      : 0.22918
+  R:R     : 1.53  |  Ishonch: 55.5%
+  Tier    : MICRO
+
+[2026-08-23 13:18:33 UTC] YOPILDI — TAKE_PROFIT  [WIN]
+  Ticket  : #1787328679
+  Symbol  : ADAUSD  (BUY)
+  Entry   : 0.22030
+  Yopildi : 0.22730
+  Foyda   : +0.63 $
+  Sabab   : TAKE_PROFIT
+
+[2026-08-23 13:22:32 UTC] BALANS YANGILANDI
+  Balans  : $12.73
+  Equity  : $12.73
+  Tier    : MICRO
+  O'sish  : +27.28%
+
+[2026-08-23 13:27:45 UTC] OCHILDI [BINANCE]
+  Ticket  : #1787328680
+  Symbol  : SOLUSD  (BUY)
+  Lot     : 0.1
+  Entry   : 94.78595
+  SL      : 93.84748
+  TP      : 97.99504
+  R:R     : 2.00  |  Ishonch: 52.6%
+  Tier    : MICRO
+
+[2026-08-23 14:42:40 UTC] YOPILDI — STOP_LOSS  [LOSS]
+  Ticket  : #1787328680
+  Symbol  : SOLUSD  (BUY)
+  Entry   : 94.78595
+  Yopildi : 94.78000
+  Foyda   : -0.00 $
+  Sabab   : STOP_LOSS
+
+[2026-08-23 14:44:15 UTC] OCHILDI [BINANCE]
+  Ticket  : #1787328681
+  Symbol  : ETHUSD  (BUY)
+  Lot     : 0.01
+  Entry   : 2,429.01490
+  SL      : 2,404.96525
+  TP      : 2,457.19320
+  R:R     : 2.28  |  Ishonch: 49.1%
+  Tier    : MICRO
+
+[2026-08-23 14:57:29 UTC] YOPILDI — STOP_LOSS  [WIN]
+  Ticket  : #1787328681
+  Symbol  : ETHUSD  (BUY)
+  Entry   : 2,429.01490
+  Yopildi : 2,435.31000
+  Foyda   : +0.06 $
+  Sabab   : STOP_LOSS
+
+[2026-08-23 14:57:38 UTC] OCHILDI [BINANCE]
+  Ticket  : #1787328682
+  Symbol  : BTCUSD  (BUY)
+  Lot     : 0.001
+  Entry   : 77,424.95691
+  SL      : 76,658.37318
+  TP      : 78,120.58163
+  R:R     : 1.94  |  Ishonch: 61.2%
+  Tier    : MICRO
+
+[2026-08-23 15:19:36 UTC] YOPILDI — STOP_LOSS  [LOSS]
+  Ticket  : #1787328682
+  Symbol  : BTCUSD  (BUY)
+  Entry   : 77,424.95691
+  Yopildi : 76,907.70000
+  Foyda   : -0.52 $
+  Sabab   : STOP_LOSS
+
+[2026-08-23 15:26:34 UTC] BALANS YANGILANDI
+  Balans  : $12.49
+  Equity  : $12.49
+  Tier    : MICRO
+  O'sish  : +24.85%
+
+[2026-08-23 15:45:12 UTC] OCHILDI [BINANCE]
+  Ticket  : #1787328683
+  Symbol  : ADAUSD  (BUY)
+  Lot     : 10.0
+  Entry   : 0.22448
+  SL      : 0.22226
+  TP      : 0.23448
+  R:R     : 2.27  |  Ishonch: 75.6%
+  Tier    : MICRO
+
+[2026-08-23 17:32:29 UTC] YOPILDI — STOP_LOSS  [LOSS]
+  Ticket  : #1787328683
+  Symbol  : ADAUSD  (BUY)
+  Entry   : 0.22448
+  Yopildi : 0.22440
+  Foyda   : -0.01 $
+  Sabab   : STOP_LOSS
+
+[2026-08-23 18:01:19 UTC] BALANS YANGILANDI
+  Balans  : $12.34
+  Equity  : $12.34
+  Tier    : MICRO
+  O'sish  : +23.39%
+
+[2026-08-23 18:32:19 UTC] BALANS YANGILANDI
+  Balans  : $12.34
+  Equity  : $12.34
+  Tier    : MICRO
+  O'sish  : +23.39%
+
+[2026-08-23 19:03:25 UTC] BALANS YANGILANDI
+  Balans  : $12.34
+  Equity  : $12.34
+  Tier    : MICRO
+  O'sish  : +23.39%
+
+[2026-08-23 19:10:43 UTC] OCHILDI [BINANCE]
+  Ticket  : #1787328684
+  Symbol  : BNBUSD  (BUY)
+  Lot     : 0.01
+  Entry   : 702.34009
+  SL      : 695.38623
+  TP      : 706.19755
+  R:R     : 2.00  |  Ishonch: 45.4%
+  Tier    : MICRO
+
+[2026-08-23 19:11:24 UTC] YOPILDI — STOP_LOSS  [LOSS]
+  Ticket  : #1787328684
+  Symbol  : BNBUSD  (BUY)
+  Entry   : 702.34009
+  Yopildi : 698.47000
+  Foyda   : -0.12 $
+  Sabab   : STOP_LOSS
+
+[2026-08-23 19:34:22 UTC] BALANS YANGILANDI
+  Balans  : $12.30
+  Equity  : $12.30
+  Tier    : MICRO
+  O'sish  : +22.97%
+
+[2026-08-23 20:05:24 UTC] BALANS YANGILANDI
+  Balans  : $12.30
+  Equity  : $12.30
+  Tier    : MICRO
+  O'sish  : +22.97%
+
+[2026-08-23 20:15:49 UTC] OCHILDI [BINANCE]
+  Ticket  : #1787328685
+  Symbol  : ADAUSD  (BUY)
+  Lot     : 34.0
+  Entry   : 0.22491
+  SL      : 0.22268
+  TP      : 0.22604
+  R:R     : 2.00  |  Ishonch: 45.3%
+  Tier    : MICRO
+
+[2026-08-23 20:30:03 UTC] YOPILDI — STOP_LOSS  [LOSS]
+  Ticket  : #1787328685
+  Symbol  : ADAUSD  (BUY)
+  Entry   : 0.22491
+  Yopildi : 0.22490
+  Foyda   : -0.00 $
+  Sabab   : STOP_LOSS
+
+[2026-08-23 20:36:26 UTC] BALANS YANGILANDI
+  Balans  : $12.36
+  Equity  : $12.36
+  Tier    : MICRO
+  O'sish  : +23.57%
+
+[2026-08-23 21:07:26 UTC] BALANS YANGILANDI
+  Balans  : $12.36
+  Equity  : $12.36
+  Tier    : MICRO
+  O'sish  : +23.57%
+
+[2026-08-23 21:30:12 UTC] OCHILDI [BINANCE]
+  Ticket  : #1787328686
+  Symbol  : BNBUSD  (BUY)
+  Lot     : 0.01
+  Entry   : 703.62759
+  SL      : 696.66098
+  TP      : 725.20607
+  R:R     : 1.90  |  Ishonch: 59.3%
+  Tier    : MICRO
+
+[2026-08-24 19:24:47 UTC] BALANS YANGILANDI
+  Balans  : $11.95
+  Equity  : $11.95
+  Tier    : MICRO
+  O'sish  : +19.46%
+
+[2026-08-24 19:55:40 UTC] BALANS YANGILANDI
+  Balans  : $11.95
+  Equity  : $11.95
+  Tier    : MICRO
+  O'sish  : +19.46%
+
+[2026-08-24 19:56:43 UTC] OCHILDI [BINANCE]
+  Ticket  : #1787328687
+  Symbol  : ETHUSD  (BUY)
+  Lot     : 0.01
+  Entry   : 2,479.02608
+  SL      : 2,454.48127
+  TP      : 2,497.59490
+  R:R     : 1.70  |  Ishonch: 55.7%
+  Tier    : MICRO
+
+[2026-08-25 01:15:44 UTC] YOPILDI — STOP_LOSS  [WIN]
+  Ticket  : #1787328687
+  Symbol  : ETHUSD  (BUY)
+  Entry   : 2,479.02608
+  Yopildi : 2,485.15000
+  Foyda   : +0.06 $
+  Sabab   : STOP_LOSS
+
+[2026-08-25 01:37:13 UTC] BALANS YANGILANDI
+  Balans  : $12.07
+  Equity  : $12.07
+  Tier    : MICRO
+  O'sish  : +20.73%
+
+[2026-08-25 02:08:13 UTC] BALANS YANGILANDI
+  Balans  : $12.07
+  Equity  : $12.07
+  Tier    : MICRO
+  O'sish  : +20.73%
+
+[2026-08-25 02:39:18 UTC] BALANS YANGILANDI
+  Balans  : $12.07
+  Equity  : $12.07
+  Tier    : MICRO
+  O'sish  : +20.73%
+
+[2026-08-25 03:10:24 UTC] BALANS YANGILANDI
+  Balans  : $12.07
+  Equity  : $12.07
+  Tier    : MICRO
+  O'sish  : +20.73%
+
+[2026-08-25 03:41:32 UTC] BALANS YANGILANDI
+  Balans  : $12.07
+  Equity  : $12.07
+  Tier    : MICRO
+  O'sish  : +20.73%
+
+[2026-08-25 04:12:25 UTC] BALANS YANGILANDI
+  Balans  : $12.07
+  Equity  : $12.07
+  Tier    : MICRO
+  O'sish  : +20.73%
+
+[2026-08-25 04:43:38 UTC] BALANS YANGILANDI
+  Balans  : $12.07
+  Equity  : $12.07
+  Tier    : MICRO
+  O'sish  : +20.73%
+
+[2026-08-25 05:14:38 UTC] BALANS YANGILANDI
+  Balans  : $12.07
+  Equity  : $12.07
+  Tier    : MICRO
+  O'sish  : +20.73%
+
+[2026-08-25 05:45:50 UTC] BALANS YANGILANDI
+  Balans  : $12.07
+  Equity  : $12.07
+  Tier    : MICRO
+  O'sish  : +20.73%
+
+[2026-08-25 06:00:15 UTC] OCHILDI [BINANCE]
+  Ticket  : #1787328688
+  Symbol  : BTCUSD  (BUY)
+  Lot     : 0.001
+  Entry   : 80,758.11858
+  SL      : 79,958.53325
+  TP      : 82,471.15012
+  R:R     : 2.20  |  Ishonch: 49.6%
+  Tier    : MICRO
+
+[2026-08-25 07:49:52 UTC] YOPILDI — STOP_LOSS  [LOSS]
+  Ticket  : #1787328688
+  Symbol  : BTCUSD  (BUY)
+  Entry   : 80,758.11858
+  Yopildi : 79,756.00000
+  Foyda   : -1.00 $
+  Sabab   : STOP_LOSS
+
+[2026-08-25 19:13:51 UTC] BALANS YANGILANDI
+  Balans  : $11.34
+  Equity  : $11.34
+  Tier    : MICRO
+  O'sish  : +13.37%
+
+[2026-08-25 19:44:43 UTC] BALANS YANGILANDI
+  Balans  : $11.34
+  Equity  : $11.34
+  Tier    : MICRO
+  O'sish  : +13.37%
+
+[2026-08-25 20:00:22 UTC] OCHILDI [BINANCE]
+  Ticket  : #1787328689
+  Symbol  : SOLUSD  (BUY)
+  Lot     : 0.1
+  Entry   : 98.19259
+  SL      : 97.22039
+  TP      : 99.45809
+  R:R     : 1.80  |  Ishonch: 49.6%
+  Tier    : MICRO
+
+[2026-08-25 20:04:26 UTC] YOPILDI — STOP_LOSS  [LOSS]
+  Ticket  : #1787328689
+  Symbol  : SOLUSD  (BUY)
+  Entry   : 98.19259
+  Yopildi : 97.15000
+  Foyda   : -0.21 $
+  Sabab   : STOP_LOSS
+
+[2026-08-25 20:15:48 UTC] BALANS YANGILANDI
+  Balans  : $11.19
+  Equity  : $11.19
+  Tier    : MICRO
+  O'sish  : +11.92%
+
+[2026-08-25 20:46:43 UTC] BALANS YANGILANDI
+  Balans  : $11.19
+  Equity  : $11.19
+  Tier    : MICRO
+  O'sish  : +11.92%
+
+[2026-08-25 21:17:38 UTC] BALANS YANGILANDI
+  Balans  : $11.19
+  Equity  : $11.19
+  Tier    : MICRO
+  O'sish  : +11.92%
+
+[2026-08-25 21:31:05 UTC] OCHILDI [BINANCE]
+  Ticket  : #1787328690
+  Symbol  : BTCUSD  (BUY)
+  Lot     : 0.001
+  Entry   : 78,426.96890
+  SL      : 77,650.46426
+  TP      : 80,274.13800
+  R:R     : 2.20  |  Ishonch: 46.7%
+  Tier    : MICRO
+
+[2026-08-30 19:00:36 UTC] OCHILDI [BINANCE]
+  Ticket  : #1787328691
+  Symbol  : BTCUSD  (BUY)
+  Lot     : 0.001
+  Entry   : 79,365.18972
+  SL      : 78,579.39576
+  TP      : 80,025.95475
+  R:R     : 2.15  |  Ishonch: 56.6%
+  Tier    : MICRO
+
+[2026-08-30 19:07:12 UTC] YOPILDI — STOP_LOSS  [LOSS]
+  Ticket  : #1787328691
+  Symbol  : BTCUSD  (BUY)
+  Entry   : 79,365.18972
+  Yopildi : 78,902.00000
+  Foyda   : -0.46 $
+  Sabab   : STOP_LOSS
+
+[2026-08-30 19:07:45 UTC] OCHILDI [BINANCE]
+  Ticket  : #1787328692
+  Symbol  : BNBUSD  (BUY)
+  Lot     : 0.01
+  Entry   : 704.29951
+  SL      : 697.32625
+  TP      : 710.17924
+  R:R     : 2.33  |  Ishonch: 49.0%
+  Tier    : MICRO
+
+[2026-08-30 19:30:30 UTC] YOPILDI — STOP_LOSS  [LOSS]
+  Ticket  : #1787328692
+  Symbol  : BNBUSD  (BUY)
+  Entry   : 704.29951
+  Yopildi : 700.33000
+  Foyda   : -0.12 $
+  Sabab   : STOP_LOSS
+
+
+======================================================================
+======================================================================
+[2026-09-08 04:55:14 UTC] BOT ISHGA TUSHDI
+[2026-09-08 04:55:14 UTC] BOT ISHGA TUSHDI
+  Rejim   : Binance Futures
+  Balans  : $0.00
+  Tier    : MICRO
+======================================================================
+  Balans  : $0.00
+  Tier    : MICRO
+======================================================================
+
+[2026-09-08 17:46:32 UTC] BALANS YANGILANDI
+  Balans  : $10.87
+  Equity  : $10.87
+  Tier    : MICRO
+  O'sish  : +8.66%
+
+[2026-09-08 17:46:33 UTC] BALANS YANGILANDI
+  Balans  : $10.87
+  Equity  : $10.87
+  Tier    : MICRO
+  O'sish  : +8.66%
+
+[2026-09-08 18:15:28 UTC] OCHILDI [BINANCE]
+  Ticket  : #1788843307
+  Symbol  : ADAUSD  (BUY)
+  Lot     : 14.0
+  Entry   : 0.22511
+  SL      : 0.22288
+  TP      : 0.23015
+  R:R     : 2.00  |  Ishonch: 49.6%
+  Tier    : MICRO
+
+[2026-09-08 18:15:31 UTC] OCHILDI [BINANCE]
+  Ticket  : #1788843307
+  Symbol  : ADAUSD  (BUY)
+  Lot     : 14.0
+  Entry   : 0.22511
+  SL      : 0.22288
+  TP      : 0.23015
+  R:R     : 2.00  |  Ishonch: 49.6%
+  Tier    : MICRO
+
+
+======================================================================
+[2026-09-12 12:34:50 UTC] BOT ISHGA TUSHDI
+  Rejim   : Binance Futures
+======================================================================
+  Balans  : $0.00
+  Tier    : MICRO
+======================================================================
+[2026-09-12 12:34:50 UTC] BOT ISHGA TUSHDI
+  Rejim   : Binance Futures
+  Balans  : $0.00
+  Tier    : MICRO
+======================================================================

@@ -1,0 +1,256 @@
+2026-09-14 03:18:23 [INFO    ] =================================================================
+2026-09-14 03:18:23 [INFO    ] 🚀 GoldAI Ultra — Libertex Edition
+2026-09-14 03:18:23 [INFO    ]    Broker: ForexClub | Server: ForexClub-MT5 Demo Server
+2026-09-14 03:18:23 [INFO    ]    Forex | Crypto | Stocks | Commodities | Indices
+2026-09-14 03:18:23 [INFO    ] =================================================================
+2026-09-14 03:18:27 [WARNING ] Trade History DB ulana olmadi: [WinError 1225] Удаленный компьютер отклонил это сетевое подключение — xotira rejimida ishlaydi
+2026-09-14 03:18:27 [INFO    ] MT5 terminal topildi: C:\Program Files\ForexClub MT5\terminal64.exe
+2026-09-14 03:18:27 [INFO    ] 🔌 MT5 login urinishi: ForexClub-MT5 Demo Server (login=500372121)
+2026-09-14 03:18:27 [INFO    ] ✅ MT5 Ulandi: ForexClub-MT5 Demo Server | Login=500372121 | Balans=$19154.47 USD | Leverage 1:1000
+2026-09-14 03:18:27 [INFO    ] 📊 Symbol mapping: USOIL → USOILCash (Libertex)
+2026-09-14 03:18:27 [DEBUG   ] Symbol topilmadi MT5 da: UKOIL
+2026-09-14 03:18:27 [DEBUG   ] Symbol topilmadi MT5 da: USTEC
+2026-09-14 03:18:27 [DEBUG   ] Symbol topilmadi MT5 da: US500
+2026-09-14 03:18:27 [DEBUG   ] Symbol topilmadi MT5 da: US30
+2026-09-14 03:18:27 [DEBUG   ] Symbol topilmadi MT5 da: GER40
+2026-09-14 03:18:27 [DEBUG   ] Symbol topilmadi MT5 da: AAPL
+2026-09-14 03:18:27 [DEBUG   ] Symbol topilmadi MT5 da: TSLA
+2026-09-14 03:18:27 [DEBUG   ] Symbol topilmadi MT5 da: NVDA
+2026-09-14 03:18:27 [DEBUG   ] Symbol topilmadi MT5 da: MSFT
+2026-09-14 03:18:27 [DEBUG   ] Symbol topilmadi MT5 da: GOOGL
+2026-09-14 03:18:27 [DEBUG   ] Symbol topilmadi MT5 da: AMZN
+2026-09-14 03:18:27 [INFO    ] ✅ Rejim: LIBERTEX MT5 MODE (ForexClub | Forex + Crypto + Stocks)
+2026-09-14 03:18:27 [INFO    ] 🏦 Libertex hisob: Login=500372121 | Server=ForexClub-MT5 Demo Server | Leverage 1:1000
+2026-09-14 03:18:27 [INFO    ] 💰 Risk Engine: Boshlang'ich=$19154.47 | Tier=elite
+2026-09-14 03:18:27 [INFO    ] 💰 Balans: $19154.47 | Tier: ELITE
+2026-09-14 03:18:27 [INFO    ] 📊 Aktiv bozorlar (30): XAUUSD, XAGUSD, EURUSD, GBPUSD, USDJPY, USDCHF...
+2026-09-14 03:18:27 [INFO    ] 🎯 Risk/savdo: 1.5% | Daily limit: 6%
+2026-09-14 03:18:27 [INFO    ] 🔍 Startup: ochiq pozitsiyalar SL tekshiruvi...
+2026-09-14 03:18:27 [WARNING ] ⚠️  SL YO'Q (Libertex): #115940565 ETHUSD | Narx: 2474.09600 — YOPILMOQDA (himoya)!
+2026-09-14 03:18:27 [ERROR   ] ❌ Close #115940565: Retcode:10027 AutoTrading disabled by client
+2026-09-14 03:18:27 [ERROR   ] ❌ Yopishda xato #115940565: Retcode:10027 AutoTrading disabled by client
+2026-09-14 03:18:27 [WARNING ] ⚠️  SL YO'Q (Libertex): #115941965 XAUUSD | Narx: 4331.93000 — YOPILMOQDA (himoya)!
+2026-09-14 03:18:28 [ERROR   ] ❌ Close #115941965: Retcode:10027 AutoTrading disabled by client
+2026-09-14 03:18:28 [ERROR   ] ❌ Yopishda xato #115941965: Retcode:10027 AutoTrading disabled by client
+2026-09-14 03:18:28 [WARNING ] ⚠️  SL YO'Q (Libertex): #115942396 XAUUSD | Narx: 4332.29000 — YOPILMOQDA (himoya)!
+2026-09-14 03:18:30 [ERROR   ] ❌ Close #115942396: Retcode:10027 AutoTrading disabled by client
+2026-09-14 03:18:30 [ERROR   ] ❌ Yopishda xato #115942396: Retcode:10027 AutoTrading disabled by client
+2026-09-14 03:18:30 [INFO    ] ✅ MT5: barcha pozitsiyalarda SL bor
+2026-09-14 03:18:30 [INFO    ] 📂 Oldingi holat yuklandi: 2026-09-08T17:46:33.778965 | Sikl#22470 | Savdolar:43
+2026-09-14 03:18:30 [INFO    ] 🔄 Multi-Market loop boshlandi [Libertex MT5 (ForexClub)]...
+2026-09-14 03:18:30 [INFO    ] 🐋 Whale WS o'chiq (Libertex rejimida MT5 ma'lumotlari ishlatiladi)
+2026-09-14 03:18:30 [INFO    ] 🤖 Telegram polling tayyor (offset=805899884)
+2026-09-14 03:18:32 [WARNING ] ⚠️ ❌ Kunlik limit 16.5% (max 6%) | ❌ Haftalik limit 16.5%
+2026-09-14 03:19:32 [WARNING ] ⚠️ ❌ Kunlik limit 16.6% (max 6%) | ❌ Haftalik limit 16.6%
+2026-09-14 03:20:32 [DEBUG   ] DeepSeek HTTP 402: {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_reque
+2026-09-14 03:20:52 [INFO    ] =================================================================
+2026-09-14 03:20:52 [INFO    ] 🚀 GoldAI Ultra — Libertex Edition
+2026-09-14 03:20:52 [INFO    ]    Broker: ForexClub | Server: ForexClub-MT5 Demo Server
+2026-09-14 03:20:52 [INFO    ]    Forex | Crypto | Stocks | Commodities | Indices
+2026-09-14 03:20:52 [INFO    ] =================================================================
+2026-09-14 03:20:56 [WARNING ] Trade History DB ulana olmadi: [WinError 1225] Удаленный компьютер отклонил это сетевое подключение — xotira rejimida ishlaydi
+2026-09-14 03:20:56 [INFO    ] MT5 terminal topildi: C:\Program Files\ForexClub MT5\terminal64.exe
+2026-09-14 03:20:56 [INFO    ] 🔌 MT5 login urinishi: ForexClub-MT5 Demo Server (login=500372121)
+2026-09-14 03:20:56 [INFO    ] ✅ MT5 Ulandi: ForexClub-MT5 Demo Server | Login=500372121 | Balans=$19154.47 USD | Leverage 1:1000
+2026-09-14 03:20:56 [INFO    ] 📊 Symbol mapping: USOIL → USOILCash (Libertex)
+2026-09-14 03:20:56 [DEBUG   ] Symbol topilmadi MT5 da: UKOIL
+2026-09-14 03:20:56 [DEBUG   ] Symbol topilmadi MT5 da: USTEC
+2026-09-14 03:20:56 [DEBUG   ] Symbol topilmadi MT5 da: US500
+2026-09-14 03:20:56 [DEBUG   ] Symbol topilmadi MT5 da: US30
+2026-09-14 03:20:56 [DEBUG   ] Symbol topilmadi MT5 da: GER40
+2026-09-14 03:20:56 [DEBUG   ] Symbol topilmadi MT5 da: AAPL
+2026-09-14 03:20:56 [DEBUG   ] Symbol topilmadi MT5 da: TSLA
+2026-09-14 03:20:56 [DEBUG   ] Symbol topilmadi MT5 da: NVDA
+2026-09-14 03:20:56 [DEBUG   ] Symbol topilmadi MT5 da: MSFT
+2026-09-14 03:20:56 [DEBUG   ] Symbol topilmadi MT5 da: GOOGL
+2026-09-14 03:20:56 [DEBUG   ] Symbol topilmadi MT5 da: AMZN
+2026-09-14 03:20:56 [INFO    ] ✅ Rejim: LIBERTEX MT5 MODE (ForexClub | Forex + Crypto + Stocks)
+2026-09-14 03:20:56 [INFO    ] 🏦 Libertex hisob: Login=500372121 | Server=ForexClub-MT5 Demo Server | Leverage 1:1000
+2026-09-14 03:20:56 [INFO    ] 💰 Risk Engine: Boshlang'ich=$19154.47 | Tier=elite
+2026-09-14 03:20:56 [INFO    ] 💰 Balans: $19154.47 | Tier: ELITE
+2026-09-14 03:20:56 [INFO    ] 📊 Aktiv bozorlar (30): XAUUSD, XAGUSD, EURUSD, GBPUSD, USDJPY, USDCHF...
+2026-09-14 03:20:56 [INFO    ] 🎯 Risk/savdo: 1.5% | Daily limit: 6%
+2026-09-14 03:20:56 [INFO    ] 🔍 Startup: ochiq pozitsiyalar SL tekshiruvi...
+2026-09-14 03:20:56 [WARNING ] ⚠️  SL YO'Q (Libertex): #115940565 ETHUSD | Narx: 2476.45100 — YOPILMOQDA (himoya)!
+2026-09-14 03:20:56 [ERROR   ] ❌ Close #115940565: Retcode:10027 AutoTrading disabled by client
+2026-09-14 03:20:56 [ERROR   ] ❌ Yopishda xato #115940565: Retcode:10027 AutoTrading disabled by client
+2026-09-14 03:20:56 [WARNING ] ⚠️  SL YO'Q (Libertex): #115941965 XAUUSD | Narx: 4332.86000 — YOPILMOQDA (himoya)!
+2026-09-14 03:20:58 [ERROR   ] ❌ Close #115941965: Retcode:10027 AutoTrading disabled by client
+2026-09-14 03:20:58 [ERROR   ] ❌ Yopishda xato #115941965: Retcode:10027 AutoTrading disabled by client
+2026-09-14 03:20:58 [WARNING ] ⚠️  SL YO'Q (Libertex): #115942396 XAUUSD | Narx: 4333.23000 — YOPILMOQDA (himoya)!
+2026-09-14 03:20:59 [ERROR   ] ❌ Close #115942396: Retcode:10027 AutoTrading disabled by client
+2026-09-14 03:20:59 [ERROR   ] ❌ Yopishda xato #115942396: Retcode:10027 AutoTrading disabled by client
+2026-09-14 03:20:59 [INFO    ] ✅ MT5: barcha pozitsiyalarda SL bor
+2026-09-14 03:20:59 [INFO    ] 📂 Oldingi holat yuklandi: 2026-09-08T17:46:33.778965 | Sikl#22470 | Savdolar:43
+2026-09-14 03:20:59 [INFO    ] 🔄 Multi-Market loop boshlandi [Libertex MT5 (ForexClub)]...
+2026-09-14 03:20:59 [INFO    ] 🐋 Whale WS o'chiq (Libertex rejimida MT5 ma'lumotlari ishlatiladi)
+2026-09-14 03:21:00 [INFO    ] 🤖 Telegram polling tayyor (offset=0)
+2026-09-14 03:21:01 [WARNING ] ⚠️ ❌ Kunlik limit 16.8% (max 6%) | ❌ Haftalik limit 16.8%
+2026-09-14 03:22:27 [DEBUG   ] DeepSeek HTTP 402: {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_reque
+2026-09-14 03:22:38 [INFO    ] =================================================================
+2026-09-14 03:22:38 [INFO    ] 🚀 GoldAI Ultra — Libertex Edition
+2026-09-14 03:22:38 [INFO    ]    Broker: ForexClub | Server: ForexClub-MT5 Demo Server
+2026-09-14 03:22:38 [INFO    ]    Forex | Crypto | Stocks | Commodities | Indices
+2026-09-14 03:22:38 [INFO    ] =================================================================
+2026-09-14 03:22:42 [WARNING ] Trade History DB ulana olmadi: [WinError 1225] Удаленный компьютер отклонил это сетевое подключение — xotira rejimida ishlaydi
+2026-09-14 03:22:42 [INFO    ] MT5 terminal topildi: C:\Program Files\ForexClub MT5\terminal64.exe
+2026-09-14 03:22:42 [INFO    ] 🔌 MT5 login urinishi: ForexClub-MT5 Demo Server (login=500372121)
+2026-09-14 03:22:42 [INFO    ] ✅ MT5 Ulandi: ForexClub-MT5 Demo Server | Login=500372121 | Balans=$19154.47 USD | Leverage 1:1000
+2026-09-14 03:22:42 [INFO    ] 📊 Symbol mapping: USOIL → USOILCash (Libertex)
+2026-09-14 03:22:42 [DEBUG   ] Symbol topilmadi MT5 da: UKOIL
+2026-09-14 03:22:42 [DEBUG   ] Symbol topilmadi MT5 da: USTEC
+2026-09-14 03:22:42 [DEBUG   ] Symbol topilmadi MT5 da: US500
+2026-09-14 03:22:42 [DEBUG   ] Symbol topilmadi MT5 da: US30
+2026-09-14 03:22:42 [DEBUG   ] Symbol topilmadi MT5 da: GER40
+2026-09-14 03:22:42 [DEBUG   ] Symbol topilmadi MT5 da: AAPL
+2026-09-14 03:22:42 [DEBUG   ] Symbol topilmadi MT5 da: TSLA
+2026-09-14 03:22:42 [DEBUG   ] Symbol topilmadi MT5 da: NVDA
+2026-09-14 03:22:42 [DEBUG   ] Symbol topilmadi MT5 da: MSFT
+2026-09-14 03:22:42 [DEBUG   ] Symbol topilmadi MT5 da: GOOGL
+2026-09-14 03:22:42 [DEBUG   ] Symbol topilmadi MT5 da: AMZN
+2026-09-14 03:22:42 [INFO    ] ✅ Rejim: LIBERTEX MT5 MODE (ForexClub | Forex + Crypto + Stocks)
+2026-09-14 03:22:42 [INFO    ] 🏦 Libertex hisob: Login=500372121 | Server=ForexClub-MT5 Demo Server | Leverage 1:1000
+2026-09-14 03:22:42 [INFO    ] 💰 Risk Engine: Boshlang'ich=$19154.47 | Tier=elite
+2026-09-14 03:22:42 [INFO    ] 💰 Balans: $19154.47 | Tier: ELITE
+2026-09-14 03:22:42 [INFO    ] 📊 Aktiv bozorlar (30): XAUUSD, XAGUSD, EURUSD, GBPUSD, USDJPY, USDCHF...
+2026-09-14 03:22:42 [INFO    ] 🎯 Risk/savdo: 1.5% | Daily limit: 6%
+2026-09-14 03:22:42 [INFO    ] 🔍 Startup: ochiq pozitsiyalar SL tekshiruvi...
+2026-09-14 03:22:42 [WARNING ] ⚠️  SL YO'Q (Libertex): #115940565 ETHUSD | Narx: 2476.66500 — YOPILMOQDA (himoya)!
+2026-09-14 03:22:42 [ERROR   ] ❌ Close #115940565: Retcode:10030 Unsupported filling mode
+2026-09-14 03:22:42 [ERROR   ] ❌ Yopishda xato #115940565: Retcode:10030 Unsupported filling mode
+2026-09-14 03:22:42 [WARNING ] ⚠️  SL YO'Q (Libertex): #115941965 XAUUSD | Narx: 4332.03000 — YOPILMOQDA (himoya)!
+2026-09-14 03:22:44 [ERROR   ] ❌ Close #115941965: Retcode:10030 Unsupported filling mode
+2026-09-14 03:22:44 [ERROR   ] ❌ Yopishda xato #115941965: Retcode:10030 Unsupported filling mode
+2026-09-14 03:22:44 [WARNING ] ⚠️  SL YO'Q (Libertex): #115942396 XAUUSD | Narx: 4332.40000 — YOPILMOQDA (himoya)!
+2026-09-14 03:22:45 [ERROR   ] ❌ Close #115942396: Retcode:10030 Unsupported filling mode
+2026-09-14 03:22:45 [ERROR   ] ❌ Yopishda xato #115942396: Retcode:10030 Unsupported filling mode
+2026-09-14 03:22:45 [INFO    ] ✅ MT5: barcha pozitsiyalarda SL bor
+2026-09-14 03:22:45 [INFO    ] 📂 Oldingi holat yuklandi: 2026-09-08T17:46:33.778965 | Sikl#22470 | Savdolar:43
+2026-09-14 03:22:46 [INFO    ] 🔄 Multi-Market loop boshlandi [Libertex MT5 (ForexClub)]...
+2026-09-14 03:22:46 [INFO    ] 🐋 Whale WS o'chiq (Libertex rejimida MT5 ma'lumotlari ishlatiladi)
+2026-09-14 03:22:46 [INFO    ] 🤖 Telegram polling tayyor (offset=0)
+2026-09-14 03:22:47 [WARNING ] ⚠️ ❌ Kunlik limit 16.7% (max 6%) | ❌ Haftalik limit 16.7%
+2026-09-14 03:23:07 [INFO    ] 📨 Telegram buyruq: /help (dan: @husniddinrofiyev / 8870183299)
+2026-09-14 03:23:07 [INFO    ] ✅ Buyruq bajarildi: /help
+2026-09-14 03:23:11 [INFO    ] 📨 Telegram buyruq: /closeall (dan: @husniddinrofiyev / 8870183299)
+2026-09-14 03:23:12 [ERROR   ] ❌ Close #115940565: (-2, 'Invalid "volume" argument')
+2026-09-14 03:23:13 [ERROR   ] ❌ Close #115941965: (-2, 'Invalid "volume" argument')
+2026-09-14 03:23:15 [ERROR   ] ❌ Close #115942396: (-2, 'Invalid "volume" argument')
+2026-09-14 03:23:15 [INFO    ] ✅ Buyruq bajarildi: /closeall
+2026-09-14 03:23:23 [INFO    ] 📨 Telegram buyruq: /auto (dan: @husniddinrofiyev / 8870183299)
+2026-09-14 03:23:23 [INFO    ] ✅ Buyruq bajarildi: /auto
+2026-09-14 03:23:27 [INFO    ] 📨 Telegram buyruq: /auto (dan: @husniddinrofiyev / 8870183299)
+2026-09-14 03:23:27 [INFO    ] ✅ Buyruq bajarildi: /auto
+2026-09-14 03:23:45 [INFO    ] 📨 Telegram buyruq: /scan xauusd (dan: @husniddinrofiyev / 8870183299)
+2026-09-14 03:23:46 [INFO    ] 🔍 Skanerlash tugadi: 1 symbol | 0 signal | 32ms
+2026-09-14 03:23:46 [INFO    ] ✅ Buyruq bajarildi: /scan
+2026-09-14 03:23:49 [WARNING ] ⚠️ ❌ Kunlik limit 16.8% (max 6%) | ❌ Haftalik limit 16.8%
+2026-09-14 03:24:14 [INFO    ] 📨 Telegram buyruq: /auto (dan: @husniddinrofiyev / 8870183299)
+2026-09-14 03:24:15 [INFO    ] ✅ Buyruq bajarildi: /auto
+2026-09-14 03:24:17 [INFO    ] 📨 Telegram buyruq: /auto (dan: @husniddinrofiyev / 8870183299)
+2026-09-14 03:24:17 [INFO    ] ✅ Buyruq bajarildi: /auto
+2026-09-14 03:24:23 [INFO    ] 📨 Telegram buyruq: /help (dan: @husniddinrofiyev / 8870183299)
+2026-09-14 03:24:23 [INFO    ] ✅ Buyruq bajarildi: /help
+2026-09-14 03:24:42 [INFO    ] 📨 Telegram buyruq: /scan (dan: @husniddinrofiyev / 8870183299)
+2026-09-14 03:24:42 [INFO    ] 🔍 Skanerlash tugadi: 1 symbol | 0 signal | 26ms
+2026-09-14 03:24:43 [INFO    ] ✅ Buyruq bajarildi: /scan
+2026-09-14 03:24:52 [WARNING ] ⚠️ ❌ Kunlik limit 15.1% (max 6%) | ❌ Haftalik limit 15.1%
+2026-09-14 03:25:56 [WARNING ] ⚠️ ❌ Kunlik limit 15.1% (max 6%) | ❌ Haftalik limit 15.1%
+2026-09-14 03:27:03 [INFO    ] =================================================================
+2026-09-14 03:27:03 [INFO    ] 🚀 GoldAI Ultra — Libertex Edition
+2026-09-14 03:27:03 [INFO    ]    Broker: ForexClub | Server: ForexClub-MT5 Demo Server
+2026-09-14 03:27:03 [INFO    ]    Forex | Crypto | Stocks | Commodities | Indices
+2026-09-14 03:27:03 [INFO    ] =================================================================
+2026-09-14 03:27:07 [WARNING ] Trade History DB ulana olmadi: [WinError 1225] Удаленный компьютер отклонил это сетевое подключение — xotira rejimida ishlaydi
+2026-09-14 03:27:07 [WARNING ] MT5 initialize (path=C:\Program Files\ForexClub MT5	erminal64.exe) xatosi: (-10003, "IPC initialize failed, Process create failed 'C:\\Program Files\\ForexClub MT5\terminal64.exe'")
+2026-09-14 03:27:07 [INFO    ] 🔌 MT5 login urinishi: ForexClub-MT5 Demo Server (login=500372121)
+2026-09-14 03:27:07 [INFO    ] ✅ MT5 Ulandi: ForexClub-MT5 Demo Server | Login=500372121 | Balans=$16263.59 USD | Leverage 1:1000
+2026-09-14 03:27:07 [INFO    ] 📊 Symbol mapping: USOIL → USOILCash (Libertex)
+2026-09-14 03:27:07 [DEBUG   ] Symbol topilmadi MT5 da: UKOIL
+2026-09-14 03:27:07 [DEBUG   ] Symbol topilmadi MT5 da: USTEC
+2026-09-14 03:27:07 [DEBUG   ] Symbol topilmadi MT5 da: US500
+2026-09-14 03:27:07 [DEBUG   ] Symbol topilmadi MT5 da: US30
+2026-09-14 03:27:07 [DEBUG   ] Symbol topilmadi MT5 da: GER40
+2026-09-14 03:27:07 [DEBUG   ] Symbol topilmadi MT5 da: AAPL
+2026-09-14 03:27:07 [DEBUG   ] Symbol topilmadi MT5 da: TSLA
+2026-09-14 03:27:07 [DEBUG   ] Symbol topilmadi MT5 da: NVDA
+2026-09-14 03:27:07 [DEBUG   ] Symbol topilmadi MT5 da: MSFT
+2026-09-14 03:27:07 [DEBUG   ] Symbol topilmadi MT5 da: GOOGL
+2026-09-14 03:27:07 [DEBUG   ] Symbol topilmadi MT5 da: AMZN
+2026-09-14 03:27:07 [INFO    ] ✅ Rejim: LIBERTEX MT5 MODE (ForexClub | Forex + Crypto + Stocks)
+2026-09-14 03:27:07 [INFO    ] 🏦 Libertex hisob: Login=500372121 | Server=ForexClub-MT5 Demo Server | Leverage 1:1000
+2026-09-14 03:27:07 [INFO    ] 💰 Risk Engine: Boshlang'ich=$16263.59 | Tier=elite
+2026-09-14 03:27:07 [INFO    ] 💰 Balans: $16263.59 | Tier: ELITE
+2026-09-14 03:27:07 [INFO    ] 📊 Aktiv bozorlar (30): XAUUSD, XAGUSD, EURUSD, GBPUSD, USDJPY, USDCHF...
+2026-09-14 03:27:07 [INFO    ] 🎯 Risk/savdo: 1.5% | Daily limit: 6%
+2026-09-14 03:27:07 [INFO    ] 🔍 Startup: ochiq pozitsiyalar SL tekshiruvi...
+2026-09-14 03:27:07 [INFO    ] ✅ MT5: barcha pozitsiyalarda SL bor
+2026-09-14 03:27:07 [INFO    ] 📂 Oldingi holat yuklandi: 2026-09-08T17:46:33.778965 | Sikl#22470 | Savdolar:43
+2026-09-14 03:27:08 [INFO    ] 🔄 Multi-Market loop boshlandi [Libertex MT5 (ForexClub)]...
+2026-09-14 03:27:08 [INFO    ] 🐋 Whale WS o'chiq (Libertex rejimida MT5 ma'lumotlari ishlatiladi)
+2026-09-14 03:27:08 [INFO    ] 🤖 Telegram polling tayyor (offset=0)
+2026-09-14 03:27:19 [DEBUG   ] MT5 OHLC yo'q: UKOIL M15 — (-1, 'Terminal: Call failed')
+2026-09-14 03:27:19 [DEBUG   ] MT5 OHLC yo'q: UKOIL M15 — (-1, 'Terminal: Call failed')
+2026-09-14 03:27:19 [DEBUG   ] OHLC yo'q: UKOIL
+2026-09-14 03:27:19 [DEBUG   ] MT5 OHLC yo'q: USTEC M15 — (-1, 'Terminal: Call failed')
+2026-09-14 03:27:19 [DEBUG   ] MT5 OHLC yo'q: USTEC M15 — (-1, 'Terminal: Call failed')
+2026-09-14 03:27:19 [DEBUG   ] OHLC yo'q: USTEC
+2026-09-14 03:27:19 [DEBUG   ] MT5 OHLC yo'q: US500 M15 — (-1, 'Terminal: Call failed')
+2026-09-14 03:27:19 [DEBUG   ] MT5 OHLC yo'q: US500 M15 — (-1, 'Terminal: Call failed')
+2026-09-14 03:27:19 [DEBUG   ] OHLC yo'q: US500
+2026-09-14 03:27:19 [DEBUG   ] MT5 OHLC yo'q: US30 M15 — (-1, 'Terminal: Call failed')
+2026-09-14 03:27:19 [DEBUG   ] MT5 OHLC yo'q: US30 M15 — (-1, 'Terminal: Call failed')
+2026-09-14 03:27:19 [DEBUG   ] OHLC yo'q: US30
+2026-09-14 03:27:19 [DEBUG   ] MT5 OHLC yo'q: GER40 M15 — (-1, 'Terminal: Call failed')
+2026-09-14 03:27:19 [DEBUG   ] MT5 OHLC yo'q: GER40 M15 — (-1, 'Terminal: Call failed')
+2026-09-14 03:27:19 [DEBUG   ] OHLC yo'q: GER40
+2026-09-14 03:27:21 [DEBUG   ] MT5 OHLC yo'q: AAPL M15 — (-1, 'Terminal: Call failed')
+2026-09-14 03:27:21 [DEBUG   ] MT5 OHLC yo'q: AAPL M15 — (-1, 'Terminal: Call failed')
+2026-09-14 03:27:21 [DEBUG   ] OHLC yo'q: AAPL
+2026-09-14 03:27:21 [DEBUG   ] MT5 OHLC yo'q: TSLA M15 — (-1, 'Terminal: Call failed')
+2026-09-14 03:27:21 [DEBUG   ] MT5 OHLC yo'q: TSLA M15 — (-1, 'Terminal: Call failed')
+2026-09-14 03:27:21 [DEBUG   ] OHLC yo'q: TSLA
+2026-09-14 03:27:21 [DEBUG   ] MT5 OHLC yo'q: NVDA M15 — (-1, 'Terminal: Call failed')
+2026-09-14 03:27:21 [DEBUG   ] MT5 OHLC yo'q: NVDA M15 — (-1, 'Terminal: Call failed')
+2026-09-14 03:27:21 [DEBUG   ] OHLC yo'q: NVDA
+2026-09-14 03:27:21 [DEBUG   ] MT5 OHLC yo'q: MSFT M15 — (-1, 'Terminal: Call failed')
+2026-09-14 03:27:21 [DEBUG   ] MT5 OHLC yo'q: MSFT M15 — (-1, 'Terminal: Call failed')
+2026-09-14 03:27:21 [DEBUG   ] OHLC yo'q: MSFT
+2026-09-14 03:27:21 [DEBUG   ] MT5 OHLC yo'q: GOOGL M15 — (-1, 'Terminal: Call failed')
+2026-09-14 03:27:21 [DEBUG   ] MT5 OHLC yo'q: GOOGL M15 — (-1, 'Terminal: Call failed')
+2026-09-14 03:27:21 [DEBUG   ] OHLC yo'q: GOOGL
+2026-09-14 03:27:21 [DEBUG   ] MT5 OHLC yo'q: AMZN M15 — (-1, 'Terminal: Call failed')
+2026-09-14 03:27:21 [DEBUG   ] MT5 OHLC yo'q: AMZN M15 — (-1, 'Terminal: Call failed')
+2026-09-14 03:27:21 [DEBUG   ] OHLC yo'q: AMZN
+2026-09-14 03:27:21 [INFO    ] 📡 Libertex MT5 scan: 19/30 symbol tayyor
+2026-09-14 03:27:21 [DEBUG   ] ADX filter: XAGUSD skip (ADX=17.6 < 20, bozor choppy)
+2026-09-14 03:27:21 [DEBUG   ] ADX filter: USDJPY skip (ADX=15.9 < 20, bozor choppy)
+2026-09-14 03:27:22 [DEBUG   ] SL chegaralandi: USOIL → 1.5% (1.54395)
+2026-09-14 03:27:22 [INFO    ] 🔍 Skanerlash tugadi: 19 symbol | 4 signal | 475ms
+2026-09-14 03:27:22 [INFO    ] 📐 Lot [ADAUSD/crypto]: $365.93 risk | SL:0.0012 | Lot:10000.0 | R:R:2.51
+2026-09-14 03:27:22 [INFO    ] 
+=======================================================
+₿ [Libertex MT5] SAVDO: BUY ADAUSD
+   Tier: ELITE | Ishonch: 57.4%
+   Entry: 0.20295 | Lot: 10000.0
+   SL: 0.20174 | TP: 0.20599
+   R:R: 2.51
+=======================================================
+2026-09-14 03:27:22 [ERROR   ] Sikl xatosi: 'SymbolInfo' object has no attribute 'trade_allowed'
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\goldai\core\orchestrator.py", line 316, in run_cycle
+    await self._process_signal(signal, account, risk_status, market_data)
+  File "C:\Users\HP\Desktop\goldai\core\orchestrator.py", line 531, in _process_signal
+    await self._execute_trade(decision)
+  File "C:\Users\HP\Desktop\goldai\core\orchestrator.py", line 580, in _execute_trade
+    result = self.execution.buy(
+        decision.symbol, decision.lot,
+        decision.stop_loss, decision.take_profit, comment
+    )
+  File "C:\Users\HP\Desktop\goldai\engines\execution_engine.py", line 113, in buy
+    return self._send_order(symbol, mt5.ORDER_TYPE_BUY, lot, sl, tp, comment)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\goldai\engines\execution_engine.py", line 166, in _send_order
+    if not info.trade_allowed:
+           ^^^^^^^^^^^^^^^^^^
+AttributeError: 'SymbolInfo' object has no attribute 'trade_allowed'
