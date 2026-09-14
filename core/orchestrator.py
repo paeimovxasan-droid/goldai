@@ -558,7 +558,7 @@ class UltraOrchestrator:
             "reason": decision.reason, "executed": True
         })
 
-        await self._execute_trade(decision)
+        return await self._execute_trade(decision)
 
     async def _execute_trade(self, decision: TradingDecision):
         icons = {"forex": "💱", "crypto": "₿", "commodity": "🏅", "stock": "📈", "index": "📊"}
@@ -628,7 +628,7 @@ class UltraOrchestrator:
                 symbol=decision.symbol,
                 side=decision.action,
                 lot=decision.lot,
-                entry=result.price or decision.entry,
+                entry=float(getattr(result, "price", 0) or decision.entry),
                 sl=decision.stop_loss,
                 tp=decision.take_profit,
                 tier=decision.tier,
@@ -686,7 +686,9 @@ class UltraOrchestrator:
                 cvd_trend=decision.cvd_trend,
             )
         else:
-            logger.error(f"❌ Savdo muvaffaqiyatsiz: {result.error}")
+            logger.error(f"❌ Savdo muvaffaqiyatsiz: {getattr(result, 'error', 'broker rad etdi')}")
+
+        return result
 
     # ─── POSITION MANAGEMENT ──────────────────────────────────────
 
@@ -919,16 +921,26 @@ class UltraOrchestrator:
                 whale_activity=None
             )
 
-        # 3. Bajarish
-        await self._process_signal(manual_sig, account, risk_status, {symbol: df})
+        # 3. Bajarish — natijani tekshirib, Telegram'da yolg'on success bermaymiz.
+        result = await self._process_signal(manual_sig, account, risk_status, {symbol: df})
+        if result is None:
+            return (
+                f"❌ {side} {symbol} bajarilmadi.\n"
+                "Signal/risk/SL tekshiruvlaridan biri orderni blokladi. "
+                "logs\\goldai_ultra.log faylini tekshiring."
+            )
+        if not result.success:
+            return f"❌ {side} {symbol} order rad etildi: {getattr(result, 'error', 'nomaʼlum xato')}"
 
         account2 = await self._get_account()
         balance2 = float(account2.get("balance") or 0)
         is_paper = self.paper.is_paper_mode(balance2)
         mode = "📝 PAPER" if is_paper else "💰 REAL"
+        ticket = getattr(result, "ticket", 0)
 
         return (
-            f"✅ {mode} {side} {symbol}\n"
+            f"✅ {mode} {side} {symbol} ochildi\n"
+            f"Ticket: {ticket}\n"
             f"Entry: {manual_sig.entry:,.4f}\n"
             f"SL: {manual_sig.stop_loss:,.4f}\n"
             f"TP: {manual_sig.take_profit:,.4f}\n"
