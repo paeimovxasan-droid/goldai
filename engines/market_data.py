@@ -5,6 +5,8 @@ Libertex (ForexClub) MT5 Edition — Asosiy manba MT5, Binance ixtiyoriy
 
 import asyncio
 import aiohttp
+import os
+from pathlib import Path
 import numpy as np
 import pandas as pd
 from datetime import datetime
@@ -55,53 +57,132 @@ class MultiMarketDataEngine:
 
     def __init__(self):
         self.mt5_connected = False
+        self.connected_server = ""
+        self.last_connection_error = ""
         self._price_cache: dict = {}
         self._ohlc_cache: dict = {}
         self._last_update: dict = {}
         self._actual_symbols: dict = {}  # BTCUSD -> MT5 dagi haqiqiy nom (masalan BTCUSD.)
 
-    def connect_mt5(self) -> bool:
-        """Libertex MT5 ga ulanish — fallback serverlar bilan"""
-        # MT5 terminal yo'li berilgan bo'lsa
-        mt5_path = config.mt5.path
-        if mt5_path:
-            if not mt5.initialize(path=mt5_path, timeout=10000):
-                logger.warning(f"MT5 initialize (path={mt5_path}) xatosi: {mt5.last_error()}")
-            else:
-                logger.info(f"MT5 terminal topildi: {mt5_path}")
+    @staticmethod
+    def _terminal_paths() -> list[str]:
+        """Return existing MT5 terminal paths plus the configured path.
 
-        # Avval oddiy initialize
-        if not mt5.initialize(timeout=8000):
-            logger.error(f"MT5 initialize xatosi: {mt5.last_error()}")
+        MT5's Python bridge can start a terminal only when the executable path
+        is correct.  The old code first initialized with MT5_PATH and then
+        initialized a second time without a path, which caused IPC failures.
+        """
+        configured = os.path.expandvars(config.mt5.path.strip().strip('"')) if config.mt5.path else ""
+        candidates = [configured] if configured else []
+        env_roots = [os.getenv("ProgramFiles"), os.getenv("ProgramFiles(x86)"), os.getenv("LOCALAPPDATA")]
+        relative = [
+            "ForexClub MT5\\terminal64.exe",
+            "Libertex MT5\\terminal64.exe",
+            "MetaTrader 5\\terminal64.exe",
+            "MetaTrader 5\\terminal64.exe",
+        ]
+        for root in env_roots:
+            if root:
+                candidates.extend(os.path.join(root, item) for item in relative)
+        # Keep a configured missing path in the list so the log explains it.
+        result = []
+        for path in candidates:
+            if path and path not in result:
+                result.append(path)
+        return result
+
+    def _initialize_terminal(self) -> bool:
+        """Initialize the MT5 IPC bridge exactly once per attempt."""
+        paths = self._terminal_paths()
+        if config.mt5.path and not os.path.isfile(paths[0] if paths else config.mt5.path):
+            logger.warning("MT5_PATH topilmadi: %s; ochiq terminalga ulanish sinab ko'riladi", config.mt5.path)
+
+        # Try an explicitly configured/existing executable first.  A normal
+        # initialize() is also needed when the terminal is already running.
+        for path in [p for p in paths if os.path.isfile(p)]:
+            try:
+                if mt5.initialize(path=path, timeout=config.mt5.timeout):
+                    logger.info("MT5 terminal topildi: %s", path)
+                    return True
+                logger.warning("MT5 initialize (path=%s) xatosi: %s", path, mt5.last_error())
+                mt5.shutdown()
+            except Exception as exc:
+                logger.warning("MT5 path initialize xatosi (%s): %s", path, type(exc).__name__)
+                try:
+                    mt5.shutdown()
+                except Exception:
+                    pass
+
+        try:
+            if mt5.initialize(timeout=config.mt5.timeout):
+                logger.info("MT5 terminalga odatiy IPC ulanishi muvaffaqiyatli")
+                return True
+            self.last_connection_error = str(mt5.last_error())
+        except Exception as exc:
+            self.last_connection_error = f"{type(exc).__name__}: {exc}"
+        logger.error("MT5 initialize xatosi: %s", self.last_connection_error)
+        return False
+
+    def connect_mt5(self) -> bool:
+        """Connect to ForexClub/Libertex MT5 with clear diagnostics."""
+        self.mt5_connected = False
+        self.connected_server = ""
+        self._actual_symbols.clear()
+
+        if not MT5_AVAILABLE:
+            self.last_connection_error = "MetaTrader5 Python paketi o'rnatilmagan (Windows + MT5 terminali kerak)"
+            logger.error("❌ %s", self.last_connection_error)
+            return False
+        if config.mt5.login <= 0 or not config.mt5.password or not config.mt5.server:
+            self.last_connection_error = "MT5_LOGIN, MT5_PASSWORD va MT5_SERVER to'liq kiritilmagan"
+            logger.error("❌ %s", self.last_connection_error)
+            return False
+        if not self._initialize_terminal():
+            logger.error("❌ MT5 terminal IPC ishga tushmadi. MT5 ni bir marta qo'lda ochib login qiling.")
             return False
 
-        # Asosiy server bilan login
-        servers_to_try = [config.mt5.server] + [s for s in config.mt5.fallback_servers if s != config.mt5.server]
         last_error = None
-        for srv in servers_to_try:
-            logger.info(f"🔌 MT5 login urinishi: {srv} (login={config.mt5.login})")
-            result = mt5.login(
-                login=config.mt5.login,
-                password=config.mt5.password,
-                server=srv
-            )
+        for srv in config.mt5.fallback_servers:
+            logger.info("🔌 MT5 login urinishi: %s (login=%s)", srv, config.mt5.login)
+            try:
+                result = mt5.login(
+                    login=config.mt5.login,
+                    password=config.mt5.password,
+                    server=srv,
+                )
+            except Exception as exc:
+                result = False
+                last_error = f"{type(exc).__name__}: {exc}"
             if result:
                 info = mt5.account_info()
-                if info:
-                    logger.info(f"✅ MT5 Ulandi: {srv} | Login={info.login} | Balans=${info.balance:.2f} {info.currency} | Leverage 1:{info.leverage}")
+                if info and int(getattr(info, "login", 0)) == config.mt5.login:
+                    self.connected_server = str(getattr(info, "server", srv) or srv)
                     self.mt5_connected = True
-                    # Haqiqiy symbol nomlarini aniqlash
+                    terminal = getattr(mt5, "terminal_info", lambda: None)()
+                    if terminal is not None and getattr(terminal, "trade_allowed", True) is False:
+                        logger.warning("⚠️ MT5 terminal AutoTrading o'chiq — ma'lumot bor, orderlar bloklanadi")
+                    logger.info(
+                        "✅ MT5 Ulandi: %s | Login=%s | Balans=$%.2f %s | Leverage 1:%s",
+                        self.connected_server, info.login, info.balance, info.currency, info.leverage,
+                    )
                     self._discover_symbols()
                     return True
-            last_error = mt5.last_error()
-            logger.warning(f"MT5 login muvaffaqiyatsiz ({srv}): {last_error}")
+            try:
+                last_error = str(mt5.last_error())
+            except Exception:
+                last_error = "unknown MT5 error"
+            logger.warning("MT5 login muvaffaqiyatsiz (%s): %s", srv, last_error)
 
-        logger.error(f"❌ MT5 ulanib bo'lmadi. Oxirgi xato: {last_error}")
-        logger.info("💡 Tekshiring: 1) MT5 terminal o'rnatilganmi 2) Libertex kabinetidagi server nomi 100% to'g'rimi 3) Login/parol to'g'rimi")
-        # Binance yoqilgan bo'lsa fallback
-        if config.enable_binance:
-            logger.warning("⚠️  Binance rejimiga o'tishga harakat qilinadi (ENABLE_BINANCE=true)")
-            return False
+        self.last_connection_error = str(last_error or "server/login rad etdi")
+        logger.error("❌ MT5 ulanib bo'lmadi: %s", self.last_connection_error)
+        logger.info(
+            "💡 MT5 terminali ochiq/login qilinganini, AutoTrading yoqilganini va "
+            "kabinetdagi server nomi MT5_SERVER bilan aynan bir xil ekanini tekshiring"
+        )
+        try:
+            mt5.shutdown()
+        except Exception:
+            pass
         return False
 
     def _discover_symbols(self):
@@ -111,31 +192,32 @@ class MultiMarketDataEngine:
             symbols = mt5.symbols_get()
             if not symbols:
                 return
-            available = {s.name for s in symbols}
+            available = {str(s.name): s for s in symbols if getattr(s, "name", None)}
+            normalized = {
+                "".join(ch for ch in name.upper() if ch.isalnum()): name
+                for name in available
+            }
             for std_symbol in MARKETS.keys():
-                if std_symbol in available:
-                    self._actual_symbols[std_symbol] = std_symbol
-                    mt5.symbol_select(std_symbol, True)
-                else:
-                    # Alias larni tekshirish
-                    aliases = LIBERTEX_SYMBOL_ALIASES.get(std_symbol, [std_symbol])
-                    found = None
-                    for alias in aliases:
-                        if alias in available:
-                            found = alias
+                aliases = LIBERTEX_SYMBOL_ALIASES.get(std_symbol, [std_symbol])
+                found = next((alias for alias in aliases if alias in available), None)
+                if not found:
+                    std_key = "".join(ch for ch in std_symbol.upper() if ch.isalnum())
+                    found = normalized.get(std_key)
+                if not found:
+                    # Handles broker suffixes/prefixes such as EURUSD.a,
+                    # EURUSDm and FX_EURUSD without guessing an unrelated symbol.
+                    std_key = "".join(ch for ch in std_symbol.upper() if ch.isalnum())
+                    for key, name in normalized.items():
+                        if key.startswith(std_key) or key.endswith(std_key):
+                            found = name
                             break
-                    # Suffix bilan ham tekshirish
-                    if not found:
-                        for avail in available:
-                            if avail.startswith(std_symbol):
-                                found = avail
-                                break
-                    if found:
-                        self._actual_symbols[std_symbol] = found
-                        mt5.symbol_select(found, True)
+                if found:
+                    self._actual_symbols[std_symbol] = found
+                    mt5.symbol_select(found, True)
+                    if found != std_symbol:
                         logger.info(f"📊 Symbol mapping: {std_symbol} → {found} (Libertex)")
-                    else:
-                        logger.debug(f"Symbol topilmadi MT5 da: {std_symbol}")
+                else:
+                    logger.debug(f"Symbol topilmadi MT5 da: {std_symbol}")
         except Exception as e:
             logger.debug(f"Symbol discovery xato: {e}")
 
