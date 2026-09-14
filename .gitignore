@@ -36,10 +36,6 @@ logs/
 *.db
 goldai_state.json
 trade_history.db
-trades.txt
-startup.log
-stdout.txt
-stderr.txt
 
 # MT5 Terminal (Windows)
 terminal64.exe
